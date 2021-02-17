@@ -1,4 +1,4 @@
-![Thrive Logo](ThriveLogo.png)
+![Thrive Logo](ThriveLogo.jpg)
 # Thrive Application Vision Statement 
 
 Thrive will provide quick and easy access to multi-faceted tools and information that will assist the consumer in optimizing their health, well-being and performance. The application aims to strike a balance between providing a range of both personalized and generic features that are instrumental for the consumer to excel and thrive. This brings us back to our mission statement, summarizing the premise of the application. "Why settle for survival, when you can be thriving!"
