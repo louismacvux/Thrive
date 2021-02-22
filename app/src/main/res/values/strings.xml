@@ -8,4 +8,9 @@
     <string name="user_email">email address</string>
     <string name="confirm_password">confirm password</string>
     <string name="done_registration">Done</string>
+    <string-array name="workouts">
+        <item>Tone up</item>
+        <item>Build muscle</item>
+        <item>Loose fat</item>
+    </string-array>
 </resources>
