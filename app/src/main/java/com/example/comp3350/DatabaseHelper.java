@@ -76,7 +76,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         return result;
     }
 
-    public User getSomeone(String input)
+    public User getSomeone(String name)
     {
         User result;
 
@@ -84,7 +84,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor;
-        cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE name = ?", new String[] {input});
+        cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COL3 + " = ?", new String[] {name});
 
         //if we found our user
         if (cursor.moveToFirst())

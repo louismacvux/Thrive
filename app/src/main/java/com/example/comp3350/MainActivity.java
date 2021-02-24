@@ -12,8 +12,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
+        String currentUser = intent.getStringExtra("currentUser");
 
-
+        User current= dbHelper.getSomeone(currentUser);
+        Toast.makeText(MainActivity.this, currentUser + " logged in",
+                Toast.LENGTH_LONG).show();
     }
 
 

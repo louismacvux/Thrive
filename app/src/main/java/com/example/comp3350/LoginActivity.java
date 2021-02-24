@@ -62,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                     boolean checkUserPass = dbHelper.checkCredentials(userName, userPass);
                     if (checkUserPass == true) {
                         Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                        MainIntent.putExtra("currentUser", userName);
                         startActivity(MainIntent);
                     } else if (dbHelper.checkName(userName)) {
                         Toast.makeText(LoginActivity.this, "Incorrect Password",
