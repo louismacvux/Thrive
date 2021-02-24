@@ -77,7 +77,8 @@ public class DatabaseHelper extends SQLiteOpenHelper
         User result;
 
         //Query the database to pull a user
-        String queryString = "SELECT * FROM " + TABLE_NAME + " WHERE NAME = " + input;
+        String queryString = ("SELECT * FROM " + TABLE_NAME);
+
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor;
@@ -100,7 +101,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         //empty User
         else
         {
-            result = new User();
+            result = null;
         }
         //close db and cursor when done
         db.close();

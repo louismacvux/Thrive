@@ -50,13 +50,13 @@ public class LoginActivity extends AppCompatActivity {
                 DatabaseHelper dbHelper = new DatabaseHelper(LoginActivity.this);
                 User currentUser = dbHelper.getSomeone(userName);
 
-                if (currentUser.getId() > 0) {
+                if (currentUser != null) {
                     Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(MainIntent);
                 }
                 else
                 {
-                    Toast.makeText(LoginActivity.this, "No such user, tap 'REGISTER'",
+                    Toast.makeText(LoginActivity.this, "No such user, tap 'SIGN UP'",
                             Toast.LENGTH_LONG).show();
                 }
             }
