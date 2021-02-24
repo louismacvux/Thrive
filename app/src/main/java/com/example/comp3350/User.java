@@ -8,6 +8,7 @@ public class User {
     private int weight;
     private String gender;
     private int bmi;
+    private String password;
 
     @Override
     public String toString() {
@@ -22,7 +23,8 @@ public class User {
                 '}';
     }
 
-    public User (int id, String name, String email, int age, int weight, String gender, int bmi)
+    public User (int id, String name, String email, int age, int weight, String gender,
+                 int bmi, String password)
     {
         this.id = id;
         this.name = name;
@@ -31,6 +33,7 @@ public class User {
         this.weight = weight;
         this.gender = gender;
         this.bmi = bmi;
+        this.password = password;
     }
     public User(){}
 
@@ -62,6 +65,7 @@ public class User {
         this.bmi = bmi;
     }
 
+    public void setPassword(String password) { this.password = password;}
 
     public int getId() {
         return id;
@@ -90,5 +94,7 @@ public class User {
     public int getBmi() {
         return bmi;
     }
+
+    public String getPassword() { return password;}
 
 }

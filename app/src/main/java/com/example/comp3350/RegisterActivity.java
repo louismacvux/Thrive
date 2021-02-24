@@ -32,6 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
     String name;
     String email;
     String gender;
+    String password;
+    String rePass;
     int age;
     int weight;
     int bmi;
@@ -62,38 +64,55 @@ public class RegisterActivity extends AppCompatActivity {
                 age = Integer.parseInt(txtAge.getText().toString());
                 weight = Integer.parseInt(txtWeight.getText().toString());
                 bmi = Integer.parseInt(txtBMI.getText().toString());
-
-                //try to make a new user with all the data
-                try
-                {
-                    newUser = new User(-1, name, email, age, weight, gender, bmi);
-                }
-                //make a new user without any of their data entered
-                catch (Exception e)
-                {
-                    newUser = new User(-1, null, null, -1,
-                            -1, null, -1);
-                    Toast.makeText(RegisterActivity.this, "Error in creating new user!",
-                            Toast.LENGTH_LONG).show();
-                }
+                password = txtPassword.getText().toString();
+                rePass = confirmPassword.getText().toString();
 
                 //database and helper
                 DatabaseHelper dbHelper = new DatabaseHelper(RegisterActivity.this);
-                if (dbHelper.addData(newUser)) {
 
-                    Toast.makeText(RegisterActivity.this, "Registration Complete",
-                            Toast.LENGTH_LONG).show();
-                }
-                else
+                if (name.equals("") || password.equals("") || rePass.equals(""))
                 {
-                    Toast.makeText(RegisterActivity.this, "Failed to add user to DB...",
+                    Toast.makeText(RegisterActivity.this, "Please enter a user name and password",
                             Toast.LENGTH_LONG).show();
                 }
-                Intent enterStats = new Intent(RegisterActivity.this,
-                        MainActivity.class);
-                startActivity(enterStats);
+                else {
+                    if (dbHelper.checkName(name))
+                    {
+                        Toast.makeText(RegisterActivity.this, "User already exists!",
+                                Toast.LENGTH_LONG).show();
+                    }
+                    else if (password.equals(rePass))
+                    {
+                        //try to make a new user with all the data
+                        try
+                        {
+                            newUser = new User(-1, name, email, age, weight, gender, bmi, password);
+                        }
+                        //make a new user without any of their data entered
+                        catch (Exception e)
+                        {
+                            Toast.makeText(RegisterActivity.this, "Error in creating new user!",
+                                    Toast.LENGTH_LONG).show();
+                        }
+
+
+                        if (dbHelper.addData(newUser)) {
+
+                            Toast.makeText(RegisterActivity.this, "Registration Complete",
+                                    Toast.LENGTH_LONG).show();
+                            Intent enterStats = new Intent(RegisterActivity.this,
+                                    MainActivity.class);
+                            startActivity(enterStats);
+                        }
+                        else
+                        {
+                            Toast.makeText(RegisterActivity.this, "Failed to add user to DB...",
+                                    Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }
             }
         });
     }
-
 }

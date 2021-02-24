@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText txtPassword;
 
     String userName;
+    String userPass;
 
     Button buttonLogin;
     Button signUp;
@@ -34,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin = (Button) findViewById(R.id.button_login);
         signUp = (Button) findViewById(R.id.button_register);
 
-        userName = txtUsername.getText().toString();
+
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,16 +49,29 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DatabaseHelper dbHelper = new DatabaseHelper(LoginActivity.this);
-                User currentUser = dbHelper.getSomeone(userName);
 
-                if (currentUser != null) {
-                    Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(MainIntent);
-                }
-                else
+                userName = txtUsername.getText().toString();
+                userPass = txtPassword.getText().toString();
+
+                if (userName.equals("") || userPass.equals(""))
                 {
-                    Toast.makeText(LoginActivity.this, "No such user, tap 'SIGN UP'",
+                    Toast.makeText(LoginActivity.this, "Please enter both username and password",
                             Toast.LENGTH_LONG).show();
+                }
+                else {
+                    boolean checkUserPass = dbHelper.checkCredentials(userName, userPass);
+                    if (checkUserPass == true) {
+                        Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(MainIntent);
+                    } else if (dbHelper.checkName(userName)) {
+                        Toast.makeText(LoginActivity.this, "Incorrect Password",
+                                Toast.LENGTH_LONG).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(LoginActivity.this, "No such user... SIGN UP!",
+                                Toast.LENGTH_LONG).show();
+                    }
                 }
             }
         });
