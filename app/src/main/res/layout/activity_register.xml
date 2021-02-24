@@ -9,56 +9,111 @@
     android:layout_gravity="center_horizontal"
     android:background="#112233">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="125dp"
-        android:layout_marginTop="25dp"
-        app:srcCompat="@drawable/logo"/>
-
-    <EditText
-        android:id="@+id/edittext_useremail"
-        android:layout_width="422dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/user"
-        android:hint="@string/user_email"/>
-
-    <EditText
-        android:id="@+id/edittext_username"
-        android:layout_width="422dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/user"
-        android:hint="@string/username"/>
-
-    <EditText
-        android:id="@+id/edittext_password"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/password"
-        android:hint="@string/password"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/edittext_confrim_password"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/password"
-        android:hint="@string/confirm_password"/>
-
-    <Button
-        android:id="@+id/button_done_register"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="150dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/done_registration"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/logo" />
 
 
+        <EditText
+            android:id="@+id/edittext_useremail"
+            android:layout_width="422dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/user"
+            android:hint="@string/user_email" />
 
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="422dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:drawableStart="@drawable/user"
+            android:hint="@string/username"/>
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/password"/>
+
+        <EditText
+            android:id="@+id/edittext_confrim_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/confirm_password"/>
+
+            <TextView
+                android:layout_width="328dp"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="30dp"
+                android:text="The fields below  can be entered/adjusted later"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittext_gender"
+                android:layout_width="422dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/gender"
+                android:hint="male/female?" />
+
+            <EditText
+                android:id="@+id/edittext_age"
+                android:layout_width="422dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/age"
+                android:hint=" how old are you?" />
+
+            <EditText
+                android:id="@+id/edittext_weight"
+                android:layout_width="422dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/scale"
+                android:hint="    weight in pounds" />
+
+            <EditText
+                android:id="@+id/edittext_bmi"
+                android:layout_width="422dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/bmi"
+                android:hint="body mass index" />
+
+            <Button
+                android:id="@+id/button_done_register"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="150dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/done_registration"/>
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

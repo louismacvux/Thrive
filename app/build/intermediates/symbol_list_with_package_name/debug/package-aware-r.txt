@@ -1625,9 +1625,11 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable age
 drawable avd_hide_password
 drawable avd_show_password
 drawable backdrop
+drawable bmi
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1642,6 +1644,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gender
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1684,6 +1687,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable password
+drawable scale
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1841,10 +1845,14 @@ id easeIn
 id easeInOut
 id easeOut
 id edit_query
+id edittext_age
+id edittext_bmi
 id edittext_confrim_password
+id edittext_gender
 id edittext_password
 id edittext_useremail
 id edittext_username
+id edittext_weight
 id elastic
 id end
 id endToStart

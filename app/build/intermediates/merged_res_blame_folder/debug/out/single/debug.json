@@ -1,19 +1,35 @@
 [
     {
+        "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gender.jpg.flat",
+        "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\src\\main\\res\\drawable-v24\\gender.jpg"
+    },
+    {
         "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_bmi.png.flat",
+        "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\src\\main\\res\\drawable-v24\\bmi.png"
+    },
+    {
+        "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_age.png.flat",
+        "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\src\\main\\res\\drawable-v24\\age.png"
     },
     {
         "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
         "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_scale.jpg.flat",
+        "source": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\src\\main\\res\\drawable-v24\\scale.jpg"
     },
     {
         "merged": "C:\\Users\\isis_\\AndroidStudioProjects\\Comp3350\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

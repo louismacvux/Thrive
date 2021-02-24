@@ -1,10 +1,15 @@
-com/example/comp3350/MainActivity.java
- com.example.comp3350.MainActivity
+com/example/comp3350/User.java
+ com.example.comp3350.User
 com/example/comp3350/BuildConfig.java
  com.example.comp3350.BuildConfig
+com/example/comp3350/MainActivity.java
+ com.example.comp3350.MainActivity
 com/example/comp3350/RegisterActivity.java
  com.example.comp3350.RegisterActivity
  com.example.comp3350.RegisterActivity$1
+com/example/comp3350/DatabaseHelper.java
+ com.example.comp3350.DatabaseHelper
 com/example/comp3350/LoginActivity.java
  com.example.comp3350.LoginActivity
  com.example.comp3350.LoginActivity$1
+ com.example.comp3350.LoginActivity$2
