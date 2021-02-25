@@ -29,7 +29,8 @@ public class WorkoutSuggestion extends AppCompatActivity {
         DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
         String currentUser = intent.getStringExtra("currentUser");
 
-        User current= dbHelper.getSomeone(currentUser);
+        //User current= dbHelper.getSomeone(currentUser);
+        //selected_gender = current.getGender();
 
         Spinner gender_spinner = findViewById(R.id.spinner_gender);
         gender_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
