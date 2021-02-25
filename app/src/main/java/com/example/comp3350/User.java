@@ -91,6 +91,17 @@ public class User {
         return gender;
     }
 
+    public int  getGenderInt() {
+        if (gender.equals("male"))
+        {
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+
     public int getBmi() {
         return bmi;
     }
