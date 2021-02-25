@@ -19,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
         User current= dbHelper.getSomeone(currentUser);
         Toast.makeText(MainActivity.this, currentUser + " logged in",
                 Toast.LENGTH_LONG).show();
+
+        Intent goToWorkouts = new Intent(MainActivity.this,
+                WorkoutSuggestion.class);
+        goToWorkouts.putExtra("currentUser", current.getName());
+        startActivity(goToWorkouts);
     }
 
 
