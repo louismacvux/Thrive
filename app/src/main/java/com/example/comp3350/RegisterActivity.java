@@ -95,13 +95,12 @@ public class RegisterActivity extends AppCompatActivity {
                                     Toast.LENGTH_LONG).show();
                         }
 
-
                         if (dbHelper.addData(newUser)) {
 
                             Toast.makeText(RegisterActivity.this, "Registration Complete",
                                     Toast.LENGTH_LONG).show();
                             Intent enterStats = new Intent(RegisterActivity.this,
-                                    MainActivity.class);
+                                    LoginActivity.class);
                             startActivity(enterStats);
                         }
                         else
