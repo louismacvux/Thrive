@@ -8,6 +8,8 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -28,6 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.comp3350.WorkoutSuggestion" />
+        <activity android:name="com.example.comp3350.ViewPDF" />
     </application>
 
 </manifest>

@@ -39,6 +39,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="150dp"
         android:layout_marginHorizontal="20dp"
-        android:text="@string/next" />
+        android:text="@string/next"
+        android:onClick="suggestResult"/>
 
 </LinearLayout>
