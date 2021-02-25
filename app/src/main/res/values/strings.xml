@@ -15,4 +15,9 @@
     </string-array>
     <string name="workout_select">Please select a workout:</string>
     <string name="next">next</string>
+    <string name="how_active_are_you">How active are you?</string>
+    <string name="barely_active">Barely Active</string>
+    <string name="active">Active</string>
+    <string name="highly_active">Highly Active</string>
+    <string name="calculate">calculate</string>
 </resources>
