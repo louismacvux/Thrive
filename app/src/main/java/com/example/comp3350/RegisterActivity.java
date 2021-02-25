@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText txtAge;
     EditText txtGender;
     EditText txtWeight;
-    EditText txtBMI;
+    EditText txtHeight;
 
     Button register;
 
@@ -36,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
     String rePass;
     int age;
     int weight;
-    int bmi;
+    double height;
 
     User newUser;
 
@@ -52,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
         txtAge = (EditText)findViewById(R.id.edittext_age);
         txtGender = (EditText)findViewById(R.id.edittext_gender);
         txtWeight = (EditText)findViewById(R.id.edittext_weight);
-        txtBMI = (EditText)findViewById(R.id.edittext_height);
+        txtHeight = (EditText)findViewById(R.id.edittext_height);
         register = (Button)findViewById(R.id.button_done_register);
 
         register.setOnClickListener(new View.OnClickListener() {
@@ -61,9 +61,39 @@ public class RegisterActivity extends AppCompatActivity {
                 name = txtUsername.getText().toString();
                 email = userEmail.getText().toString();
                 gender = txtGender.getText().toString();
-                age = Integer.parseInt(txtAge.getText().toString());
-                weight = Integer.parseInt(txtWeight.getText().toString());
-                bmi = Integer.parseInt(txtBMI.getText().toString());
+
+                //try to get numeric values from age, weight and height
+                try
+                {
+                    age = Integer.parseInt(txtAge.getText().toString());
+                }
+                catch (NumberFormatException e)
+                {
+                    System.out.println("NumberFormatException: " + e.getMessage());
+                    Toast.makeText(RegisterActivity.this, "Please enter a number for AGE",
+                            Toast.LENGTH_LONG).show();
+                }
+                try
+                {
+                    weight = Integer.parseInt(txtWeight.getText().toString());
+                }
+                catch (NumberFormatException e)
+                {
+                    System.out.println("NumberFormatException: " + e.getMessage());
+                    Toast.makeText(RegisterActivity.this, "Please enter a number for WEIGHT",
+                            Toast.LENGTH_LONG).show();
+                }
+                try
+                {
+                    height = Double.parseDouble(txtHeight.getText().toString());
+                }
+                catch (NumberFormatException e)
+                {
+                    System.out.println("NumberFormatException: " + e.getMessage());
+                    Toast.makeText(RegisterActivity.this, "Please enter a number for HEIGHT",
+                            Toast.LENGTH_LONG).show();
+                }
+
                 password = txtPassword.getText().toString();
                 rePass = confirmPassword.getText().toString();
 
@@ -86,7 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
                         //try to make a new user with all the data
                         try
                         {
-                            newUser = new User(-1, name, email, age, weight, gender, bmi, password);
+                            newUser = new User(-1, name, email, age, weight, gender, height, password);
                         }
                         //make a new user without any of their data entered
                         catch (Exception e)
