@@ -21,7 +21,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
     private static final String COL4 = "gender";
     private static final String COL5 = "weight";
     private static final String COL6 = "age";
-    private static final String COL7 = "BMI";
+    private static final String COL7 = "height";
     private static final String COL8 = "password";
 
 
@@ -61,7 +61,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         contentValues.put(COL4, newUser.getGender());
         contentValues.put(COL5, newUser.getWeight());
         contentValues.put(COL6, newUser.getAge());
-        contentValues.put(COL7, newUser.getBmi());
+        contentValues.put(COL7, newUser.getHeight());
         contentValues.put(COL8, newUser.getPassword());
 
         Log.d(TAG, "addData: Adding a new user to " + TABLE_NAME);
@@ -95,11 +95,11 @@ public class DatabaseHelper extends SQLiteOpenHelper
             String userGender = cursor.getString(3);
             int userWeight = cursor.getInt(4);
             int userAge = cursor.getInt(5);
-            int userBMI = cursor.getInt(6);
+            double userHeight = cursor.getInt(6);
             String userPass = cursor.getString(7);
 
             result = new User(userID, userName, userEmail, userAge, userWeight,
-                    userGender, userBMI, userPass);
+                    userGender, userHeight, userPass);
         }
         //empty User
         else

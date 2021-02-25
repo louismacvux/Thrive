@@ -52,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
         txtAge = (EditText)findViewById(R.id.edittext_age);
         txtGender = (EditText)findViewById(R.id.edittext_gender);
         txtWeight = (EditText)findViewById(R.id.edittext_weight);
-        txtBMI = (EditText)findViewById(R.id.edittext_bmi);
+        txtBMI = (EditText)findViewById(R.id.edittext_height);
         register = (Button)findViewById(R.id.button_done_register);
 
         register.setOnClickListener(new View.OnClickListener() {

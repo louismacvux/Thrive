@@ -7,7 +7,7 @@ public class User {
     private int age;
     private int weight;
     private String gender;
-    private int bmi;
+    private double height;
     private String password;
 
     @Override
@@ -19,12 +19,12 @@ public class User {
                 ", age=" + age +
                 ", weight=" + weight +
                 ", gender='" + gender + '\'' +
-                ", bmi=" + bmi +
+                ", height=" + height +
                 '}';
     }
 
     public User (int id, String name, String email, int age, int weight, String gender,
-                 int bmi, String password)
+                 double height, String password)
     {
         this.id = id;
         this.name = name;
@@ -32,7 +32,7 @@ public class User {
         this.age = age;
         this.weight = weight;
         this.gender = gender;
-        this.bmi = bmi;
+        this.height = height;
         this.password = password;
     }
     public User(){}
@@ -61,8 +61,8 @@ public class User {
         this.gender = gender;
     }
 
-    public void setBmi(int bmi) {
-        this.bmi = bmi;
+    public void setheight(int height) {
+        this.height = height;
     }
 
     public void setPassword(String password) { this.password = password;}
@@ -102,8 +102,8 @@ public class User {
         }
     }
 
-    public int getBmi() {
-        return bmi;
+    public double getHeight() {
+        return height;
     }
 
     public String getPassword() { return password;}
