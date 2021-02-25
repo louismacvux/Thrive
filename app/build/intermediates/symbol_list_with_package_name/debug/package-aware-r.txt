@@ -50,6 +50,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array gender
 array workouts
 attr actionBarDivider
 attr actionBarItemBackground
@@ -2057,7 +2058,8 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
-id spinner
+id spinner_gender
+id spinner_workout
 id spline
 id split_action_bar
 id spread
@@ -2336,6 +2338,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string gender_select
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

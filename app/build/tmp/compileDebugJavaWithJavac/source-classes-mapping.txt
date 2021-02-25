@@ -18,3 +18,4 @@ com/example/comp3350/ViewPDF.java
 com/example/comp3350/WorkoutSuggestion.java
  com.example.comp3350.WorkoutSuggestion
  com.example.comp3350.WorkoutSuggestion$1
+ com.example.comp3350.WorkoutSuggestion$2

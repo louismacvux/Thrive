@@ -6394,7 +6394,10 @@
         <item>Tone up</item>
         <item>Build muscle</item>
         <item>Loose fat</item>
-    </string-array><string name="workout_select">Please select a workout:</string><string name="next">next</string></file><file path="C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Comp3350" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </string-array><string name="workout_select">Please select a workout:</string><string name="next">Get your workout suggestion</string><string name="gender_select">Please select your gender:</string><string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array></file><file path="C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Comp3350" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

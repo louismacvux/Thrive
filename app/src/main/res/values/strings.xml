@@ -8,11 +8,16 @@
     <string name="user_email">email address</string>
     <string name="confirm_password">confirm password</string>
     <string name="done_registration">Done</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
     <string-array name="workouts">
         <item>Tone up</item>
         <item>Build muscle</item>
         <item>Loose fat</item>
     </string-array>
+    <string name="gender_select">Please select your gender:</string>
     <string name="workout_select">Please select a workout:</string>
-    <string name="next">next</string>
+    <string name="next">Get your workout suggestion</string>
 </resources>
