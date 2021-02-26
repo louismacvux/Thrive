@@ -1,11 +1,9 @@
 package com.example.comp3350;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -17,8 +15,8 @@ import com.github.barteksc.pdfviewer.PDFView;
 public class WorkoutSuggestion extends AppCompatActivity {
 
     Button next;
-    int selected_gender;
-    int selected_workout;
+    int selected_gender = -1;
+    int selected_workout = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,28 +28,7 @@ public class WorkoutSuggestion extends AppCompatActivity {
         String currentUser = intent.getStringExtra("currentUser");
 
         User current= dbHelper.getSomeone(currentUser);
-
-        Spinner gender_spinner = findViewById(R.id.spinner_gender);
-        gender_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        selected_gender = 0; //Male
-                        break;
-                    case 1:
-                        selected_gender = 1; //Female
-                        break;
-                }
-                String text = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
+        selected_gender = current.getGenderInt();
 
         Spinner workout_spinner = findViewById(R.id.spinner_workout);
         workout_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -82,11 +59,25 @@ public class WorkoutSuggestion extends AppCompatActivity {
     }
 
     public void suggestResult (View view) {
-        Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
-        Bundle bundle = new Bundle();
-        bundle.putInt("gender", selected_gender);
-        bundle.putInt("workout", selected_workout);
-        pdfViewIntent.putExtras(bundle);
-        startActivity(pdfViewIntent);
+        if(selected_gender == -1) {
+            Toast.makeText(WorkoutSuggestion.this, "Incorrect Gender", Toast.LENGTH_LONG).show();
+            Intent GenderSelectionIntent = new Intent(WorkoutSuggestion.this, GenderSelection.class);
+            startActivity(GenderSelectionIntent);
+        }
+        else {
+            Intent intent = getIntent();
+            DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
+            String currentUser = intent.getStringExtra("currentUser");
+
+            User current= dbHelper.getSomeone(currentUser);
+            selected_gender = current.getGenderInt();
+
+            Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("gender", selected_gender);
+            bundle.putInt("workout", selected_workout);
+            pdfViewIntent.putExtras(bundle);
+            startActivity(pdfViewIntent);
+        }
     }
 }
