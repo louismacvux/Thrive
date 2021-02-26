@@ -31,6 +31,7 @@
         </activity>
         <activity android:name="com.example.comp3350.WorkoutSuggestion" />
         <activity android:name="com.example.comp3350.ViewPDF" />
+        <activity android:name="com.example.comp3350.GenderSelection" />
     </application>
 
 </manifest>

@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".WorkoutSuggestion"></activity>
         <activity android:name=".ViewPDF"></activity>
+        <activity android:name=".GenderSelection"></activity>
     </application>
 
 </manifest>

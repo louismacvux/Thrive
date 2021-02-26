@@ -32,6 +32,7 @@
             android:layout_marginHorizontal="20dp"
             android:background="#ffffff"
             android:drawableLeft="@drawable/user"
+            android:drawablePadding="24dp"
             android:hint="@string/user_email" />
 
         <EditText
@@ -42,6 +43,7 @@
             android:layout_marginHorizontal="20dp"
             android:background="#ffffff"
             android:drawableStart="@drawable/user"
+            android:drawablePadding="24dp"
             android:hint="@string/username"/>
 
         <EditText
@@ -69,7 +71,7 @@
                 android:layout_height="45dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="30dp"
-                android:text="The fields below  can be entered/adjusted later"
+                android:text="The fields below can be entered/adjusted later"
                 android:textColor="#ffffff"
                 android:textStyle="bold" />
 
@@ -102,6 +104,16 @@
                 android:background="#ffffff"
                 android:drawableLeft="@drawable/scale"
                 android:hint="    weight in pounds" />
+
+            <EditText
+                android:id="@+id/edittext_height"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/scale"
+                android:hint="    height in cm" />
 
             <EditText
                 android:id="@+id/edittext_bmi"

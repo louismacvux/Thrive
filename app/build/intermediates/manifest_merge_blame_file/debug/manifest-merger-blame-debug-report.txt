@@ -15,7 +15,7 @@
 11-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:5:22-77
 12
 13    <application
-13-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:7:5-25:19
+13-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:7:5-26:19
 14        android:allowBackup="true"
 14-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -58,6 +58,9 @@
 33        <activity android:name="com.example.comp3350.ViewPDF" />
 33-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:24:9-54
 33-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:24:19-42
-34    </application>
-35
-36</manifest>
+34        <activity android:name="com.example.comp3350.GenderSelection" />
+34-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:25:9-62
+34-->C:\Users\Michael Yau\StudioProjects\thrive\app\src\main\AndroidManifest.xml:25:19-50
+35    </application>
+36
+37</manifest>

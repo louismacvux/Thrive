@@ -72,6 +72,10 @@
         "source": "C:\\Users\\Michael Yau\\StudioProjects\\thrive\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Michael Yau\\StudioProjects\\thrive\\app\\build\\intermediates\\res\\merged\\debug\\layout_gender_selection.xml.flat",
+        "source": "C:\\Users\\Michael Yau\\StudioProjects\\thrive\\app\\src\\main\\res\\layout\\gender_selection.xml"
+    },
+    {
         "merged": "C:\\Users\\Michael Yau\\StudioProjects\\thrive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Michael Yau\\StudioProjects\\thrive\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },

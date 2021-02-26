@@ -92,13 +92,16 @@ public class User {
     }
 
     public int  getGenderInt() {
-        if (gender.equals("male"))
+        if (gender.equalsIgnoreCase("male"))
         {
             return 0;
         }
-        else
+        else if (gender.equalsIgnoreCase("female"))
         {
             return 1;
+        }
+        else{
+            return -1;
         }
     }
 
