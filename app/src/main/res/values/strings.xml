@@ -20,4 +20,8 @@
     <string name="active">Active</string>
     <string name="highly_active">Highly Active</string>
     <string name="calculate">calculate</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="SUBMIT">Button</string>
+    <string name="submit">SUBMIT</string>
 </resources>

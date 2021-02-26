@@ -1759,7 +1759,6 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
-id activeQ
 id activity_chooser_view_content
 id add
 id alertTitle
@@ -1782,12 +1781,13 @@ id blocking
 id bottom
 id bounce
 id buttonPanel
+id button_calculate
+id button_custom
 id button_done_register
 id button_login
 id button_next
 id button_register
 id cache_measures
-id calculateBtn
 id cancel_button
 id center
 id center_horizontal
@@ -1853,6 +1853,8 @@ id edittext_age
 id edittext_bmi
 id edittext_confrim_password
 id edittext_gender
+id edittext_new_height
+id edittext_new_weight
 id edittext_password
 id edittext_useremail
 id edittext_username
@@ -1996,10 +1998,6 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
-id radioActive
-id radioBarelyActive
-id radioGroup
-id radioHighlyActive
 id ratio
 id rectangles
 id reverseSawtooth
@@ -2085,6 +2083,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2185,7 +2185,6 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_register
-layout activity_wellness_calculator
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2268,10 +2267,12 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout wellness_calculator
 layout workout_suggestion
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string SUBMIT
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2317,6 +2318,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string height
 string hide_bottom_view_on_scroll_behavior
 string highly_active
 string how_active_are_you
@@ -2384,8 +2386,10 @@ string path_password_strike_through
 string register
 string search_menu_title
 string status_bar_notification_info_overflow
+string submit
 string user_email
 string username
+string weight
 string workout_select
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
