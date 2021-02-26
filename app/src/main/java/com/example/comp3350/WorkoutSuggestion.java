@@ -1,5 +1,6 @@
 package com.example.comp3350;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.barteksc.pdfviewer.PDFView;
@@ -22,6 +24,11 @@ public class WorkoutSuggestion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workout_suggestion);
+
+        Bundle bundle = getIntent().getExtras();
+        if(bundle != null) {
+            selected_gender = bundle.getInt("gender");
+        }
 
         Intent intent = getIntent();
         DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
@@ -60,18 +67,22 @@ public class WorkoutSuggestion extends AppCompatActivity {
 
     public void suggestResult (View view) {
         if(selected_gender == -1) {
-            Toast.makeText(WorkoutSuggestion.this, "Incorrect Gender", Toast.LENGTH_LONG).show();
-            Intent GenderSelectionIntent = new Intent(WorkoutSuggestion.this, GenderSelection.class);
-            startActivity(GenderSelectionIntent);
-        }
-        else {
-            Intent intent = getIntent();
+            /*Intent intent = getIntent();
             DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
             String currentUser = intent.getStringExtra("currentUser");
 
             User current= dbHelper.getSomeone(currentUser);
             selected_gender = current.getGenderInt();
 
+            Toast.makeText(WorkoutSuggestion.this, "Incorrect gender in user profile", Toast.LENGTH_LONG).show();*/
+            Intent GenderSelectionIntent = new Intent(WorkoutSuggestion.this, GenderSelection.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("workout", selected_workout);
+            GenderSelectionIntent.putExtras(bundle);
+
+            startActivity(GenderSelectionIntent);
+        }
+        else {
             Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
             Bundle bundle = new Bundle();
             bundle.putInt("gender", selected_gender);
@@ -80,4 +91,5 @@ public class WorkoutSuggestion extends AppCompatActivity {
             startActivity(pdfViewIntent);
         }
     }
+
 }

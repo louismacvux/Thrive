@@ -1800,6 +1800,7 @@ id button_done_register
 id button_login
 id button_next
 id button_register
+id button_save
 id cache_measures
 id cancel_action
 id cancel_button
