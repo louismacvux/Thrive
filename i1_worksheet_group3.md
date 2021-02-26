@@ -8,9 +8,9 @@ It was during one of our first group meetings that we decided our first feature.
 
 * link to feature: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/1
 * link to user story: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/17
-* merge requests (if used): ???
+* merge requests (if used): https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/merge_requests/1
 * associated tests: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/tree/development/app/src/test/java/com/example/comp3350
-* merge commit: ???
+* merge commit: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/merge_requests/1
 
 Exceptional code
 ----------------
