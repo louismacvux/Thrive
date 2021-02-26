@@ -15,11 +15,11 @@ It was during one of our first group meetings that we decided our first feature.
 Exceptional code
 ----------------
 
-(Note: You must be signed into Gitlab for the link to work)
-https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/16952a112d9ae0caf69bc1cdc45de82b56d34cdb#328091f14f1bcab81af6de76dcf15b07daf71bef
-Directory location
-app/src/main/java/com/example/comp3350/RegisterActivity.java
-Lines 66, 76 and 86
+(Note: You must be signed into Gitlab for the link to work)<br/>
+https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/16952a112d9ae0caf69bc1cdc45de82b56d34cdb#328091f14f1bcab81af6de76dcf15b07daf71bef<br/>
+Directory location<br/>
+app/src/main/java/com/example/comp3350/RegisterActivity.java<br/>
+Lines 66, 76 and 86<br/>
 These exceptional codes test whether numeric values for age, weight, and height are successfully converted to and integer after being entered in by our client. Since when the client originally enters this information it is a string variable so the parseInt() should be successful each time they are called as there should not be an issue with that type of conversion using parseInt(). However, ensuring that the information was correctly retrieved from our clients before being stored we needed to ensure it was in the correct format.
 
 
