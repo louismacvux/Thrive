@@ -42,9 +42,9 @@ https://code.cs.umanitoba.ca/3350-winter-2021-a02/group5/-/issues/64
 Agile Planning
 --------------
 
-We do have one feature and one user story that we pushed to iteration 2 which is for the blood health optimizer feature. 
-* link to feature: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/2
+We do have 2 features and 2 user stories that we pushed to iteration 2 which is for the blood health optimizer and wellness calculator feature. 
+* link to feature: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/2 , https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/4
 * link to user story 1: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/11
 * link to user story 2: https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/18
 
-We realized that for this iteration we would have a little extra work figuring out coding in Android Studio along with te starting point of the interface, so we decided to focus more on the workout suggestion and wellness calculator with the login and registration page at the start of the application. 
+We realized that for this iteration we would have a little extra work figuring out coding in Android Studio along with the starting point of the interface, so we decided to focus more on the workout suggestion with the login and registration page at the start of the application. 
