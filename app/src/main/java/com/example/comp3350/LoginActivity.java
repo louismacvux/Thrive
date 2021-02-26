@@ -18,24 +18,23 @@ public class LoginActivity extends AppCompatActivity {
     //set variables that are captured on welcome page
     EditText txtUsername;
     EditText txtPassword;
-
-    String userName;
-    String userPass;
-
     Button buttonLogin;
     Button signUp;
+
+    //Strings to work with EditText variables
+    String userName;
+    String userPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //get the data from the GUI
         txtUsername = (EditText) findViewById(R.id.edittext_username);
         txtPassword = (EditText) findViewById(R.id.edittext_password);
         buttonLogin = (Button) findViewById(R.id.button_login);
         signUp = (Button) findViewById(R.id.button_register);
-
-
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -20,7 +20,12 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, currentUser + " logged in",
                 Toast.LENGTH_LONG).show();
 
-        //Wellness Calculator needs the user name to pull up data. (Long Vu)
+        Intent goToWorkouts = new Intent(MainActivity.this,
+                WorkoutSuggestion.class);
+        goToWorkouts.putExtra("currentUser", current.getName());
+        startActivity(goToWorkouts);
+
+
         Intent CalculateIntent = new Intent(MainActivity.this, WellnessCalculator.class);
         CalculateIntent.putExtra("currentUser", currentUser);
         startActivity(CalculateIntent);

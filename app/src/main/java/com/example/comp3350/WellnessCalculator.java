@@ -41,8 +41,14 @@ public class WellnessCalculator extends AppCompatActivity {
                 weight = Integer.parseInt(txtWeight.getText().toString());
                 height = Integer.parseInt(txtHeight.getText().toString());
 
-                float result = CalculateBMI(weight, height);
-                System.out.print(result);
+                double result = CalculateBMI(weight, height);
+
+                Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
+                ShowResult.putExtra("weight", weight);
+                ShowResult.putExtra("height", height);
+                ShowResult.putExtra("result", result);
+                startActivity(ShowResult);
+
             }
         });
 
@@ -52,14 +58,20 @@ public class WellnessCalculator extends AppCompatActivity {
             public void onClick(View v) {
                 String userName = intent.getStringExtra("currentUser");
                 currentUser = dbHelper.getSomeone(userName);
-                //float result = CalculateBMI(currentUser.getWeight(), currentUser.getHeight());
 
+                double result = CalculateBMI(currentUser.getWeight(), currentUser.getHeight());
+
+                Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
+                ShowResult.putExtra("weight", currentUser.getWeight());
+                ShowResult.putExtra("height", currentUser.getHeight());
+                ShowResult.putExtra("result", result);
+                startActivity(ShowResult);
             }
         });
 
     }
 
-    private float CalculateBMI(int weight, int height){
+    private double CalculateBMI(int weight, double height){
         //convert weight from pounds to kilograms. 1kb = 2.2lb
         weight = (int) (weight/2.2);
         //convert height from centimeters to meters. 1cm = 0.01m
