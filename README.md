@@ -14,3 +14,12 @@ Thrive will be valuable to anyone requiring some direction in achieving their he
 * Users are using the application after 14 days of having initially accessing/downloading it.
 * At least one-third of users would recommend the application to friends and family.
 * After 30 days of use, users report an improvement of either their physical, mental or overall wellbeing. 
+
+## Branching Strategy
+Git Flow model or the successfull Git branching model.<br/>
+We have the two main branches which are master and development. <br/>
+
+* master : production-ready
+* development : source code of the latest changes to the application<br/>
+
+All of the other branches for feature development will branch off from the development branch and be merged to development. Then the project in development will be pushed to master once it is ready to be released. 
