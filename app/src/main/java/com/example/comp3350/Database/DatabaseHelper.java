@@ -1,4 +1,4 @@
-package com.example.comp3350;
+package com.example.comp3350.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,20 +9,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.comp3350.Object.User;
+
 public class DatabaseHelper extends SQLiteOpenHelper
 {
     private static final String TAG = "DatabaseHelper";
 
     private static final String FILE_NAME = "profiles.db";
     private static final String TABLE_NAME = "profiles";
-    private static final String COL1 = "ID";
-    private static final String COL2 = "email";
-    private static final String COL3 = "user_name";
-    private static final String COL4 = "gender";
-    private static final String COL5 = "weight";
-    private static final String COL6 = "age";
-    private static final String COL7 = "height";
-    private static final String COL8 = "password";
+    private static final String COL_ID = "ID";
+    private static final String COL_EMAIL = "email";
+    private static final String COL_USERNAME = "user_name";
+    private static final String COL_GENDER = "gender";
+    private static final String COL_WEIGHT = "weight";
+    private static final String COL_AGE = "age";
+    private static final String COL_HEIGHT = "height";
+    private static final String COL_PW = "password";
 
 
 
@@ -35,9 +37,9 @@ public class DatabaseHelper extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase db)
     {
-       String createTable = "CREATE TABLE " + TABLE_NAME + " (" + COL1 + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " +
-               COL3 + " TEXT, " + COL4 + " TEXT, " + COL5 + " INTEGER, " +
-               COL6 + " INTEGER, " + COL7 + " INTEGER, " + COL8 + " TEXT) ";
+       String createTable = "CREATE TABLE " + TABLE_NAME + " (" + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_EMAIL + " TEXT, " +
+               COL_USERNAME + " TEXT, " + COL_GENDER + " TEXT, " + COL_WEIGHT + " INTEGER, " +
+               COL_AGE + " INTEGER, " + COL_HEIGHT + " INTEGER, " + COL_PW + " TEXT) ";
         db.execSQL(createTable);
     }
 
@@ -56,13 +58,13 @@ public class DatabaseHelper extends SQLiteOpenHelper
         ContentValues contentValues = new ContentValues();
 
         //insert user data in database file
-        contentValues.put(COL2, newUser.getEmail());
-        contentValues.put(COL3, newUser.getName());
-        contentValues.put(COL4, newUser.getGender());
-        contentValues.put(COL5, newUser.getWeight());
-        contentValues.put(COL6, newUser.getAge());
-        contentValues.put(COL7, newUser.getHeight());
-        contentValues.put(COL8, newUser.getPassword());
+        contentValues.put(COL_EMAIL, newUser.getEmail());
+        contentValues.put(COL_USERNAME, newUser.getName());
+        contentValues.put(COL_GENDER, newUser.getGender());
+        contentValues.put(COL_WEIGHT, newUser.getWeight());
+        contentValues.put(COL_AGE, newUser.getAge());
+        contentValues.put(COL_HEIGHT, newUser.getHeight());
+        contentValues.put(COL_PW, newUser.getPassword());
 
         Log.d(TAG, "addData: Adding a new user to " + TABLE_NAME);
 
@@ -84,7 +86,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor;
-        cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COL3 + " = ?", new String[] {name});
+        cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COL_USERNAME + " = ?", new String[] {name});
 
         //if we found our user
         if (cursor.moveToFirst())
@@ -93,13 +95,12 @@ public class DatabaseHelper extends SQLiteOpenHelper
             String userEmail = cursor.getString(1);
             String userName = cursor.getString(2);
             String userGender = cursor.getString(3);
-            int userWeight = cursor.getInt(4);
+            double userWeight = cursor.getInt(4);
             int userAge = cursor.getInt(5);
             double userHeight = cursor.getInt(6);
             String userPass = cursor.getString(7);
 
-            result = new User(userID, userName, userEmail, userAge, userWeight,
-                    userGender, userHeight, userPass);
+            result = new User(userID, userName, userEmail, userAge, userWeight, userGender, userHeight, userPass);
         }
         //empty User
         else
@@ -118,7 +119,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME +
-                " WHERE " + COL3 + " = ? AND " + COL8 + " = ?", new String[] {givenName, givenPassword});
+                " WHERE " + COL_USERNAME + " = ? AND " + COL_PW + " = ?", new String[] {givenName, givenPassword});
 
         cursor.moveToFirst();
         String help = DatabaseUtils.dumpCursorToString(cursor);
@@ -130,13 +131,14 @@ public class DatabaseHelper extends SQLiteOpenHelper
         return result;
     }
 
+    //returns true if there is a same username found
     public boolean checkName(String givenName)
     {
         boolean result = false;
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME +
-                " WHERE " +  COL3 + " = ?", new String[] {givenName});
+                " WHERE " +  COL_USERNAME + " = ?", new String[] {givenName});
 
         cursor.moveToFirst();
         String help = DatabaseUtils.dumpCursorToString(cursor);

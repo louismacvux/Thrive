@@ -1,4 +1,4 @@
-package com.example.comp3350;
+package com.example.comp3350.UI;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,19 +11,17 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.comp3350.Database.DatabaseHelper;
 import com.example.comp3350.R;
 
 public class LoginActivity extends AppCompatActivity {
 
     //set variables that are captured on welcome page
-    EditText txtUsername;
-    EditText txtPassword;
-    Button buttonLogin;
-    Button signUp;
+    private EditText txtUsername, txtPassword;
+    private Button buttonLogin, signUp;
 
     //Strings to work with EditText variables
-    String userName;
-    String userPass;
+    private String userName, userPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +29,10 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //get the data from the GUI
-        txtUsername = (EditText) findViewById(R.id.edittext_username);
-        txtPassword = (EditText) findViewById(R.id.edittext_password);
-        buttonLogin = (Button) findViewById(R.id.button_login);
-        signUp = (Button) findViewById(R.id.button_register);
+        txtUsername = findViewById(R.id.edittext_username);
+        txtPassword = findViewById(R.id.edittext_password);
+        buttonLogin = findViewById(R.id.button_login);
+        signUp = findViewById(R.id.button_register);
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override

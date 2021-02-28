@@ -1,4 +1,7 @@
-package com.example.comp3350;
+package com.example.comp3350.Database;
+
+import com.example.comp3350.Database.Database;
+import com.example.comp3350.Object.User;
 
 import java.util.ArrayList;
 

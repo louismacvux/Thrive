@@ -1,4 +1,6 @@
-package com.example.comp3350;
+package com.example.comp3350.Database;
+
+import com.example.comp3350.Object.User;
 
 public interface Database {
 

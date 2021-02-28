@@ -1,11 +1,11 @@
-package com.example.comp3350;
+package com.example.comp3350.Object;
 
 public class User {
     private int id;
     private String name;
     private String email;
     private int age;
-    private int weight;
+    private double weight;
     private String gender;
     private double height;
     private String password;
@@ -23,8 +23,7 @@ public class User {
                 '}';
     }
 
-    public User (int id, String name, String email, int age, int weight, String gender,
-                 double height, String password)
+    public User (int id, String name, String email, int age, double weight, String gender, double height, String password)
     {
         this.id = id;
         this.name = name;
@@ -36,6 +35,13 @@ public class User {
         this.password = password;
     }
     public User(){}
+
+    public void setInfo(String gender, int age, double weight, double height){
+        setGender(gender);
+        setAge(age);
+        setWeight(weight);
+        setHeight(height);
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -53,7 +59,7 @@ public class User {
         this.age = age;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
@@ -61,7 +67,7 @@ public class User {
         this.gender = gender;
     }
 
-    public void setheight(int height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 
@@ -83,7 +89,7 @@ public class User {
         return age;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 

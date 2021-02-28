@@ -1,6 +1,7 @@
 package com.example.comp3350;
 
 import android.content.DialogInterface;
+import com.example.comp3350.Database.DatabaseHelper;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.comp3350.Database.DatabaseHelper;
+import com.example.comp3350.Object.User;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class WorkoutSuggestion extends AppCompatActivity {

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Comp 3350</string>
-    <string name="username">username</string>
+    <string name="username">   username</string>
     <string name="password">password</string>
     <string name="login">login</string>
     <string name="not_registered">Not Registered?</string>
@@ -20,4 +20,22 @@
     <string name="gender_select">Please select your gender:</string>
     <string name="workout_select">Please select a workout:</string>
     <string name="next">Get your workout suggestion</string>
+    <string name="hrive">hrive</string>
+    <string name="thrive_logo">thrive_logo</string>
+    <string name="registration">Registration</string>
+    <string name="email_address">email_address</string>
+<!--    <string name="username">username</string>-->
+<!--    <string name="password">password</string>-->
+    <string name="background_pattern">background pattern</string>
+    <string name="welcome_to_thrive">Welcome to Thrive!</string>
+    <string name="let_s_get_you_started_with_some_basic_information">Let\'s get you started with some basic information.</string>
+    <string name="age">age</string>
+    <string name="gender">Gender?</string>
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="weight_lbs">Weight (lbs)</string>
+    <string name="weight">weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">height</string>
+    <string name="height_cm">Height (cm)</string>
 </resources>
