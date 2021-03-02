@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="#F3B0AA"
+    android:background="#FFFDFD"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
+    tools:context="com.example.comp3350.UI.RegisterActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#74FF8D58">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
                 android:layout_marginTop="50dp"
                 android:text="@string/registration"
                 android:textColor="#4C4A4A"

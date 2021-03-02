@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class DatabaseBasic implements Database
 {
-    ArrayList data;
+    private ArrayList data;
     
     public DatabaseBasic()
     {

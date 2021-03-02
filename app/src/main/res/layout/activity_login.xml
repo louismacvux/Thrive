@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="bottom"
-    android:background="#F3B0AA"
+    android:background="#74FF8D58"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context="com.example.comp3350.UI.LoginActivity">
 
     <Button
         android:id="@+id/button_login"
@@ -18,7 +18,6 @@
         android:layout_marginTop="32dp"
         android:text="@string/login"
         android:textColor="#FFFFFF"
-        app:iconTint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edittext_password" />

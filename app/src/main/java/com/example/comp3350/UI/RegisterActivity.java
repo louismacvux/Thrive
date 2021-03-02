@@ -1,5 +1,6 @@
 package com.example.comp3350.UI;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -24,10 +25,9 @@ import com.example.comp3350.Object.User;
 public class RegisterActivity extends AppCompatActivity {
 
     //set variables that are captured on registration page
-    private TextView txtEmail, txtUsername, txtPassword, txtConfirmPassword;
+    private EditText txtEmail, txtUsername, txtPassword, txtConfirmPassword;
     private RadioGroup radioGroupGender;
-//    private String chosenGender;
-    private TextView txtAge, txtWeight, txtHeight;
+    private EditText txtAge, txtWeight, txtHeight;
     Button register;
 
     //variables used to create our User object
@@ -37,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String rePass;
     private String gender;
     private int age;
-    private int weight;
+    private double weight;
     private double height;
 
     private User newUser;
@@ -64,6 +64,11 @@ public class RegisterActivity extends AppCompatActivity {
                 DatabaseHelper dbHelper = new DatabaseHelper(RegisterActivity.this);
                 email = txtEmail.getText().toString();
                 name = txtUsername.getText().toString();
+                password = txtPassword.getText().toString();
+                rePass = txtConfirmPassword.getText().toString();
+                age = Integer.parseInt(String.valueOf(txtAge.getText()));
+                weight = Double.parseDouble(String.valueOf(txtWeight.getText()));
+                height = Double.parseDouble(String.valueOf(txtHeight.getText()));
 
 //                gender = txtGender.getText().toString();
 
@@ -110,27 +115,25 @@ public class RegisterActivity extends AppCompatActivity {
 //                }
 
 
-                password = txtPassword.getText().toString();
-                rePass = txtConfirmPassword.getText().toString();
-
                 RegisterManager registerManager = new RegisterManager(dbHelper);
+
 
                 if (registerManager.registered(email, name, password, rePass, gender, age, weight, height)){ //if registration was successful
                     //create new user and if database is successfully added, go to login
-                    newUser = new User(-1, name, email, age, weight, gender, height, password);
-//                    DatabaseHelper dbHelper = new DatabaseHelper(RegisterActivity.this);
+//                    newUser = new User(-1, name, email, age, weight, gender, height, password);
 
-                    try{
-                        dbHelper.addData(newUser);
+
+//                    try{
+//                        dbHelper.addData(newUser);
                         Toast.makeText(RegisterActivity.this, "Registration Complete",
                                 Toast.LENGTH_LONG).show();
                         Intent enterStats = new Intent(RegisterActivity.this,
                                 LoginActivity.class);
                         startActivity(enterStats);
-                    }catch(Exception e){
-                        Toast.makeText(RegisterActivity.this, "Error: dbHelper.addData()",
-                                Toast.LENGTH_LONG).show();
-                    }
+//                    }catch(Exception e){
+//                        Toast.makeText(RegisterActivity.this, "Error: dbHelper.addData()",
+//                                Toast.LENGTH_LONG).show();
+//                    }
 
 
                 }else{
@@ -187,6 +190,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     public void onRadioButtonClicked(View view) {
         boolean checked = ((RadioButton) view).isChecked();
 

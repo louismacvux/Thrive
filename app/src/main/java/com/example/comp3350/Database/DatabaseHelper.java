@@ -7,7 +7,6 @@ import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.comp3350.Object.User;
 
@@ -15,7 +14,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
 {
     private static final String TAG = "DatabaseHelper";
 
-    private static final String FILE_NAME = "profiles.db";
+    private static final String FILE_NAME = "users.db";
     private static final String TABLE_NAME = "profiles";
     private static final String COL_ID = "ID";
     private static final String COL_EMAIL = "email";

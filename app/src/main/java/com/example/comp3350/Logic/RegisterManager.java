@@ -1,23 +1,28 @@
 package com.example.comp3350.Logic;
 
 import com.example.comp3350.Database.DatabaseHelper;
+import com.example.comp3350.Object.User;
 
 public class RegisterManager{
 
-    DatabaseHelper dbHelper;
+    private final DatabaseHelper dbHelper;
     private String registerErrorMessage = "";
 
     public RegisterManager(DatabaseHelper dbHelper){
+
         this.dbHelper = dbHelper;
     }
 
-    //This will return true when user is registered successfully
+    //This will return true when user is registered successfully and add the user
+    //if all the fields are entered, password matches, and the user is a new user
     public boolean registered(String email, String username, String pw, String confirmPw, String gender, int age, double weight, double height){
         boolean result = false;
 
         if (!fieldEmpty(email, username, pw, confirmPw, gender, age, weight, height)){
             if (pwMatches(pw, confirmPw)){
                 if (!userExists(username)){
+                    User newUser = new User(-1, username, email, age, weight, gender, height, pw);
+                    dbHelper.addData(newUser);
                     result = true;
                 }
             }else{

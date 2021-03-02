@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.comp3350.Database.DatabaseHelper;
 import com.example.comp3350.Object.User;
+import com.example.comp3350.UI.ViewPDF;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class WorkoutSuggestion extends AppCompatActivity {
@@ -52,7 +53,7 @@ public class WorkoutSuggestion extends AppCompatActivity {
                         selected_workout = 1; //Build muscle
                         break;
                     case 2:
-                        selected_workout = 2; //Loose fat
+                        selected_workout = 2; //Lose fat
                         break;
                 }
                 String text = parent.getItemAtPosition(position).toString();
