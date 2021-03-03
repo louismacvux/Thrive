@@ -23,7 +23,7 @@
     <string name="hrive">hrive</string>
     <string name="thrive_logo">thrive_logo</string>
     <string name="registration">Registration</string>
-    <string name="email_address">email_address</string>
+<!--    <string name="email_address">email_address</string>-->
 <!--    <string name="username">username</string>-->
 <!--    <string name="password">password</string>-->
     <string name="background_pattern">background pattern</string>
@@ -38,4 +38,9 @@
     <string name="female">Female</string>
     <string name="height">height</string>
     <string name="height_cm">Height (cm)</string>
+<!--    <string name="confirm_password">confirm password</string>-->
+    <string name="please_enter_all_of_the_entries_below">Please enter all of the entries below.</string>
+    <string name="email_address">email address</string>
+    <string name="todo">TODO</string>
+    <string name="Thrive">Thrive</string>
 </resources>

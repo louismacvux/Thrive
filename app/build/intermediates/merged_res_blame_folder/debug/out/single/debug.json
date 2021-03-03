@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -16,10 +16,6 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/lock.png"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-v24_bmi.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable-v24/bmi.png"
-    },
-    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
@@ -28,16 +24,8 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-v24_age.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable-v24/age.png"
-    },
-    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_gender_selection.xml.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/gender_selection.xml"
-    },
-    {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-v24_backdrop.jpg.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable-v24/backdrop.jpg"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_pdf_view.xml.flat",
@@ -52,28 +40,20 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_scale.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/scale.png"
-    },
-    {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_lock2.png.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/lock2.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-v24_gender.jpg.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable-v24/gender.jpg"
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_blood.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/blood.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-v24_scale.jpg.flat",
@@ -92,28 +72,20 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_running.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/running.png"
-    },
-    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-v24_password.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable-v24/password.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_bmi.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/bmi.png"
-    },
-    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_mail.png.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/mail.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -150,10 +122,6 @@
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_user.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/user.png"
-    },
-    {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_pattern.png.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/drawable/pattern.png"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable_logo.png.flat",
