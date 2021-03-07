@@ -17,8 +17,9 @@ public class WellnessCalculator extends AppCompatActivity {
     Button submitData;
     Button calculate;
 
-    int weight;
-    int height;
+    double weight;
+    double height;
+    double result;
 
     Intent intent;
     User currentUser;
@@ -29,53 +30,51 @@ public class WellnessCalculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wellness_calculator);
 
-        txtWeight = (EditText) findViewById(R.id.edittext_new_weight);
-        txtHeight = (EditText) findViewById(R.id.edittext_new_height);
-        submitData = (Button) findViewById(R.id.button_custom);
-        calculate = (Button) findViewById(R.id.button_calculate);
+        txtWeight = findViewById(R.id.edittext_new_weight);
+        txtHeight = findViewById(R.id.edittext_new_height);
+        submitData = findViewById(R.id.button_custom);
+        calculate = findViewById(R.id.button_calculate);
 
 
-        submitData.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                weight = Integer.parseInt(txtWeight.getText().toString());
-                height = Integer.parseInt(txtHeight.getText().toString());
+        submitData.setOnClickListener(v -> {
+            weight = Double.parseDouble(txtWeight.getText().toString());
+            height = Double.parseDouble(txtHeight.getText().toString());
 
-                double result = CalculateBMI(weight, height);
+            result = CalculateBMI(weight, height);
 
-                Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
-                ShowResult.putExtra("weight", weight);
-                ShowResult.putExtra("height", height);
-                ShowResult.putExtra("result", result);
-                startActivity(ShowResult);
+            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
+            Bundle bundle = new Bundle();
+            bundle.putDouble("weight", weight);
+            bundle.putDouble("height", height);
+            bundle.putDouble("result", result);
+            ShowResult.putExtras(bundle);
+            startActivity(ShowResult);
 
-            }
         });
 
 
-        calculate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String userName = intent.getStringExtra("currentUser");
-                currentUser = dbHelper.getSomeone(userName);
+        calculate.setOnClickListener(v -> {
+            String userName = intent.getStringExtra("currentUser");
+            currentUser = dbHelper.getSomeone(userName);
 
-                double result = CalculateBMI(currentUser.getWeight(), currentUser.getHeight());
+            result = CalculateBMI(currentUser.getWeight(), currentUser.getHeight());
 
-                Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
-                ShowResult.putExtra("weight", currentUser.getWeight());
-                ShowResult.putExtra("height", currentUser.getHeight());
-                ShowResult.putExtra("result", result);
-                startActivity(ShowResult);
-            }
+            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
+            Bundle bundle = new Bundle();
+            bundle.putDouble("weight", currentUser.getWeight());
+            bundle.putDouble("height", currentUser.getHeight());
+            bundle.putDouble("result", result);
+            ShowResult.putExtras(bundle);
+            startActivity(ShowResult);
         });
 
     }
 
-    private double CalculateBMI(int weight, double height){
+    private double CalculateBMI(double weightInput, double heightInput){
         //convert weight from pounds to kilograms. 1kb = 2.2lb
-        weight = (int) (weight/2.2);
+        weight = weightInput/2.2;
         //convert height from centimeters to meters. 1cm = 0.01m
-        height = height/100;
+        height = heightInput/100;
         return weight/(height*height);
     }
 

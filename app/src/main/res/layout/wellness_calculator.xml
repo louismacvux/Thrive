@@ -21,19 +21,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:rotationX="0"
-        android:text="@android:string/untitled"
+        android:text="@string/custom_your_info"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Custom you weight and height" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edittext_new_weight"
         android:layout_width="188dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:autofillHints=""
         android:ems="10"
@@ -47,7 +46,7 @@
     <EditText
         android:id="@+id/edittext_new_height"
         android:layout_width="188dp"
-        android:layout_height="38dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:autofillHints=""
         android:ems="10"
@@ -74,13 +73,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:rotationX="0"
-        android:text="@android:string/untitled"
+        android:text="@string/calculate_data"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_custom"
-        tools:text="Calculate using your personal data" />
+        app:layout_constraintTop_toBottomOf="@+id/button_custom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

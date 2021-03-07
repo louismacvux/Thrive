@@ -5,7 +5,7 @@ public class User {
     private String name;
     private String email;
     private int age;
-    private int weight;
+    private double weight;
     private String gender;
     private double height;
     private String password;
@@ -61,7 +61,7 @@ public class User {
         this.gender = gender;
     }
 
-    public void setheight(int height) {
+    public void setheight(double height) {
         this.height = height;
     }
 
@@ -83,7 +83,7 @@ public class User {
         return age;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
