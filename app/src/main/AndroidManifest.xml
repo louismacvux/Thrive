@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.comp3350">
+    package="com.comp3350">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/Thrive"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Comp3350">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.comp3350.UI.MainActivity" />
+        <activity android:name="com.comp3350.UI.RegisterActivity" />
+        <activity android:name="com.comp3350.UI.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WorkoutSuggestion"></activity>
-        <activity android:name=".ViewPDF"></activity>
-        <activity android:name=".GenderSelection"></activity>
+        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
+        <activity android:name="com.comp3350.UI.ViewPDF" />
+        <activity android:name="com.comp3350.UI.GenderSelection" />
     </application>
 
 </manifest>
