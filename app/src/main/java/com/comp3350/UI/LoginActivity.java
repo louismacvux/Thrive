@@ -47,13 +47,12 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 LoginManager loginManager = new LoginManager(db);
 
                 userName = txtUsername.getText().toString();
                 userPass = txtPassword.getText().toString();
 
-                if (userName.equals("") || userPass.equals(""))
+                if (userName.isEmpty() || userPass.isEmpty())
                 {
                     Toast.makeText(LoginActivity.this, "Please enter both username and password",
                             Toast.LENGTH_LONG).show();
@@ -67,9 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                     } else if (loginManager.foundUser(userName)) {
                         Toast.makeText(LoginActivity.this, "Incorrect Password",
                                 Toast.LENGTH_LONG).show();
-                    }
-                    else
-                    {
+                    } else {
                         Toast.makeText(LoginActivity.this,"No such user... SIGN UP!",
                                 Toast.LENGTH_LONG).show();
                     }

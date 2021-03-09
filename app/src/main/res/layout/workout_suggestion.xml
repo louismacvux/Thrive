@@ -7,7 +7,7 @@
     android:layout_gravity="bottom"
     android:background="#4DF89945"
     android:orientation="vertical"
-    tools:context="com.comp3350.WorkoutSuggestion">
+    tools:context="com.comp3350.UI.WorkoutSuggestion">
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,11 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
-        android:background="#65FFFFFF"
         android:entries="@array/workouts"
         android:padding="10dp"
         android:scrollbarSize="8dp"
-        android:spinnerMode="dialog"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

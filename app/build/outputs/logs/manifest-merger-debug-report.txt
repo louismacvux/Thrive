@@ -112,18 +112,18 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:27-74
-activity#com.comp3350.WorkoutSuggestion
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-67
+activity#com.comp3350.UI.WorkoutSuggestion
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-70
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-64
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-67
 activity#com.comp3350.UI.ViewPDF
 ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-60
 	android:name
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-57
-activity#com.comp3350.GenderSelection
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-65
+activity#com.comp3350.UI.GenderSelection
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-68
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-62
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-65
 uses-sdk
 INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml

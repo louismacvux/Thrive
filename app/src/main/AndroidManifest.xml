@@ -20,9 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.comp3350.WorkoutSuggestion" />
+        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
         <activity android:name="com.comp3350.UI.ViewPDF" />
-        <activity android:name="com.comp3350.GenderSelection" />
+        <activity android:name="com.comp3350.UI.GenderSelection" />
     </application>
 
 </manifest>
