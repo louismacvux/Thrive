@@ -29,4 +29,5 @@
     <string name="your_height">Your height:</string>
     <string name="your_weight">Your weight:</string>
     <string name="your_bmi_result_is">Your BMI result is:</string>
+    <string name="if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data">if you leave this empty, your BMI result is based on your personal data</string>
 </resources>

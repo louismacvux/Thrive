@@ -14,14 +14,12 @@ public class WellnessCalculator extends AppCompatActivity {
     EditText txtWeight;
     EditText txtHeight;
 
-    Button submitData;
     Button calculate;
 
     double weight;
     double height;
     double result;
 
-    Intent intent;
     User currentUser;
     DatabaseHelper dbHelper;
 
@@ -32,38 +30,33 @@ public class WellnessCalculator extends AppCompatActivity {
 
         txtWeight = findViewById(R.id.edittext_new_weight);
         txtHeight = findViewById(R.id.edittext_new_height);
-        submitData = findViewById(R.id.button_custom);
         calculate = findViewById(R.id.button_calculate);
 
-
-        submitData.setOnClickListener(v -> {
-            weight = Double.parseDouble(txtWeight.getText().toString());
-            height = Double.parseDouble(txtHeight.getText().toString());
-
-            result = CalculateBMI(weight, height);
-
-            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
-            Bundle bundle = new Bundle();
-            bundle.putDouble("weight", weight);
-            bundle.putDouble("height", height);
-            bundle.putDouble("result", result);
-            ShowResult.putExtras(bundle);
-            startActivity(ShowResult);
-
-        });
-
-
         calculate.setOnClickListener(v -> {
-            String userName = intent.getStringExtra("currentUser");
-            currentUser = dbHelper.getSomeone(userName);
-
-            result = CalculateBMI(currentUser.getWeight(), currentUser.getHeight());
-
-            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
             Bundle bundle = new Bundle();
-            bundle.putDouble("weight", currentUser.getWeight());
-            bundle.putDouble("height", currentUser.getHeight());
-            bundle.putDouble("result", result);
+            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
+
+            //calculate using personal data
+            if (txtWeight.getText().toString().equals("") & txtHeight.getText().toString().equals("")){
+                Intent intent = getIntent();
+                dbHelper = new DatabaseHelper(WellnessCalculator.this);
+                String userName = intent.getStringExtra("currentUser");
+                currentUser = dbHelper.getSomeone(userName);
+                result = CalculateBMI(currentUser.getWeight(), currentUser.getHeight());
+
+                bundle.putDouble("weight", currentUser.getWeight());
+                bundle.putDouble("height", currentUser.getHeight());
+                bundle.putDouble("result", result);
+            }else{ //calculate using given data
+                weight = Double.parseDouble(txtWeight.getText().toString());
+                height = Double.parseDouble(txtHeight.getText().toString());
+
+                result = CalculateBMI(weight, height);
+                bundle.putDouble("weight", weight);
+                bundle.putDouble("height", height);
+                bundle.putDouble("result", result);
+            }
+
             ShowResult.putExtras(bundle);
             startActivity(ShowResult);
         });
@@ -72,10 +65,10 @@ public class WellnessCalculator extends AppCompatActivity {
 
     private double CalculateBMI(double weightInput, double heightInput){
         //convert weight from pounds to kilograms. 1kb = 2.2lb
-        weight = weightInput/2.2;
+        double convertedWeight = weightInput/2.2;
         //convert height from centimeters to meters. 1cm = 0.01m
-        height = heightInput/100;
-        return weight/(height*height);
+        double convertedHeight = heightInput/100;
+        return convertedWeight/(convertedHeight*convertedHeight);
     }
 
 
