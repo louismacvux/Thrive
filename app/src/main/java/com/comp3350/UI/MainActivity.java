@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
         Intent intent;
         Intent i = getIntent();
         DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String currentUser = i.getStringExtra("currentUser");
         User current= dbHelper.getSomeone(currentUser);
 
+        //for now only workout suggestion is clickable
+        //this if block can be deleted and use the switch block instead once we have all the other classes
         if (v.getId() == R.id.cardview_workoutPlan){
             intent = new Intent(MainActivity.this, WorkoutSuggestion.class);
             intent.putExtra("currentUser", current.getName());
