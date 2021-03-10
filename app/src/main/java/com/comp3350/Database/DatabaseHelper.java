@@ -150,4 +150,50 @@ public class DatabaseHelper extends SQLiteOpenHelper
         return result;
     }
 
+    public boolean updateInfo(String id, String column, String data)
+    {
+        boolean result = false;
+
+        //parse the string to an 'int' if necessary
+        SQLiteDatabase db = this.getWritableDatabase();
+        try
+        {
+            Integer.parseInt(data);
+        }
+        catch (NumberFormatException e)
+        {
+            System.out.println(e.getMessage());
+        }
+
+        //CV object is used to add/update our DB
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(column, data);
+
+        //checker -> will be the number of rows affected
+        int checker = db.update(TABLE_NAME, contentValues, "ID = ?", new String[] {id} );
+
+        if (checker > 0)
+        {
+            result = true;
+        }
+        return result;
+    }
+
+    public boolean deleteUser(String name)
+    {
+        //assume we didn't remove the user from the db
+        boolean result = false;
+
+        //Query the database to pull a user
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor;
+        cursor = db.rawQuery("DELETE FROM " + TABLE_NAME + " WHERE " + COL_USERNAME + " = ?", new String[] {name});
+
+        if (!checkName(name))
+        {
+            result = true;
+        }
+        return result;
+    }
 }//end class
