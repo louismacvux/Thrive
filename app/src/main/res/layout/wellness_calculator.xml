@@ -20,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:rotationX="0"
         android:text="@string/custom_your_info"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
@@ -31,7 +30,7 @@
 
     <EditText
         android:id="@+id/edittext_new_weight"
-        android:layout_width="188dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:autofillHints=""
@@ -45,7 +44,7 @@
 
     <EditText
         android:id="@+id/edittext_new_height"
-        android:layout_width="188dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:autofillHints=""
@@ -71,8 +70,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="352dp"
-        android:layout_height="81dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
         android:layout_marginTop="40dp"
         android:rotationX="0"
         android:text="@string/if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data"

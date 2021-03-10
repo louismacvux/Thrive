@@ -20,7 +20,7 @@
     <string name="gender_select">Please select your gender:</string>
     <string name="workout_select">Please select a workout:</string>
     <string name="next">Get your workout suggestion</string>
-    <string name="custom_your_info">Custom your weight and height</string>
+    <string name="custom_your_info">Custom your weight and height:</string>
     <string name="weight">weight (pounds)</string>
     <string name="height">height (cm)</string>
     <string name="calculate">calculate</string>
@@ -29,5 +29,5 @@
     <string name="your_height">Your height:</string>
     <string name="your_weight">Your weight:</string>
     <string name="your_bmi_result_is">Your BMI result is:</string>
-    <string name="if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data">if you leave this empty, your BMI result is based on your personal data</string>
+    <string name="if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data">If you leave this empty, your BMI result is based on your personal data.</string>
 </resources>

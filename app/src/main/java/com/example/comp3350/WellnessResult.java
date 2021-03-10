@@ -2,6 +2,7 @@ package com.example.comp3350;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -43,7 +44,7 @@ public class WellnessResult extends AppCompatActivity {
         else if (result >= 18.5 && result <= 24.9)
             show_range.setText("Your weight is normal.");
         else if (result >= 25 && result <= 29)
-            show_range.setText("You are overweight");
+            show_range.setText("You are overweight.");
         else
             show_range.setText("You are obese.");
 
