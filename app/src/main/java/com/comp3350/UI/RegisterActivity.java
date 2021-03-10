@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText txtEmail, txtUsername, txtPassword, txtConfirmPassword;
     private EditText txtAge, txtWeight, txtHeight;
     Button register;
+    RadioGroup txtGender;
 
     //variables used to create our User object
     private String email;
@@ -31,7 +33,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String password;
     private String rePass;
     private String gender;
-    private int age;
+    private int age, checkGender;
     private double weight;
     private double height;
 
@@ -52,6 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
         txtAge = findViewById(R.id.edittext_age);
         txtWeight = findViewById(R.id.edittext_weight);
         txtHeight = findViewById(R.id.edittext_height);
+        txtGender = (RadioGroup)findViewById(R.id.radioGroup_gender);
 
         register = findViewById(R.id.button_done_register);
 
@@ -63,54 +66,58 @@ public class RegisterActivity extends AppCompatActivity {
                 name = txtUsername.getText().toString();
                 password = txtPassword.getText().toString();
                 rePass = txtConfirmPassword.getText().toString();
-                age = Integer.parseInt(String.valueOf(txtAge.getText()));
-                weight = Double.parseDouble(String.valueOf(txtWeight.getText()));
-                height = Double.parseDouble(String.valueOf(txtHeight.getText()));
+                checkGender = txtGender.getCheckedRadioButtonId();
 
-//                gender = txtGender.getText().toString();
+                if (checkGender == -1)
+                {
+                    Toast.makeText(com.comp3350.UI.RegisterActivity.this, "Please indicate a gender",
+                            Toast.LENGTH_LONG).show();
+                }
+                else
+                {
+                    switch (checkGender)
+                    {
+                        case R.id.radioBtn_female:
+                            gender = "female";
+                            break;
 
-//                if (!txtAge.getText().toString().equals(""))
-//                {
-//                    //try to get numeric values from age, weight and height
-//                    try
-//                    {
-//                        age = Integer.parseInt(txtAge.getText().toString());
-//                    }
-//                    catch (NumberFormatException e)
-//                    {
-//                        System.out.println("NumberFormatException: " + e.getMessage());
-//                        Toast.makeText(RegisterActivity.this, "Please enter a number for AGE",
-//                                Toast.LENGTH_LONG).show();
-//                    }
-//                }
-//                if (!txtWeight.getText().toString().equals(""))
-//                {
-//                    try
-//                    {
-//                        weight = Integer.parseInt(txtWeight.getText().toString());
-//                    }
-//                    catch (NumberFormatException e)
-//                    {
-//                        System.out.println("NumberFormatException: " + e.getMessage());
-//                        Toast.makeText(RegisterActivity.this, "Please enter a number for WEIGHT",
-//                                Toast.LENGTH_LONG).show();
-//                    }
-//                }
-//
-//                if (!txtHeight.getText().toString().equals(""))
-//                {
-//                    try
-//                    {
-//                        height = Double.parseDouble(txtHeight.getText().toString());
-//                    }
-//                    catch (NumberFormatException e)
-//                    {
-//                        System.out.println("NumberFormatException: " + e.getMessage());
-//                        Toast.makeText(RegisterActivity.this, "Please enter a number for HEIGHT",
-//                                Toast.LENGTH_LONG).show();
-//                    }
-//                }
+                        case R.id.radioBtn_male:
+                            gender = "male";
+                            break;
+                    }
+                }
+                //validate AGE
+                if (!txtAge.getText().toString().equals("")) {
+                    //try to get numeric values from age, weight and height
+                    try {
+                        age = Integer.parseInt(txtAge.getText().toString());
+                    } catch (NumberFormatException e) {
+                        System.out.println("NumberFormatException: " + e.getMessage());
+                        Toast.makeText(RegisterActivity.this, "Please enter a number for AGE",
+                                Toast.LENGTH_LONG).show();
+                    }
+                }
+                //validate WEIGHT
+                if (!txtWeight.getText().toString().equals("")) {
+                    try {
+                        weight = Integer.parseInt(txtWeight.getText().toString());
+                    } catch (NumberFormatException e) {
+                        System.out.println("NumberFormatException: " + e.getMessage());
+                        Toast.makeText(RegisterActivity.this, "Please enter a number for WEIGHT",
+                                Toast.LENGTH_LONG).show();
+                    }
+                }
 
+                //validate HEIGHT
+                if (!txtHeight.getText().toString().equals("")) {
+                    try {
+                        height = Double.parseDouble(txtHeight.getText().toString());
+                    } catch (NumberFormatException e) {
+                        System.out.println("NumberFormatException: " + e.getMessage());
+                        Toast.makeText(RegisterActivity.this, "Please enter a number for HEIGHT",
+                                Toast.LENGTH_LONG).show();
+                    }
+                }
 
                 RegisterManager registerManager = new RegisterManager(db);
 
