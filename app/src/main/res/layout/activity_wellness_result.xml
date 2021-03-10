@@ -7,80 +7,122 @@
     tools:context=".WellnessResult">
 
     <TextView
-        android:id="@+id/range"
+        android:id="@+id/health_range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
-        android:text="@string/textview"
+        android:text="@string/text_view"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_result2" />
+        app:layout_constraintTop_toBottomOf="@+id/bmi_result_text" />
 
     <TextView
-        android:id="@+id/show_result"
+        android:id="@+id/bmi_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="70dp"
-        android:text="@string/textview"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/text_view"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/show_result2"
-        app:layout_constraintTop_toBottomOf="@+id/show_weight" />
+        app:layout_constraintStart_toEndOf="@+id/bmi_result_text"
+        app:layout_constraintTop_toBottomOf="@+id/mc_result_text" />
 
     <TextView
-        android:id="@+id/show_height2"
+        android:id="@+id/weight_result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="80dp"
-        android:text="@string/your_height"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/show_weight2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
         android:text="@string/your_weight"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_height2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/show_height"
+        android:id="@+id/height_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/your_height"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_result_text" />
+
+    <TextView
+        android:id="@+id/weight_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="80dp"
-        android:text="@string/textview"
+        android:text="@string/text_view"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/show_height2"
+        app:layout_constraintStart_toEndOf="@+id/weight_result_text"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/show_weight"
+        android:id="@+id/height_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:text="@string/textview"
+        android:text="@string/text_view"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/show_weight2"
-        app:layout_constraintTop_toBottomOf="@+id/show_height" />
+        app:layout_constraintStart_toEndOf="@+id/height_result_text"
+        app:layout_constraintTop_toBottomOf="@+id/weight_result" />
 
     <TextView
-        android:id="@+id/show_result2"
+        android:id="@+id/mc_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="70dp"
+        android:text="@string/text_view"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_result_text" />
+
+    <TextView
+        android:id="@+id/mc_result_text"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/calories_message"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_result_text" />
+
+    <TextView
+        android:id="@+id/bmi_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
         android:text="@string/your_bmi_result_is"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/show_weight2" />
+        app:layout_constraintTop_toBottomOf="@+id/mc_result_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/pounds"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/weight_result"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/cm"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/height_result"
+        app:layout_constraintTop_toBottomOf="@+id/weight_result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

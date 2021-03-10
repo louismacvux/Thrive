@@ -20,14 +20,23 @@
     <string name="gender_select">Please select your gender:</string>
     <string name="workout_select">Please select a workout:</string>
     <string name="next">Get your workout suggestion</string>
-    <string name="custom_your_info">Custom your weight and height:</string>
+    <string name="custom_your_info">Custom your weight and height if needed:</string>
     <string name="weight">weight (pounds)</string>
     <string name="height">height (cm)</string>
+    <string name="pounds">pounds</string>
+    <string name="cm">cm</string>
     <string name="calculate">calculate</string>
     <string name="calculate_data">Calculate using your personal data</string>
-    <string name="textview">TextView</string>
+    <string name="text_view">TextView</string>
     <string name="your_height">Your height:</string>
     <string name="your_weight">Your weight:</string>
     <string name="your_bmi_result_is">Your BMI result is:</string>
-    <string name="if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data">If you leave this empty, your BMI result is based on your personal data.</string>
+    <string name="if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data">If you leave this empty, your BMI and maintenance calories will be calculated based on your profile.</string>
+    <string name="select_activity_level">Please select your activity level:</string>
+    <string-array name="activity_level">
+        <item>Barely active</item>
+        <item>Active</item>
+        <item>Highly active</item>
+    </string-array>
+    <string name="calories_message">\t\t\t\t\t\t\t\t\tCalories/day is needed to maintain your current body composition.</string>
 </resources>

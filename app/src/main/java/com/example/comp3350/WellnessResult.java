@@ -9,14 +9,16 @@ import android.widget.TextView;
 
 public class WellnessResult extends AppCompatActivity {
 
+    TextView show_mc;
     TextView show_weight;
     TextView show_height;
-    TextView show_result;
+    TextView show_bmi;
     TextView show_range;
 
+    double maintenance_calories;
     double weight;
     double height;
-    double result;
+    double bmi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,25 +27,28 @@ public class WellnessResult extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         if(bundle != null) {
+            maintenance_calories = bundle.getDouble("mc");
             weight = bundle.getDouble("weight");
             height = bundle.getDouble("height");
-            result = bundle.getDouble("result");
+            bmi = bundle.getDouble("bmi");
         }
 
-        show_height = findViewById(R.id.show_height);
-        show_weight = findViewById(R.id.show_weight);
-        show_result = findViewById(R.id.show_result);
-        show_range = findViewById(R.id.range);
+        show_mc = findViewById(R.id.mc_result);
+        show_height = findViewById(R.id.height_result);
+        show_weight = findViewById(R.id.weight_result);
+        show_bmi = findViewById(R.id.bmi_result);
+        show_range = findViewById(R.id.health_range);
 
+        show_mc.setText(String.format("%.2f", maintenance_calories));
         show_height.setText(String.format("%.2f", height));
         show_weight.setText(String.format("%.2f", weight));
-        show_result.setText(String.format("%.2f", result));
+        show_bmi.setText(String.format("%.2f", bmi));
 
-        if (result > 0 && result < 18.5)
+        if (bmi > 0 && bmi < 18.5)
             show_range.setText("You are underweight.");
-        else if (result >= 18.5 && result <= 24.9)
+        else if (bmi >= 18.5 && bmi <= 24.9)
             show_range.setText("Your weight is normal.");
-        else if (result >= 25 && result <= 29)
+        else if (bmi >= 25 && bmi <= 29)
             show_range.setText("You are overweight.");
         else
             show_range.setText("You are obese.");
