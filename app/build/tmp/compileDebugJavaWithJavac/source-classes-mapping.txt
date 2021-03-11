@@ -5,12 +5,14 @@ com/comp3350/UI/RegisterActivity.java
  com.comp3350.UI.RegisterActivity$1
 com/comp3350/Logic/RegisterManager.java
  com.comp3350.Logic.RegisterManager
+com/comp3350/BloodInformation.java
+ com.comp3350.BloodInformation
 com/comp3350/Database/Database.java
  com.comp3350.Database.Database
 com/comp3350/Object/User.java
  com.comp3350.Object.User
-com/comp3350/UI/ViewPDF.java
- com.comp3350.UI.ViewPDF
+com/comp3350/UI/MainActivity.java
+ com.comp3350.UI.MainActivity
 com/comp3350/UI/WorkoutSuggestion.java
  com.comp3350.UI.WorkoutSuggestion
  com.comp3350.UI.WorkoutSuggestion$1
@@ -23,8 +25,8 @@ com/comp3350/Logic/LoginManager.java
  com.comp3350.Logic.LoginManager
 com/comp3350/Database/DatabaseBasic.java
  com.comp3350.Database.DatabaseBasic
-com/comp3350/UI/MainActivity.java
- com.comp3350.UI.MainActivity
+com/comp3350/UI/ViewPDF.java
+ com.comp3350.UI.ViewPDF
 com/comp3350/UI/LoginActivity.java
  com.comp3350.UI.LoginActivity
  com.comp3350.UI.LoginActivity$1

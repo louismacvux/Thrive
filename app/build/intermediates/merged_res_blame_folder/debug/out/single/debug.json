@@ -40,6 +40,10 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_activity_blood_information.xml.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/activity_blood_information.xml"
+    },
+    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
