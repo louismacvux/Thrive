@@ -1,5 +1,6 @@
 package com.example.comp3350;
 
+import com.comp3350.User;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
