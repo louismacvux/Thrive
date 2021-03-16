@@ -12,30 +12,26 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.comp3350.Object.User;
+import com.comp3350.Object.WorkoutDoc;
 import com.comp3350.R;
 
 public class WorkoutSuggestion extends AppCompatActivity {
 
     Button next;
-    int selected_gender = -1;
-    int selected_workout = -1;
+    String gender;
+    WorkoutDoc selected_workout; //workout enum
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workout_suggestion);
 
-        Bundle bundle = getIntent().getExtras();
-        if(bundle != null) {
-            selected_gender = bundle.getInt("gender");
-        }
-
         Intent intent = getIntent();
         DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
         String currentUser = intent.getStringExtra("currentUser");
 
-        User current= dbHelper.getSomeone(currentUser);
-        selected_gender = current.getGenderInt();
+        User current= dbHelper.getSomeone(currentUser); //get current user from database
+        gender = current.getGender(); //get gender of current user
 
         Spinner workout_spinner = findViewById(R.id.spinner_workout);
         workout_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -43,13 +39,13 @@ public class WorkoutSuggestion extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        selected_workout = 0; //Tone up
+                        selected_workout = WorkoutDoc.ToneUp; //Tone up plan
                         break;
                     case 1:
-                        selected_workout = 1; //Build muscle
+                        selected_workout = WorkoutDoc.BuildMuscle; //Build muscle plan
                         break;
                     case 2:
-                        selected_workout = 2; //Lose fat
+                        selected_workout = WorkoutDoc.FatLoss; //Lose fat plan
                         break;
                 }
                 String text = parent.getItemAtPosition(position).toString();
@@ -66,30 +62,11 @@ public class WorkoutSuggestion extends AppCompatActivity {
     }
 
     public void suggestResult (View view) {
-        if(selected_gender == -1) {
-            /*Intent intent = getIntent();
-            DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
-            String currentUser = intent.getStringExtra("currentUser");
-
-            User current= dbHelper.getSomeone(currentUser);
-            selected_gender = current.getGenderInt();
-
-            Toast.makeText(WorkoutSuggestion.this, "Incorrect gender in user profile", Toast.LENGTH_LONG).show();*/
-            Intent GenderSelectionIntent = new Intent(WorkoutSuggestion.this, GenderSelection.class);
-            Bundle bundle = new Bundle();
-            bundle.putInt("workout", selected_workout);
-            GenderSelectionIntent.putExtras(bundle);
-
-            startActivity(GenderSelectionIntent);
-        }
-        else {
-            Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
-            Bundle bundle = new Bundle();
-            bundle.putInt("gender", selected_gender);
-            bundle.putInt("workout", selected_workout);
-            pdfViewIntent.putExtras(bundle);
-            startActivity(pdfViewIntent);
-        }
+        Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("fileName", gender + selected_workout.getFileName()); //gender is the first part of the file name, string get from workout enum is the second part of the file name
+        pdfViewIntent.putExtras(bundle);
+        startActivity(pdfViewIntent);
     }
 
 }

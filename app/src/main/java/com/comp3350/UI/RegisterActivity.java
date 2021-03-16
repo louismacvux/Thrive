@@ -72,11 +72,11 @@ public class RegisterActivity extends AppCompatActivity {
                     switch (checkGender)
                     {
                         case R.id.radioBtn_female:
-                            gender = "female";
+                            gender = "Female";
                             break;
 
                         case R.id.radioBtn_male:
-                            gender = "male";
+                            gender = "Male";
                             break;
                     }
                 }
@@ -140,12 +140,12 @@ public class RegisterActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radioBtn_female:
                 if (checked) {
-                    gender = "female";
+                    gender = "Female";
                 }
                 break;
             case R.id.radioBtn_male:
                 if (checked){
-                    gender = "male";
+                    gender = "Male";
                 }
                 break;
         }
