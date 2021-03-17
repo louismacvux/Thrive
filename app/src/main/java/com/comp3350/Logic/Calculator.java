@@ -11,17 +11,16 @@ public class Calculator {
     double bmi;
     User user;
 
-    double weight = Double.parseDouble(string_weight);
-    double height = Double.parseDouble(string_height);
 
     public Calculator(String string_weight, String string_height, User user, double activity_level){
         this.string_weight = string_weight;
         this.string_height = string_height;
+
         this.activity_level = activity_level;
         this.user = user;
     };
 
-    private double calculateBMI(double weight, double height){
+    public double calculateBMI(double weight, double height){
         double result;
         if (weight > 0 || height > 0){
             //convert weight from pounds to kilograms. 1kg = 2.2lb
@@ -36,15 +35,17 @@ public class Calculator {
         return result;
     }
 
-    private double calculateBMR(int gender, double weight, double height, int age){
+    public double calculateBMR(double weight, double height){
         double result;
+        int gender = user.getGenderInt();
+        int age = user.getAge();
         if (gender == 0) {
             //calculate BMR value of male
             result = 66 + (13.7 * weight / 2.2) + (5 * height) - (6.8 * age);
         }
         else if (gender == 1){
             //calculate BMR value for female
-            result = 655 + (9.6 * weight/2.2) + (1.8 * height) - (4.7 * weight);
+            result = 655 + (9.6 * weight/2.2) + (1.8 * height) - (4.7 * age);
         }
         else {
             //incorrect BMR due to incorrect gender
@@ -55,11 +56,13 @@ public class Calculator {
 
     public void calculate(){
         if (string_weight.equals("") && string_height.equals("")){ //calculate using personal data in profile
-            maintenance_calories = activity_level * calculateBMR(user.getGenderInt(), user.getWeight(), user.getHeight(), user.getAge());
+            maintenance_calories = activity_level * calculateBMR(user.getWeight(), user.getHeight());
             bmi = calculateBMI(user.getWeight(), user.getHeight());
         }
         else{ //calculate using new custom given data
-            maintenance_calories = activity_level * calculateBMR(user.getGenderInt(), weight, height, user.getAge());
+            double weight = Double.parseDouble(string_weight);
+            double height = Double.parseDouble(string_height);
+            maintenance_calories = activity_level * calculateBMR(weight, height);
             bmi = calculateBMI(weight, height);
         }
     }
@@ -68,14 +71,14 @@ public class Calculator {
     public double getWeightUsed(){
         double result;
         result = user.getWeight(); if (string_weight.equals(""));
-        else result = weight;
+        else result = Double.parseDouble(string_weight);
         return result;
     }
 
     public double getHeightUsed(){
         double result;
         result = user.getHeight(); if (string_height.equals(""));
-        else result = height;
+        else result = Double.parseDouble(string_height);
         return result;
     }
 

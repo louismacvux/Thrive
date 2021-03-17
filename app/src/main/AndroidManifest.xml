@@ -11,19 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Comp3350">
-        <activity android:name=".WellnessResult"/>
-        <activity android:name=".WellnessCalculator"/>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.comp3350.UI.WellnessResult"/>
+        <activity android:name="com.comp3350.UI.WellnessCalculator"/>
+        <activity android:name="com.comp3350.UI.MainActivity" />
+        <activity android:name="com.comp3350.UI.RegisterActivity" />
+        <activity android:name="com.comp3350.UI.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WorkoutSuggestion" />
-        <activity android:name=".ViewPDF" />
+        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
+        <activity android:name="com.comp3350.UI.ViewPDF" />
     </application>
 
 </manifest>
