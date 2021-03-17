@@ -1,10 +1,14 @@
-package com.example.comp3350;
+package com.comp3350.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Object.User;
+import com.example.comp3350.R;
 
 public class MainActivity extends AppCompatActivity {
 

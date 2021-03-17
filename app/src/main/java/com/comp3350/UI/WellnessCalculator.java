@@ -1,4 +1,4 @@
-package com.example.comp3350;
+package com.comp3350.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,11 +11,19 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Object.User;
+import com.example.comp3350.R;
+
+import com.comp3350.Logic.Calculator;
+
 public class WellnessCalculator extends AppCompatActivity {
 
     //variable that user might want to enter manually
     EditText txtWeight;
     EditText txtHeight;
+    String string_weight;
+    String string_height;
 
     Button calculate;
 
@@ -27,6 +35,7 @@ public class WellnessCalculator extends AppCompatActivity {
 
     User currentUser;
     DatabaseHelper dbHelper;
+    Calculator calculator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,55 +78,30 @@ public class WellnessCalculator extends AppCompatActivity {
             Intent intent = getIntent();
             dbHelper = new DatabaseHelper(WellnessCalculator.this);
             String userName = intent.getStringExtra("currentUser");
+
             currentUser = dbHelper.getSomeone(userName);
+            string_weight = txtWeight.getText().toString();
+            string_height = txtHeight.getText().toString();
 
-            if (txtWeight.getText().toString().equals("") & txtHeight.getText().toString().equals("")){ //calculate using personal data in profile
-                maintenance_calories = activity_level * calculateBMR(currentUser.getGenderInt(), currentUser.getWeight(), currentUser.getHeight(), currentUser.getAge());
-                bmi = calculateBMI(currentUser.getWeight(), currentUser.getHeight());
-                bundle.putDouble("mc", maintenance_calories);
-                bundle.putDouble("weight", currentUser.getWeight());
-                bundle.putDouble("height", currentUser.getHeight());
-                bundle.putDouble("bmi", bmi);
-            }
-            else{ //calculate using new custom given data
-                weight = Double.parseDouble(txtWeight.getText().toString());
-                height = Double.parseDouble(txtHeight.getText().toString());
+            //Do the calculation using given data
+            calculator = new Calculator(string_weight, string_height, currentUser, activity_level);
 
-                maintenance_calories = activity_level * calculateBMR(currentUser.getGenderInt(), weight, height, currentUser.getAge());
-                bmi = calculateBMI(weight, height);
-                bundle.putDouble("mc", maintenance_calories);
-                bundle.putDouble("weight", weight);
-                bundle.putDouble("height", height);
-                bundle.putDouble("bmi", bmi);
-            }
+            //get back the result
+            maintenance_calories = calculator.getMC();
+            weight = calculator.getWeightUsed();
+            height = calculator.getHeightUsed();
+            bmi = calculator.getBMI();
+
+            bundle.putDouble("mc", maintenance_calories);
+            bundle.putDouble("weight", weight);
+            bundle.putDouble("height", height);
+            bundle.putDouble("bmi", bmi);
 
             ShowResult.putExtras(bundle);
             startActivity(ShowResult);
+
         });
 
-    }
-
-    private double calculateBMI(double weight, double height){
-        //convert weight from pounds to kilograms. 1kb = 2.2lb
-        double convertedWeight = weight/2.2;
-        //convert height from centimeters to meters. 1cm = 0.01m
-        double convertedHeight = height/100;
-        return convertedWeight/(convertedHeight*convertedHeight);
-    }
-
-    private double calculateBMR(int gender, double weight, double height, int age) {
-        if(gender == 0) {
-            //calculate BMR value of male
-            return 66 + (13.7 * weight/2.2) + (5 * height) - (6.8 * age);
-        }
-        else if(gender == 1) {
-            //calculate BMR value of female
-            return 655 + (9.6 * weight/2.2) + (1.8 * height) - (4.7 * age);
-        }
-        else {
-            //incorrect BMR due to incorrect gender
-            return -1;
-        }
     }
 
 }

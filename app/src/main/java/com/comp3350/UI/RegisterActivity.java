@@ -1,9 +1,6 @@
-package com.example.comp3350;
+package com.comp3350.UI;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +8,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Object.User;
+import com.example.comp3350.R;
 
 public class RegisterActivity extends AppCompatActivity {
 

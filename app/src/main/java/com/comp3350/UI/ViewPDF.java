@@ -1,9 +1,10 @@
-package com.example.comp3350;
+package com.comp3350.UI;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.comp3350.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class ViewPDF extends AppCompatActivity {

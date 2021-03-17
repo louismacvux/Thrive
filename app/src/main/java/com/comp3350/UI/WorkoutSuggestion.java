@@ -1,18 +1,18 @@
-package com.example.comp3350;
+package com.comp3350.UI;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.github.barteksc.pdfviewer.PDFView;
+import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Object.User;
+import com.example.comp3350.R;
 
 public class WorkoutSuggestion extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.comp3350;
+package com.comp3350.Object;
 
 public class User {
     private int id;

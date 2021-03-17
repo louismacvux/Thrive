@@ -1,4 +1,4 @@
-package com.example.comp3350;
+package com.comp3350.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,7 +7,8 @@ import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.widget.Toast;
+
+import com.comp3350.Object.User;
 
 public class DatabaseHelper extends SQLiteOpenHelper
 {
