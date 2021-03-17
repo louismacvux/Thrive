@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent = new Intent(MainActivity.this, WorkoutSuggestion.class);
             intent.putExtra("currentUser", current.getName());
             startActivity(intent);
+        }else if (v.getId() == R.id.cardview_bloodOptimizer){
+            intent = new Intent(MainActivity.this, BloodOptimizer.class);
+            intent.putExtra("currentUser", current.getName());
+            startActivity(intent);
         }
 
 //        switch (v.getId()){
