@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4DF89945"
     tools:context="com.comp3350.UI.WellnessResult">
 
     <TextView

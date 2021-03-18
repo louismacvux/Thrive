@@ -1,4 +1,4 @@
-package com.example.comp3350;
+package com.comp3350;
 
 import com.comp3350.Logic.Calculator;
 import com.comp3350.Object.User;

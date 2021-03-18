@@ -77,18 +77,4 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-//    public boolean fieldEmpty(String username, String userpass){
-//        boolean result = true;
-//        if (username.isEmpty()){
-//            Toast.makeText(LoginActivity.this, "Please enter your username",
-//                            Toast.LENGTH_LONG).show();
-//            result = false;
-//        }
-//        if (userpass.isEmpty()){
-//            Toast.makeText(LoginActivity.this, "Please enter your password",
-//                    Toast.LENGTH_LONG).show();
-//            result = false;
-//        }
-//        return result;
-//    }//end fieldEmpty
 }//end class
