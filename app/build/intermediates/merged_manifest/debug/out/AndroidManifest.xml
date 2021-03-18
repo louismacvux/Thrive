@@ -20,7 +20,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Comp3350" >
-        <activity android:name="com.comp3350.UI.ViewBloodOptimizer" />
         <activity android:name="com.comp3350.UI.MainActivity" />
         <activity android:name="com.comp3350.UI.RegisterActivity" />
         <activity android:name="com.comp3350.UI.LoginActivity" >

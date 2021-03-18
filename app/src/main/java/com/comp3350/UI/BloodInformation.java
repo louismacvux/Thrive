@@ -44,6 +44,7 @@ public class BloodInformation extends AppCompatActivity {
         estraGeneralInfo = (TextView) findViewById(R.id.estraGeneralInfo);
         generalMaleSugg = (TextView) findViewById(R.id.generalMaleSugg);
         generalFemaleSugg = (TextView) findViewById(R.id.generalFemaleSugg);
+
         //symptoms
         tshLow = (TextView) findViewById(R.id.tsh_low_info);
         tshHigh = (TextView) findViewById(R.id.tsh_high_info);
@@ -55,6 +56,7 @@ public class BloodInformation extends AppCompatActivity {
         testLow = (TextView) findViewById(R.id.test_low_info);
         estraLow = (TextView) findViewById(R.id.estra_low_info);
         estraHigh = (TextView) findViewById(R.id.estra_high_info);
+
         //suggestion buttons
         tshLowBtn = (Button) findViewById(R.id.tsh_low_sugg); //bloodMark = 1
         tshHighBtn = (Button) findViewById(R.id.tsh_high_sugg); //bloodMark = 2
@@ -67,7 +69,6 @@ public class BloodInformation extends AppCompatActivity {
         estraHighBtn = (Button) findViewById(R.id.estra_high_sugg); //bloodMark = 9
         generalMBtn = (Button) findViewById(R.id.general_m_sugg); //bloodMark = 10
         generalFBtn = (Button) findViewById(R.id.general_f_sugg); //bloodMark = 11
-
 
         //Printing our all the general information about the blood markers onto the screen
         printGeneralInfo(tshGeneralInfo, cortisolGeneralInfo, creatinineGeneralInfo, glucoseGeneralInfo,

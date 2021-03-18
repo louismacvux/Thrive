@@ -500,7 +500,7 @@
             android:text="@string/see_suggestions"
             android:onClick="maleSugg"
             android:textColor="#FFFFFF"
-            android:textSize="12sp" />
+            android:textSize="12sp"/>
 
         <TextView
             android:id="@+id/textView57"
