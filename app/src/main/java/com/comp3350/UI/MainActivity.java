@@ -57,6 +57,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
 
+        //this if block can be deleted and use the switch block instead once we have all the other classes
+        if (v.getId() == R.id.cardview_bmi){
+            intent = new Intent(MainActivity.this, WellnessCalculator.class);
+            intent.putExtra("currentUser", current.getName());
+            startActivity(intent);
+        }
+
 //        switch (v.getId()){
 //            case R.id.cardview_bmi : intent = new Intent(this, WellnessCalculator.class); break;
 //            case R.id.cardview_bloodOptimizer : intent = new Intent(this, BloodOptimizer.class); break;
