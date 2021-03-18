@@ -62,7 +62,7 @@ public class GenderSelection extends AppCompatActivity {
     }
 
     public void suggestResult (View view) {
-        Intent pdfViewIntent = new Intent(GenderSelection.this, viewWorkoutSuggestion.class);
+        Intent pdfViewIntent = new Intent(GenderSelection.this, ViewPDF.class);
         Bundle bundle = new Bundle();
         bundle.putInt("gender", selected_gender);
         bundle.putInt("workout", selected_workout);

@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Comp3350">
-        <activity android:name=".UI.viewBloodOptimizer"></activity>
+        <activity android:name=".UI.ViewBloodOptimizer"/>
         <activity android:name=".UI.MainActivity" />
         <activity android:name=".UI.RegisterActivity" />
         <activity android:name=".UI.LoginActivity">
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".UI.WorkoutSuggestion" />
-        <activity android:name=".UI.viewWorkoutSuggestion" />
+        <activity android:name=".UI.ViewPDF" />
         <activity android:name=".UI.GenderSelection" />
         <activity android:name=".UI.BloodInformation" />
     </application>

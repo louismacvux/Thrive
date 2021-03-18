@@ -36,8 +36,8 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/activity_blood_analyze_result.xml"
     },
     {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_view_blood_optimizer.xml.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/view_blood_optimizer.xml"
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_pdf_view.xml.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/pdf_view.xml"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -46,10 +46,6 @@
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_activity_blood_information.xml.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/activity_blood_information.xml"
-    },
-    {
-        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_view_pdf_workout_suggestion.xml.flat",
-        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/view_pdf_workout_suggestion.xml"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",

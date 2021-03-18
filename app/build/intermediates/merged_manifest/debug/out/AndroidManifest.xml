@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
-        <activity android:name="com.comp3350.UI.viewWorkoutSuggestion" />
+        <activity android:name="com.comp3350.UI.ViewPDF" />
         <activity android:name="com.comp3350.UI.GenderSelection" />
         <activity android:name="com.comp3350.UI.BloodInformation" />
     </application>

@@ -58,9 +58,9 @@
 33        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
 33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-58
 33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-55
-34        <activity android:name="com.comp3350.UI.viewWorkoutSuggestion" />
-34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-62
-34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-59
+34        <activity android:name="com.comp3350.UI.ViewPDF" />
+34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-48
+34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-45
 35        <activity android:name="com.comp3350.UI.GenderSelection" />
 35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-56
 35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:19-53

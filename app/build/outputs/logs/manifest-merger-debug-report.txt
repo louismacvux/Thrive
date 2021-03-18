@@ -120,10 +120,10 @@ activity#com.comp3350.UI.WorkoutSuggestion
 ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-58
 	android:name
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-55
-activity#com.comp3350.UI.viewWorkoutSuggestion
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-62
+activity#com.comp3350.UI.ViewPDF
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-48
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-59
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-45
 activity#com.comp3350.UI.GenderSelection
 ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-56
 	android:name

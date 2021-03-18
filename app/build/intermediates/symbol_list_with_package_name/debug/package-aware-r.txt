@@ -2413,6 +2413,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout pdf_view
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2431,8 +2432,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout view_blood_optimizer
-layout view_pdf_workout_suggestion
 layout workout_suggestion
 mipmap ic_launcher
 mipmap ic_launcher_round

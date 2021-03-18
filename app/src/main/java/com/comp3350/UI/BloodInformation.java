@@ -202,8 +202,8 @@ public class BloodInformation extends AppCompatActivity {
 
     //tells the PDF viewer which one to show the user
     public void suggestions (int bloodMark){
-        Intent pdfViewIntent = new Intent(BloodInformation.this, viewBloodOptimizer.class);
-        viewBloodOptimizer newView = new viewBloodOptimizer();
+        Intent pdfViewIntent = new Intent(BloodInformation.this, ViewBloodOptimizer.class);
+        ViewBloodOptimizer newView = new ViewBloodOptimizer();
         newView.setBloodMark(bloodMark);
         startActivity(pdfViewIntent);
     }//end suggestions

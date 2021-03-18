@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.comp3350.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class viewBloodOptimizer extends AppCompatActivity {
+public class ViewBloodOptimizer extends AppCompatActivity {
     
     PDFView pdfView;
     private static int selected_blood_sugg = -1;
@@ -15,7 +15,7 @@ public class viewBloodOptimizer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_blood_optimizer);
+        setContentView(R.layout.pdf_view);
 
         pdfView = (PDFView) findViewById(R.id.pdfView);
         
