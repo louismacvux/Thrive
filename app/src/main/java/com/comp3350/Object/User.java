@@ -23,7 +23,7 @@ public class User {
                 '}';
     }
 
-    public User (int id, String name, String email, int age, int weight, String gender,
+    public User (int id, String name, String email, int age, double weight, String gender,
                  double height, String password)
     {
         this.id = id;
@@ -53,7 +53,7 @@ public class User {
         this.age = age;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
@@ -92,13 +92,16 @@ public class User {
     }
 
     public int  getGenderInt() {
-        if (gender.equals("male"))
+        if (gender.equalsIgnoreCase("Male"))
         {
             return 0;
         }
-        else
+        else if (gender.equalsIgnoreCase("Female"))
         {
             return 1;
+        }
+        else{
+            return -1;
         }
     }
 

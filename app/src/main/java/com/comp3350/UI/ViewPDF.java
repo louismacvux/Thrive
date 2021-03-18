@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.comp3350.R;
+import com.comp3350.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class ViewPDF extends AppCompatActivity {

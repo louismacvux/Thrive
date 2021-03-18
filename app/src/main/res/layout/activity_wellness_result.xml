@@ -71,7 +71,8 @@
         android:textSize="22sp"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="505dp" />
+        tools:layout_editor_absoluteY="505dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/mc_result"
@@ -82,7 +83,6 @@
         android:layout_marginEnd="50dp"
         android:text="@string/text_view"
         android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/height_result_text" />
 
@@ -101,7 +101,7 @@
         android:id="@+id/bmi_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="70dp"
         android:text="@string/text_view"
         android:textSize="22sp"

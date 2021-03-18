@@ -15,10 +15,9 @@ public class Calculator {
     public Calculator(String string_weight, String string_height, User user, double activity_level){
         this.string_weight = string_weight;
         this.string_height = string_height;
-
         this.activity_level = activity_level;
         this.user = user;
-    };
+    }
 
     public double calculateBMI(double weight, double height){
         double result;
@@ -29,9 +28,9 @@ public class Calculator {
             double convertedHeight = height/100;
             result = convertedWeight / (convertedHeight * convertedHeight);
         }else{
+            //incorrect BMI due to incorrect input
             result = -1;
         }
-
         return result;
     }
 
@@ -41,7 +40,7 @@ public class Calculator {
         int age = user.getAge();
         if (gender == 0) {
             //calculate BMR value of male
-            result = 66 + (13.7 * weight / 2.2) + (5 * height) - (6.8 * age);
+            result = 66 + (13.7 * weight/2.2) + (5 * height) - (6.8 * age);
         }
         else if (gender == 1){
             //calculate BMR value for female
@@ -55,30 +54,30 @@ public class Calculator {
     }
 
     public void calculate(){
-        if (string_weight.equals("") && string_height.equals("")){ //calculate using personal data in profile
-            maintenance_calories = activity_level * calculateBMR(user.getWeight(), user.getHeight());
-            bmi = calculateBMI(user.getWeight(), user.getHeight());
-        }
-        else{ //calculate using new custom given data
-            double weight = Double.parseDouble(string_weight);
-            double height = Double.parseDouble(string_height);
-            maintenance_calories = activity_level * calculateBMR(weight, height);
-            bmi = calculateBMI(weight, height);
-        }
+        maintenance_calories = activity_level * calculateBMR(getWeightUsed(), getHeightUsed());
+        bmi = calculateBMI(getWeightUsed(), getHeightUsed());
     }
 
     //getter
     public double getWeightUsed(){
         double result;
-        result = user.getWeight(); if (string_weight.equals(""));
-        else result = Double.parseDouble(string_weight);
+        if (string_weight.equals("") || string_weight.equals(".")) {
+            result = user.getWeight();
+        }
+        else {
+            result = Double.parseDouble(string_weight);
+        }
         return result;
     }
 
     public double getHeightUsed(){
         double result;
-        result = user.getHeight(); if (string_height.equals(""));
-        else result = Double.parseDouble(string_height);
+        if (string_height.equals("") || string_height.equals(".")) {
+            result = user.getHeight();
+        }
+        else {
+            result = Double.parseDouble(string_height);
+        }
         return result;
     }
 

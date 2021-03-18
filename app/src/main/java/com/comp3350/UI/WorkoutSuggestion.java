@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.comp3350.Database.DatabaseHelper;
 import com.comp3350.Object.User;
-import com.example.comp3350.R;
+import com.comp3350.R;
 
 public class WorkoutSuggestion extends AppCompatActivity {
 

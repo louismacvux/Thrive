@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.comp3350.R;
+import com.comp3350.R;
 
 public class WellnessResult extends AppCompatActivity {
 
@@ -22,6 +22,7 @@ public class WellnessResult extends AppCompatActivity {
     double height;
     double bmi;
 
+    @SuppressLint({"SetTextI18n", "DefaultLocale"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,17 +37,14 @@ public class WellnessResult extends AppCompatActivity {
         }
 
         show_mc = findViewById(R.id.mc_result);
-        String string_mc = String.format("%.2f", maintenance_calories);
-        show_height = findViewById(R.id.height_result);
         show_weight = findViewById(R.id.weight_result);
+        show_height = findViewById(R.id.height_result);
         show_bmi = findViewById(R.id.bmi_result);
         show_range = findViewById(R.id.health_range);
 
-        //show_mc.setText(String.format("%.2f", maintenance_calories));
-        show_mc.setText(String.format("%.2f", maintenance_calories) + " kcal/24 hours is needed to " +
-                "maintain your current body composition");
-        show_height.setText(String.format("%.2f", height));
+        show_mc.setText(String.format("%.2f", maintenance_calories) + " Calories/day are needed to maintain your current body composition.");
         show_weight.setText(String.format("%.2f", weight));
+        show_height.setText(String.format("%.2f", height));
         show_bmi.setText(String.format("%.2f", bmi));
 
         if (bmi > 0 && bmi < 18.5)

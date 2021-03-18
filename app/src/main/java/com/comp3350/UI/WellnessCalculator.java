@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.comp3350.Database.DatabaseHelper;
 import com.comp3350.Object.User;
-import com.example.comp3350.R;
+import com.comp3350.R;
 
 import com.comp3350.Logic.Calculator;
 
@@ -72,9 +72,6 @@ public class WellnessCalculator extends AppCompatActivity {
         });
 
         calculate.setOnClickListener(v -> {
-            Bundle bundle = new Bundle();
-            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
-
             Intent intent = getIntent();
             dbHelper = new DatabaseHelper(WellnessCalculator.this);
             String userName = intent.getStringExtra("currentUser");
@@ -83,7 +80,7 @@ public class WellnessCalculator extends AppCompatActivity {
             string_weight = txtWeight.getText().toString();
             string_height = txtHeight.getText().toString();
 
-            //Do the calculation using given data
+            //Do the calculation
             calculator = new Calculator(string_weight, string_height, currentUser, activity_level);
             calculator.calculate();
 
@@ -93,6 +90,9 @@ public class WellnessCalculator extends AppCompatActivity {
             height = calculator.getHeightUsed();
             bmi = calculator.getBMI();
 
+            Bundle bundle = new Bundle();
+            Intent ShowResult = new Intent(WellnessCalculator.this, WellnessResult.class);
+
             bundle.putDouble("mc", maintenance_calories);
             bundle.putDouble("weight", weight);
             bundle.putDouble("height", height);
@@ -100,7 +100,6 @@ public class WellnessCalculator extends AppCompatActivity {
 
             ShowResult.putExtras(bundle);
             startActivity(ShowResult);
-
         });
 
     }
