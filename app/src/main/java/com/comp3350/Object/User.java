@@ -1,4 +1,6 @@
 package com.comp3350.Object;
+import com.comp3350.Database.DatabaseHelper;
+
 
 public class User {
     private int id;
@@ -23,8 +25,7 @@ public class User {
                 '}';
     }
 
-    public User (int id, String name, String email, int age, double weight, String gender,
-                 double height, String password)
+    public User (int id, String name, String email, int age, double weight, String gender, double height, String password)
     {
         this.id = id;
         this.name = name;
@@ -37,35 +38,44 @@ public class User {
     }
     public User(){}
 
-    public void setId(int id) {
+    public void setId(int id, DatabaseHelper db) {
         this.id = id;
+        db.updateInfo("id", "COL_ID", "id");
     }
 
-    public void setName(String name) {
+    public void setName(String name,  DatabaseHelper db) {
         this.name = name;
+        db.updateInfo("id", "COL_NAME", name);
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email,  DatabaseHelper db) {
         this.email = email;
+        db.updateInfo("id", "COL_EMAIL", email);
     }
 
-    public void setAge(int age) {
+    public void setAge(int age, DatabaseHelper db) {
         this.age = age;
+        db.updateInfo("id", "COL_AGE", String.valueOf(age));
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(double weight, DatabaseHelper db) {
         this.weight = weight;
+        db.updateInfo("id", "COL_WEIGHT", String.valueOf(weight));
     }
 
-    public void setGender(String gender) {
+    public void setGender(String gender, DatabaseHelper db) {
         this.gender = gender;
+        db.updateInfo("id", "COL_GENDER", gender);
     }
 
-    public void setheight(double height) {
+    public void setHeight(double height, DatabaseHelper db) {
         this.height = height;
+        db.updateInfo("id", "COL_HEIGHT", String.valueOf(height));
     }
 
-    public void setPassword(String password) { this.password = password;}
+    public void setPassword(String password, DatabaseHelper db) { this.password = password;
+        db.updateInfo("id", "COL_PW", password);
+    }
 
     public int getId() {
         return id;
