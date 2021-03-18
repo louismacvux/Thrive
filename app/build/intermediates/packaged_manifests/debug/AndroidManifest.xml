@@ -18,7 +18,9 @@
         android:label="@string/Thrive"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.Comp3350" >
+        <activity android:name="com.comp3350.UI.viewBloodOptimizer" />
         <activity android:name="com.comp3350.UI.MainActivity" />
         <activity android:name="com.comp3350.UI.RegisterActivity" />
         <activity android:name="com.comp3350.UI.LoginActivity" >
@@ -29,9 +31,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
-        <activity android:name="com.comp3350.UI.ViewPDF" />
+        <activity android:name="com.comp3350.UI.viewWorkoutSuggestion" />
         <activity android:name="com.comp3350.UI.GenderSelection" />
-        <activity android:name="com.comp3350.UI.BloodOptimizer" />
+        <activity android:name="com.comp3350.UI.BloodInformation" />
     </application>
 
 </manifest>

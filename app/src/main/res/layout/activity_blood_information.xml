@@ -34,7 +34,69 @@
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:text="@string/tsh"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tshGeneralInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/lower_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tsh_low_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/tsh_low_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/higher_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tsh_high_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/tsh_high_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView7"
@@ -44,7 +106,43 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:text="@string/cortisol"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cortisolGeneralInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/higher_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cortisol_high_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/cortisol_high_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView8"
@@ -54,7 +152,43 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:text="@string/creatinine"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/creatinineGeneralInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/higher_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/creatinine_high_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/creatinine_high_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView17"
@@ -64,7 +198,59 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:text="@string/glucose"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/glucoseGeneralInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/lower_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/glucose_low_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/higher_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/glucose_high_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/glucose_high_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView9"
@@ -74,10 +260,46 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:text="@string/iron"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/ironGeneralInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/lower_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/iron_low_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/iron_low_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Gender_specific"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -108,17 +330,44 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:text="@string/testosterone"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/testGeneralInfo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
-            android:text="@string/if_you_are_not_aware_of_any_specific_deficiencies_and_have_any_of_the_following_symptoms_including_heart_condition_risk_lack_of_deep_sleep_improper_digestion_numbness_and_weakness_of_limbs_or_memory_loss_check_out_thrives_general_recommendations_that_might_be_a_quick_fix"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/lower_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/test_low_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/test_low_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/textView23"
@@ -139,17 +388,138 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:text="@string/estradiol"
-            android:textSize="16sp" />
+            android:textColor="#73347E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/estraGeneralInfo"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/lower_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/estra_low_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/estra_low_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/higher_than_normal_range_related_symptoms"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/estra_high_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/estra_high_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/general_suggestion"
+            android:textColor="#959595"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:text="@string/if_you_are_not_aware_of_any_specific_deficiencies_and_have_any_of_the_following_symptoms_including_severe_pms_extreme_fatigue_depression_lack_of_sleep_hair_fall_or_skin_or_nail_problems_check_out_thrives_general_recommendations_that_might_be_a_quick_fix"
-            android:textSize="16sp" />
+            android:text="@string/male"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/generalMaleSugg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/general_m_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/female"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/generalFemaleSugg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp" />
+
+        <Button
+            android:id="@+id/general_f_sugg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="32dp"
+            android:text="@string/see_suggestions"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
 
     </LinearLayout>
 

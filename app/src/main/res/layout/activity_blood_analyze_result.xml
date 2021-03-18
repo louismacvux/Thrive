@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -19,7 +19,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:text="Blood Optimizer - Results"
+            android:text="@string/blood_optimizer_results"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="115dp"
                 android:layout_marginTop="16dp"
-                android:text="Flags"
+                android:text="@string/flags"
                 android:textStyle="bold" />
 
             <TextView
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
-                android:text="Results"
+                android:text="@string/results"
                 android:textStyle="bold" />
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
-                android:text="Reference Range"
+                android:text="@string/reference_range"
                 android:textAlignment="center"
                 android:textStyle="bold" />
 
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Units"
+                android:text="@string/units"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -99,14 +99,14 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="0.5 - 2.3" />
+                android:text="@string/_0_5_2_3" />
 
             <TextView
                 android:id="@+id/textView36"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="miU/L" />
+                android:text="@string/miu_l" />
 
         </LinearLayout>
 
@@ -114,11 +114,11 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginEnd="32dp"
-            android:text="See suggestions"
+            android:text="@string/see_suggestions"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -151,14 +151,14 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="150 - 600" />
+                android:text="@string/_150_600" />
 
             <TextView
                 android:id="@+id/textView42"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="nmol/L" />
+                android:text="@string/nmol_l" />
 
         </LinearLayout>
 
@@ -166,11 +166,11 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginEnd="32dp"
-            android:text="See suggestions"
+            android:text="@string/see_suggestions"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -209,7 +209,7 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="mg" />
+                android:text="@string/mg" />
 
         </LinearLayout>
 
@@ -217,11 +217,11 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginEnd="32dp"
-            android:text="See suggestions"
+            android:text="@string/see_suggestions"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -254,14 +254,14 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="4.0 - 5.4" />
+                android:text="@string/_4_0_5_4" />
 
             <TextView
                 android:id="@+id/textView50"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="mmol/L" />
+                android:text="@string/mmol_l" />
 
         </LinearLayout>
 
@@ -269,11 +269,11 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginEnd="32dp"
-            android:text="See suggestions"
+            android:text="@string/see_suggestions"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -306,14 +306,14 @@
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="36-48" />
+                android:text="@string/_36_48" />
 
             <TextView
                 android:id="@+id/textView54"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:text="%" />
+                android:text="@string/percent" />
 
         </LinearLayout>
 
@@ -321,11 +321,11 @@
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginEnd="32dp"
-            android:text="See suggestions"
+            android:text="@string/see_suggestions"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
 
     </LinearLayout>

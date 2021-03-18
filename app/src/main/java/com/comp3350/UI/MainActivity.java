@@ -13,7 +13,7 @@ import com.comp3350.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private CardView bmi, bloodOptimizer, workoutPlan, mealPlan;
+    private CardView bmi, bloodOptimizerSelfCheck, workoutPlan, mealPlan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //define the cards
         bmi = (CardView) findViewById(R.id.cardview_bmi);
-        bloodOptimizer = (CardView) findViewById(R.id.cardview_bloodOptimizer);
+        bloodOptimizerSelfCheck = (CardView) findViewById(R.id.cardview_bloodOptimizer);
         workoutPlan = (CardView) findViewById(R.id.cardview_workoutPlan);
         mealPlan = (CardView) findViewById(R.id.cardview_mealPlan);
 
         //adding the click listener
         bmi.setOnClickListener(this);
-        bloodOptimizer.setOnClickListener(this);
+        bloodOptimizerSelfCheck.setOnClickListener(this);
         workoutPlan.setOnClickListener(this);
         mealPlan.setOnClickListener(this);
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("currentUser", current.getName());
             startActivity(intent);
         }else if (v.getId() == R.id.cardview_bloodOptimizer){
-            intent = new Intent(MainActivity.this, BloodOptimizer.class);
+            intent = new Intent(MainActivity.this, BloodInformation.class);
             intent.putExtra("currentUser", current.getName());
             startActivity(intent);
         }

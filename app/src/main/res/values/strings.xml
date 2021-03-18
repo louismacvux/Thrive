@@ -23,9 +23,6 @@
     <string name="hrive">hrive</string>
     <string name="thrive_logo">thrive_logo</string>
     <string name="registration">Registration</string>
-<!--    <string name="email_address">email_address</string>-->
-<!--    <string name="username">username</string>-->
-<!--    <string name="password">password</string>-->
     <string name="background_pattern">background pattern</string>
     <string name="welcome_to_thrive">Welcome to Thrive!</string>
     <string name="let_s_get_you_started_with_some_basic_information">Let\'s get you started with some basic information.</string>
@@ -38,7 +35,6 @@
     <string name="female">Female</string>
     <string name="height">height</string>
     <string name="height_cm">Height (cm)</string>
-<!--    <string name="confirm_password">confirm password</string>-->
     <string name="please_enter_all_of_the_entries_below">Please enter all of the entries below.</string>
     <string name="email_address">email address</string>
     <string name="todo">TODO</string>
@@ -54,26 +50,39 @@
     <string name="dashboard_blood">dashboard-blood</string>
 
     <string name="blood_optimizer_text">Blood Optimizer</string>
-    <string name="enter_hematology">Please enter your information regarding Hematology.</string>
-    <string name="enter_wbc">Please enter your WBC count. Units in: x10 9/L</string>
-    <string name="enter_rbc">Please enter your RBC count. Units in: x10 12/L</string>
-    <string name="enter_hemoglobin">Please enter your Hemoglobin count. Units in: g/L</string>
-    <string name="enter_hematocrit">Please enter your Hematocrit count. Units in: L/L</string>
-    <string name="enter_mcv">Please enter your MCV count. Units in: fL</string>
-    <string name="enter_mch">Please enter your MCH count. Units in: pg</string>
-    <string name="enter_mchc">Please enter your MCHC count. Units in: g/L</string>
-    <string name="enter_rdw">Please enter your RDW count. Units in: g/L</string>
-    <string name="enter_platelet">Please enter your Platelet count. Units in: x10 9/L</string>
-    <string name="enter_mpv">Please enter your MPV count. Units in: fL</string>
-    <string name="enter_neutrophils">Please enter your Neutrophils count. Units in: x10 9/L</string>
-    <string name="enter_lymphocytes">Please enter your Lymphocytes count. Units in: x10E9/L</string>
-    <string name="enter_monocytes">Please enter your Monocytes count. Units in: x10 9/L</string>
-    <string name="enter_eosinophils">Please enter your Eosinophils count. Units in: x10 9/L</string>
-    <string name="enter_basophils">Please enter your Basophils count. Units in: x10 9/L</string>
-    <string name="enter_sedimentation_Rate">Please enter your Sedimentation Rate. Units in: mm/hr</string>
-    <string name="enter_creatinine">Please enter your Creatinine count. Units in: umol/L</string>
-    <string name="enter_egfr">Please enter your EGFR count. Units in: ml/min/1.7</string>
-    <string name="enter_biochemistry">Please enter your information regarding Biochemistry.</string>
+    <string name="blood_optimizer_results">Blood Optimizer - Results</string>
+    <string name="flags">Flags</string>
+    <string name="_150_600">150 – 600</string>
+    <string name="_4_0_5_4">4.0 – 5.4</string>
+    <string name="results">Results</string>
+    <string name="nmol_l">nmol/L</string>
+    <string name="_36_48">36–48</string>
+    <string name="mg">mg</string>
+    <string name="mmol_l">mmol/L</string>
+    <string name="see_suggestions">See suggestions</string>
+    <string name="percent">%</string>
+    <string name="_0_5_2_3">0.5 – 2.3</string>
+    <string name="units">Units</string>
+    <string name="reference_range">Reference Range</string>
+    <string name="miu_l">miU/L</string>
+    <string name="glucose">Glucose</string>
+    <string name="tsh">TSH</string>
+    <string name="cortisol">Cortisol</string>
+    <string name="creatinine">Creatinine</string>
+    <string name="iron">Iron</string>
+    <string name="testosterone">Testosterone</string>
+    <string name="estradiol">Estradiol</string>
+    <string name="blood_optimizer_self_check">Blood Optimizer Self Check</string>
+    <string name="blood_optimizer_analyzation">Blood Optimizer - Analyzation</string>
+    <string name="please_enter_the_blood_markers_you_have_in_hand">Please enter the blood markers you have in hand.</string>
+    <string name="estradiol_female">Estradiol (Female)</string>
+    <string name="ng_dl">ng/DL</string>
+    <string name="see_result">See Result</string>
+    <string name="gender_specific_section">Gender Specific Section</string>
+    <string name="testosterone_male">Testosterone (Male)</string>
+    <string name="general_suggestion">General suggestion</string>
+    <string name="lower_than_normal_range_related_symptoms">Lower than normal range - related symptoms:</string>
+    <string name="higher_than_normal_range_related_symptoms">Higher than normal range - related symptoms:</string>
 
 
 </resources>

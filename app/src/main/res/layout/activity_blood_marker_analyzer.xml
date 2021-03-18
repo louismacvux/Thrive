@@ -21,7 +21,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
-            android:text="Blood Optimizer - Analyzation"
+            android:text="@string/blood_optimizer_analyzation"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -33,7 +33,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Please enter the blood markers you have in hand."
+            android:text="@string/please_enter_the_blood_markers_you_have_in_hand"
             android:textAllCaps="false"
             android:textStyle="bold|italic" />
 
@@ -44,7 +44,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="TSH"
+            android:text="@string/tsh"
             android:textSize="16sp" />
 
         <EditText
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
             android:layout_marginTop="-25dp"
-            android:text="miU/L" />
+            android:text="@string/miu_l" />
 
         <TextView
             android:id="@+id/textView9"
@@ -71,7 +71,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Cortisol"
+            android:text="@string/cortisol"
             android:textSize="16sp" />
 
         <TextView
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
             android:layout_marginTop="-25dp"
-            android:text="nmol/L" />
+            android:text="@string/nmol_l" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal2"
@@ -98,7 +98,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Creatinine"
+            android:text="@string/creatinine"
             android:textSize="16sp" />
 
         <EditText
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
             android:layout_marginTop="-25dp"
-            android:text="mg" />
+            android:text="@string/mg" />
 
         <TextView
             android:id="@+id/textView11"
@@ -125,7 +125,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Glucose"
+            android:text="@string/glucose"
             android:textSize="16sp" />
 
         <TextView
@@ -134,7 +134,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
             android:layout_marginTop="-25dp"
-            android:text="mmol/L" />
+            android:text="@string/mmol_l" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal4"
@@ -152,7 +152,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Iron"
+            android:text="@string/iron"
             android:textSize="16sp" />
 
         <TextView
@@ -161,7 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="200dp"
             android:layout_marginTop="-25dp"
-            android:text="%" />
+            android:text="@string/percent" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal5"
@@ -180,7 +180,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
-            android:text="Gener Specific Section"
+            android:text="@string/gender_specific_section"
             android:textStyle="italic" />
 
         <TextView
@@ -190,7 +190,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Testosterone (Male)"
+            android:text="@string/testosterone_male"
             android:textSize="16sp" />
 
         <EditText
@@ -208,7 +208,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="270dp"
             android:layout_marginTop="-25dp"
-            android:text="ng/DL" />
+            android:text="@string/ng_dl" />
 
         <TextView
             android:id="@+id/textView15"
@@ -217,7 +217,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Estradiol (Female)"
+            android:text="@string/estradiol_female"
             android:textSize="16sp" />
 
         <TextView
@@ -226,7 +226,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="270dp"
             android:layout_marginTop="-25dp"
-            android:text="ng/DL" />
+            android:text="@string/ng_dl" />
 
         <EditText
             android:id="@+id/editTextNumberDecimal7"
@@ -241,10 +241,10 @@
             android:id="@+id/button_BloodResult"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="32dp"
-            android:text="See Result"
+            android:text="@string/see_result"
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
