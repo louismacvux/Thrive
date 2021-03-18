@@ -11,18 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Comp3350">
-        <activity android:name="com.comp3350.UI.MainActivity" />
-        <activity android:name="com.comp3350.UI.RegisterActivity" />
-        <activity android:name="com.comp3350.UI.LoginActivity">
+        <activity android:name=".UI.MainActivity" />
+        <activity android:name=".UI.RegisterActivity" />
+        <activity android:name=".UI.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
-        <activity android:name="com.comp3350.UI.ViewPDF" />
-        <activity android:name="com.comp3350.UI.GenderSelection" />
+        <activity android:name=".UI.WorkoutSuggestion" />
+        <activity android:name=".UI.ViewPDF" />
+        <activity android:name=".UI.GenderSelection" />
+        <activity android:name=".UI.BloodInformation" />
     </application>
 
 </manifest>
