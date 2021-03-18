@@ -59,14 +59,25 @@ public class WorkoutSuggestion extends AppCompatActivity {
         });
 
         next = (Button)findViewById(R.id.button_next);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("fileName", gender + selected_workout.getFileName()); //gender is the first part of the file name, string get from workout enum is the second part of the file name
+                pdfViewIntent.putExtras(bundle);
+                startActivity(pdfViewIntent);
+            }
+        });
     }
 
-    public void suggestResult (View view) {
+    /*public void suggestResult (View view) {
         Intent pdfViewIntent = new Intent(WorkoutSuggestion.this, ViewPDF.class);
         Bundle bundle = new Bundle();
         bundle.putString("fileName", gender + selected_workout.getFileName()); //gender is the first part of the file name, string get from workout enum is the second part of the file name
         pdfViewIntent.putExtras(bundle);
         startActivity(pdfViewIntent);
-    }
+    }*/
 
 }
