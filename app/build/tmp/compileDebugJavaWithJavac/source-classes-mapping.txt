@@ -11,36 +11,26 @@ com/comp3350/Database/Database.java
  com.comp3350.Database.Database
 com/comp3350/Object/WorkoutDoc.java
  com.comp3350.Object.WorkoutDoc
-com/comp3350/Database/BloodMarks/Glucose.java
- com.comp3350.Database.BloodMarks.Glucose
-com/comp3350/Database/BloodMarks/Estradiol.java
- com.comp3350.Database.BloodMarks.Estradiol
-com/comp3350/UI/BloodInformation.java
- com.comp3350.UI.BloodInformation
- com.comp3350.UI.BloodInformation$1
- com.comp3350.UI.BloodInformation$10
- com.comp3350.UI.BloodInformation$11
- com.comp3350.UI.BloodInformation$2
- com.comp3350.UI.BloodInformation$3
- com.comp3350.UI.BloodInformation$4
- com.comp3350.UI.BloodInformation$5
- com.comp3350.UI.BloodInformation$6
- com.comp3350.UI.BloodInformation$7
- com.comp3350.UI.BloodInformation$8
- com.comp3350.UI.BloodInformation$9
+com/comp3350/UI/BloodAnalyzeResult.java
+ com.comp3350.UI.BloodAnalyzeResult
+com/comp3350/UI/ViewBloodOptimizer.java
+ com.comp3350.UI.ViewBloodOptimizer
+com/comp3350/Logic/LoginManager.java
+ com.comp3350.Logic.LoginManager
 com/comp3350/UI/GenderSelection.java
  com.comp3350.UI.GenderSelection
  com.comp3350.UI.GenderSelection$1
 com/comp3350/Database/DatabaseHelper.java
  com.comp3350.Database.DatabaseHelper
-com/comp3350/Database/BloodMarks/Iron.java
- com.comp3350.Database.BloodMarks.Iron
+com/comp3350/Object/BloodSelfCheckDoc.java
+ com.comp3350.Object.BloodSelfCheckDoc
 com/comp3350/Database/DatabaseBasic.java
  com.comp3350.Database.DatabaseBasic
-com/comp3350/UI/viewBloodOptimizer.java
- com.comp3350.UI.viewBloodOptimizer
-com/comp3350/Logic/BloodInformationManager.java
- com.comp3350.Logic.BloodInformationManager
+com/comp3350/UI/WorkoutSuggestion.java
+ com.comp3350.UI.WorkoutSuggestion
+ com.comp3350.UI.WorkoutSuggestion$1
+com/comp3350/Object/User.java
+ com.comp3350.Object.User
 com/comp3350/UI/ViewPDF.java
  com.comp3350.UI.ViewPDF
 com/comp3350/Database/BloodMarks/IBlood.java
@@ -51,20 +41,21 @@ com/comp3350/UI/LoginActivity.java
  com.comp3350.UI.LoginActivity$2
 com/comp3350/Database/BloodMarks/TSH.java
  com.comp3350.Database.BloodMarks.TSH
-com/comp3350/Database/BloodMarks/Testosterone.java
- com.comp3350.Database.BloodMarks.Testosterone
-com/comp3350/Object/User.java
- com.comp3350.Object.User
-com/comp3350/Database/BloodMarks/Creatinine.java
- com.comp3350.Database.BloodMarks.Creatinine
-com/comp3350/UI/BloodAnalyzeResult.java
- com.comp3350.UI.BloodAnalyzeResult
-com/comp3350/Logic/LoginManager.java
- com.comp3350.Logic.LoginManager
 com/comp3350/Database/BloodMarks/Cortisol.java
  com.comp3350.Database.BloodMarks.Cortisol
+com/comp3350/Database/BloodMarks/Testosterone.java
+ com.comp3350.Database.BloodMarks.Testosterone
+com/comp3350/Database/BloodMarks/Iron.java
+ com.comp3350.Database.BloodMarks.Iron
+com/comp3350/UI/BloodInformation.java
+ com.comp3350.UI.BloodInformation
+com/comp3350/Database/BloodMarks/Glucose.java
+ com.comp3350.Database.BloodMarks.Glucose
+com/comp3350/Logic/BloodInformationManager.java
+ com.comp3350.Logic.BloodInformationManager
 com/comp3350/UI/MainActivity.java
  com.comp3350.UI.MainActivity
-com/comp3350/UI/WorkoutSuggestion.java
- com.comp3350.UI.WorkoutSuggestion
- com.comp3350.UI.WorkoutSuggestion$1
+com/comp3350/Database/BloodMarks/Creatinine.java
+ com.comp3350.Database.BloodMarks.Creatinine
+com/comp3350/Database/BloodMarks/Estradiol.java
+ com.comp3350.Database.BloodMarks.Estradiol

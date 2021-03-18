@@ -32,8 +32,8 @@
 21        android:testOnly="true"
 22        android:theme="@style/Theme.Comp3350" >
 22-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:13:9-46
-23        <activity android:name="com.comp3350.UI.viewBloodOptimizer" />
-23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-68
+23        <activity android:name="com.comp3350.UI.ViewBloodOptimizer" />
+23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-58
 23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:19-56
 24        <activity android:name="com.comp3350.UI.MainActivity" />
 24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:9-53

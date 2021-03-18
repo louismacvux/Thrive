@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.comp3350.Logic.BloodInformationManager;
+import com.comp3350.Object.BloodSelfCheckDoc;
 import com.comp3350.R;
 
 public class BloodInformation extends AppCompatActivity {
@@ -26,17 +27,12 @@ public class BloodInformation extends AppCompatActivity {
 
     BloodInformationManager bloodInfoManager = new BloodInformationManager();
 
-    int bloodMark = -1; //for bundle -> viewPDF
+    BloodSelfCheckDoc selected_sugg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blood_information);
-
-        Bundle bundle = getIntent().getExtras();
-        if(bundle != null) {
-            bloodMark = bundle.getInt("bloodMark");
-        }
 
         //general info
         tshGeneralInfo = (TextView) findViewById(R.id.tshGeneralInfo);
@@ -80,84 +76,6 @@ public class BloodInformation extends AppCompatActivity {
         printSymptomInfo(tshLow, tshHigh, cortisolHigh, creatinineHigh,
                         glucoseLow, glucoseHigh, ironLow, testLow, estraLow, estraHigh);
 
-        //suggestions
-        tshLowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 1;
-                suggestions(bloodMark);
-            }
-        });
-        tshHighBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 2;
-                suggestions(bloodMark);
-            }
-        });
-        cortisolHighBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 3;
-                suggestions(bloodMark);
-            }
-        });
-        creatinineHighBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 4;
-                suggestions(bloodMark);
-            }
-        });
-        glucoseHighBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 5;
-                suggestions(bloodMark);
-            }
-        });
-        ironLowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 6;
-                suggestions(bloodMark);
-            }
-        });
-        testLowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 7;
-                suggestions(bloodMark);
-            }
-        });
-        estraLowBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 8;
-                suggestions(bloodMark);
-            }
-        });
-        estraHighBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 9;
-                suggestions(bloodMark);
-            }
-        });
-        generalMBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 10;
-                suggestions(bloodMark);
-            }
-        });
-        generalFBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                bloodMark = 11;
-                suggestions(bloodMark);
-            }
-        });
 
     }//end onCreate
 
@@ -200,11 +118,40 @@ public class BloodInformation extends AppCompatActivity {
         estraHigh.setText(bloodInfoManager.getEstraHigh());
     }//end printSymptomInfo
 
+    //onclick
+    public void tshLow(View v){ suggestions(1); }
+    public void tshHigh(View v){ suggestions(2); }
+    public void cortisolHigh(View v){ suggestions(3); }
+    public void creatinineHigh(View v){ suggestions(4); }
+    public void glucoseHigh(View v){ suggestions(5); }
+    public void ironLow(View v){ suggestions(6); }
+    public void testLow(View v){ suggestions(7); }
+    public void estraLow(View v){ suggestions(8); }
+    public void estraHigh(View v){ suggestions(9); }
+    public void maleSugg(View v){ suggestions(10); }
+    public void femaleSugg(View v){ suggestions(11); }
+
     //tells the PDF viewer which one to show the user
     public void suggestions (int bloodMark){
-        Intent pdfViewIntent = new Intent(BloodInformation.this, ViewBloodOptimizer.class);
-        ViewBloodOptimizer newView = new ViewBloodOptimizer();
-        newView.setBloodMark(bloodMark);
+        Intent pdfViewIntent = new Intent(BloodInformation.this, ViewPDF.class);
+        Bundle bundle = new Bundle();
+
+        switch(bloodMark){
+            case 1 : selected_sugg = BloodSelfCheckDoc.TSHLow; break; //low TSH
+            case 2 : selected_sugg = BloodSelfCheckDoc.TSHHigh; break; //high TSH
+            case 3 : selected_sugg = BloodSelfCheckDoc.CortisolHigh; break; //high cortisol
+            case 4 : selected_sugg = BloodSelfCheckDoc.CreatinineHigh; break; //high creatinine
+            case 5 : selected_sugg = BloodSelfCheckDoc.GlucoseHigh; break; //high glucose
+            case 6 : selected_sugg = BloodSelfCheckDoc.IronLow; break; //low iron
+            case 7 : selected_sugg = BloodSelfCheckDoc.TestosteroneLow; break; //low testosterone
+            case 8 : selected_sugg = BloodSelfCheckDoc.EstradiolLow; break; //low estradiol
+            case 9 : selected_sugg = BloodSelfCheckDoc.EstradiolHigh; break; //high estradiol
+            case 10 : selected_sugg = BloodSelfCheckDoc.MaleRecomm; break; //Male no symptoms
+            case 11 : selected_sugg = BloodSelfCheckDoc.FemaleRecomm; break; //Female no symptoms
+        }
+
+        bundle.putString("fileName", selected_sugg.getFileName());
+        pdfViewIntent.putExtras(bundle);
         startActivity(pdfViewIntent);
-    }//end suggestions
+    }
 }//end class

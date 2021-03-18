@@ -69,6 +69,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="tshLow"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -95,6 +96,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="tshHigh"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -141,6 +143,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="cortisolHigh"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -187,6 +190,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="creatinineHigh"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -249,6 +253,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="glucoseHigh"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -295,6 +300,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="ironLow"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -366,6 +372,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="testLow"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -424,6 +431,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="estraLow"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -450,6 +458,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="estraHigh"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -489,6 +498,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="maleSugg"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 
@@ -518,6 +528,7 @@
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
             android:text="@string/see_suggestions"
+            android:onClick="femaleSugg"
             android:textColor="#FFFFFF"
             android:textSize="12sp" />
 

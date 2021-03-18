@@ -11,7 +11,7 @@ public class Estradiol implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        String result = "Estradiol, also referred to as estrogen, is one of the most vital sexual " +
+        String result = "ℹ️ Estradiol, also referred to as estrogen, is one of the most vital sexual " +
                 "hormone for women. It regulates to a large context much of women's sexual function " +
                 "/ development, metabolism of important metabolites, insulin sensitivity and body composition. ";
         return result;
@@ -19,13 +19,13 @@ public class Estradiol implements IBlood{
 
 //    @Override
     public String getLowSymptoms() {
-        return "As a healthy women if you are having irregular periods, hot flashes, mood swings, " +
-                "fatigue or depression, check out Thrives low estrogen balancing approach below.";
+        return "Are having irregular periods, hot flashes, mood swings, " +
+                "fatigue or depression? Check out Thrive's low estrogen balancing approach below.";
     }
 
 //    @Override
     public String getHighSymptoms() {
-        return "On the other hand experiencing symptoms such as bloating, cold hands and feet, low " +
-                "sex drive and hair loss can point towards high estrogen, check out Thrives high estrogen balancing approach below.";
+        return "Experiencing symptoms such as bloating, cold hands and feet, low " +
+                "sex drive and hair loss? Check out Thrives high estrogen balancing approach below.";
     }
 }
