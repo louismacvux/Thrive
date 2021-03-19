@@ -19,13 +19,22 @@ public class BloodInformationTest {
 
     @Test
     public void constructorTest(){ //constructor for each of the blood mark
-        TSH tsh = new TSH();
-        Cortisol cortisol  = new Cortisol();
-        Creatinine creatinine = new Creatinine();
-        Glucose glucose = new Glucose();
-        Iron iron = new Iron();
-        Testosterone testosterone = new Testosterone();
-        Estradiol estradiol = new Estradiol();
+
+        TSH tsh = new TSH(1.0);
+        Cortisol cortisol  = new Cortisol(210);
+        Creatinine creatinine = new Creatinine(1000);
+        Glucose glucose = new Glucose(5.1);
+        Iron iron = new Iron(40);
+        Testosterone testosterone = new Testosterone(450);
+        Estradiol estradiol = new Estradiol(360);
+
+        assert(tsh.getTsh() == 1.0);
+        assert(cortisol.getCortisol() == 210);
+        assert(creatinine.getCreatinine() == 1000);
+        assert(glucose.getGlucose() == 5.1);
+        assert(iron.getIron() == 40);
+        assert(testosterone.getTestosterone() == 450);
+        assert(estradiol.getEstradiol() == 360);
     }
 
     @Test

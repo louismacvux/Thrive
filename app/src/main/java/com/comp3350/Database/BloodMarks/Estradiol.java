@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Estradiol implements IBlood{
-    float estradiol;
+    double estradiol;
 
-    public Estradiol(float estradiol){
+    public Estradiol(double estradiol){
         this.estradiol = estradiol;
     }
 
@@ -24,5 +24,9 @@ public class Estradiol implements IBlood{
     public String getHighSymptoms() {
         return "Experiencing symptoms such as bloating, cold hands and feet, low " +
                 "sex drive and hair loss? Check out Thrives high estrogen balancing approach below.";
+    }
+
+    public double getEstradiol() {
+        return estradiol;
     }
 }

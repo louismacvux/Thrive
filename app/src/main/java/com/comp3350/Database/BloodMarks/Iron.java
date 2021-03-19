@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Iron implements IBlood{
-    float iron;
+    double iron;
 
-    public Iron(float iron){
+    public Iron(double iron){
         this.iron = iron;
     }
 
@@ -20,4 +20,7 @@ public class Iron implements IBlood{
                 "Check out Thrives low Iron recommendations.";
     }
 
+    public double getIron() {
+        return iron;
+    }
 }

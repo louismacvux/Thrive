@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Glucose implements IBlood{
-    float glucose;
+    double glucose;
 
-    public Glucose(float glucose){
+    public Glucose(double glucose){
         this.glucose = glucose;
     }
 
@@ -25,5 +25,9 @@ public class Glucose implements IBlood{
         return "Experiencing any of the following symptoms including a very dry mouth, " +
                 "extreme thirst, light headedness, a fast heart beat followed with a weak pulse? " +
                 "Check out Thrive's high blood glucose recommendation. ";
+    }
+
+    public double getGlucose() {
+        return glucose;
     }
 }

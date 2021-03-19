@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Creatinine implements IBlood{
-    float creatinine;
+    double creatinine;
 
-    public Creatinine(float creatinine) {
+    public Creatinine(double creatinine) {
         this.creatinine = creatinine;
     }
 
@@ -17,5 +17,9 @@ public class Creatinine implements IBlood{
     public String getHighSymptoms() {
         return "Experiencing any of the following symptoms including urination issues, " +
                 "muscle cramp, chest pain, increase in thirst or heavy fatigue? Check out Thrive's high creatinine remedies.";
+    }
+
+    public double getCreatinine() {
+        return creatinine;
     }
 }

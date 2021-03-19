@@ -1,6 +1,15 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Testosterone implements IBlood{
+    double testosterone;
+
+    public Testosterone(double testosterone) {
+        this.testosterone = testosterone;
+    }
+
+    public Testosterone() {
+    }
+
     @Override
     public String getGeneralInfo() {
         return "ℹ️ Testosterone is one of the most vital sexual hormones, specifically for males. " +
@@ -12,4 +21,7 @@ public class Testosterone implements IBlood{
                 "Check out Thrives testosterone balancing strategies below.";
     }
 
+    public double getTestosterone() {
+        return testosterone;
+    }
 }

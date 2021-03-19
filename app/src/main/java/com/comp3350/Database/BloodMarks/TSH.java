@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class TSH implements IBlood {
-    float tsh;
+    double tsh;
 
-    public TSH(float tsh){
+    public TSH(double tsh){
         this.tsh = tsh;
     }
 
@@ -24,5 +24,9 @@ public class TSH implements IBlood {
     public String getHighSymptoms() {
         return "Experiencing a slow heart rate, thinning of hair, fertility issues or swelling " +
                 "of the face and neck? Check out Thrive's high TSH balancing strategies.";
+    }
+
+    public double getTsh() {
+        return tsh;
     }
 }//end class
