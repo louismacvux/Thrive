@@ -50,6 +50,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array activity_level
 array gender
 array workouts
 attr actionBarDivider
@@ -1798,6 +1799,8 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id blocking
+id bmi_result
+id bmi_result_text
 id bottom
 id bounce
 id button
@@ -1807,6 +1810,8 @@ id button4
 id button5
 id buttonPanel
 id button_BloodResult
+id button_calculate
+id button_custom
 id button_done_register
 id button_login
 id button_next
@@ -1895,6 +1900,8 @@ id edit_query
 id edittext_age
 id edittext_confrim_password
 id edittext_height
+id edittext_new_height
+id edittext_new_weight
 id edittext_password
 id edittext_useremail
 id edittext_username
@@ -1941,6 +1948,9 @@ id grouping
 id groups
 id guideline
 id header_title
+id health_range
+id height_result
+id height_result_text
 id hideable
 id home
 id homeAsUp
@@ -2001,6 +2011,8 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id mc_result
+id mc_result_text
 id media_actions
 id message
 id middle
@@ -2099,6 +2111,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id select_activity_level
 id select_dialog_listview
 id selected
 id selection_type
@@ -2115,6 +2128,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner_activity_level
 id spinner_gender
 id spinner_workout
 id spline
@@ -2268,6 +2282,8 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id weight_result
+id weight_result_text
 id withText
 id withinBounds
 id wrap
@@ -2339,6 +2355,7 @@ layout activity_blood_marker_analyzer
 layout activity_login
 layout activity_main
 layout activity_register
+layout activity_wellness_result
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2432,6 +2449,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout wellness_calculator
 layout workout_suggestion
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2479,14 +2497,19 @@ string blood_optimizer_self_check
 string blood_optimizer_text
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string calculate
+string calculate_data
+string calories_message
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string cm
 string confirm_password
 string cortisol
 string creatinine
+string custom_your_info
 string dashboard_blood
 string dashboard_bmi
 string dashboard_meal
@@ -2513,6 +2536,7 @@ string higher_than_normal_range_related_symptoms
 string how_old_are_you
 string hrive
 string icon_content_description
+string if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data
 string iron
 string item_view_role_description
 string let_s_get_you_started_with_some_basic_information
@@ -2588,6 +2612,7 @@ string path_password_strike_through
 string percent
 string please_enter_all_of_the_entries_below
 string please_enter_the_blood_markers_you_have_in_hand
+string pounds
 string reference_range
 string register
 string registration
@@ -2595,9 +2620,11 @@ string results
 string search_menu_title
 string see_result
 string see_suggestions
+string select_activity_level
 string status_bar_notification_info_overflow
 string testosterone
 string testosterone_male
+string text_view
 string thrive_logo
 string todo
 string tsh
@@ -2609,6 +2636,9 @@ string weight_lbs
 string welcome_to_thrive
 string workout_plan
 string workout_select
+string your_bmi_result_is
+string your_height
+string your_weight
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

@@ -4,6 +4,10 @@
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_activity_wellness_result.xml.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/activity_wellness_result.xml"
+    },
+    {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
@@ -134,6 +138,10 @@
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "/Users/suhjinkang/Desktop/thrive/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_wellness_calculator.xml.flat",
+        "source": "/Users/suhjinkang/Desktop/thrive/app/src/main/res/layout/wellness_calculator.xml"
     },
     {
         "merged": "/Users/suhjinkang/Desktop/thrive/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
