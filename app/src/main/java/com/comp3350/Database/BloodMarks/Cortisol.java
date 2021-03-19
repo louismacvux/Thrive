@@ -11,8 +11,7 @@ public class Cortisol implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        String result = "ℹ️ Cortisol is the primary stress hormone in the human body.";
-        return result;
+        return "ℹ️ Cortisol is the primary stress hormone in the human body.";
     }
 
     public String getHighSymptoms() {

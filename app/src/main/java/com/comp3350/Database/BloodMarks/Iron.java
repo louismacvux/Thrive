@@ -11,11 +11,9 @@ public class Iron implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        String result = "ℹ️ Iron is an essential element for blood production. It is also essential for oxygen distribution in the body.";
-        return result;
+        return "ℹ️ Iron is an essential element for blood production. It is also essential for oxygen distribution in the body.";
     }
 
-//    @Override
     public String getLowSymptoms() {
         return "Experiencing symptoms including getting pale, " +
                 "lack of energy, shortness of breath, rapid heartbeat and extreme fatigue? " +

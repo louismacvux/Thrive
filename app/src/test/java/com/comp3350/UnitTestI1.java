@@ -53,7 +53,7 @@ public class UnitTestI1 {
         }
 
         //test some getters and setters
-        testUser1.setAge(28);
+//        testUser1.setAge(28);
         try
         {
             numTests++;

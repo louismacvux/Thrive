@@ -3,9 +3,8 @@ package com.comp3350.Database.BloodMarks;
 public class Testosterone implements IBlood{
     @Override
     public String getGeneralInfo() {
-        String result = "ℹ️ Testosterone is one of the most vital sexual hormones, specifically for males. " +
+        return "ℹ️ Testosterone is one of the most vital sexual hormones, specifically for males. " +
                 "It regulates to a large context much of men's sexual function, mood stability, body composition and bone mass.";
-        return result;
     }
 
     public String getLowSymptoms() {
