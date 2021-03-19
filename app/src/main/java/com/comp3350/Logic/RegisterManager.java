@@ -26,6 +26,9 @@ public class RegisterManager{
                     dbHelper.addData(newUser);
                     result = true;
                 }
+                else{
+                    registerErrorMessage += "User already existed\n";
+                }
             }else{
                 registerErrorMessage += "Your confirmation password is different from your desired password\n";
             }

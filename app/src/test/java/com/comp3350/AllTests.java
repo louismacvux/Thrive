@@ -18,5 +18,5 @@ import org.junit.runners.Suite;
         WellnessCalculatorTest.class,
 })
 
-public class AutomatedTest {
+public class AllTests {
 }

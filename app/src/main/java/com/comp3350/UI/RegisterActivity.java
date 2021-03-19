@@ -94,7 +94,7 @@ public class RegisterActivity extends AppCompatActivity {
                 //validate WEIGHT
                 if (!txtWeight.getText().toString().equals("")) {
                     try {
-                        weight = Integer.parseInt(txtWeight.getText().toString());
+                        weight = Double.parseDouble(txtWeight.getText().toString());
                     } catch (NumberFormatException e) {
                         System.out.println("NumberFormatException: " + e.getMessage());
                         Toast.makeText(RegisterActivity.this, "Please enter a number for WEIGHT",
