@@ -36,7 +36,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7d9434ff-11ca-4b76-80aa-c1b3f20e9737" name="Default Changelist" comment="revert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTestI1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/GenderSelection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_analyze_result.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_marker_analyzer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/gender_selection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iteration2WorkSheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/iteration2WorkSheet.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -488,11 +492,12 @@
       <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="484" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.836@0.23.1440.836" timestamp="1614466463072" />
-    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616148133707">
+    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616165038625">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614123715318" />
     <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.836@0.23.1440.836" timestamp="1614750625547" />
+    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616165038625" />
     <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.828@0.25.1440.828" timestamp="1616148133707" />
     <state x="69" y="98" width="1302" height="682" key="AVDManager" timestamp="1615243132753">
       <screen x="0" y="25" width="1440" height="828" />

@@ -30,7 +30,8 @@ Consider the following: The ClockUtility child class has a function to get the c
 However, if you look at the Utility parent class, it has defined functions for getting and setting a utility's usage frequency. The Note class should not be tasked with tracking or displaying timestamps, given the implementation of the Utility class hierarchy.
 
 [link to issue](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/issues/42)
-[link to commit: ](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/tree/logic-development/app/src/main/java/com/comp3350a03/group03/youtitlties/objects)
+
+[link to commit](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/tree/logic-development/app/src/main/java/com/comp3350a03/group03/youtitlties/objects)
 
 ## RETROSPECTIVE
 ### How have things changed?
@@ -47,13 +48,16 @@ After our second meeting, we updated our meeting notes and agreed upon tasks usi
 A DatabaseHelper class is implemented such that our other classes and activity files can interact with the application's permanent storage without directly issuing sql commands. Each class or activity can instead create a databaseHelper object with can then be used as needed. The databaseHelper object uses given parameters to then construct and apply the appropriate sql commands to the database.
 
 [link to commit](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/06f0bc3571b826a3932a4a244287ddbffdcdd9dd)
+
 [link to issue](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/issues/42)
-###Chain of Responsibility
+
+### Chain of Responsibility
 
 Both of our application's LoginActivity and RegisterActivity files follow this design practice, albeit minimally; their respective chains have only one link each. that being said, those chain-links are responsible for validating client input. for instance, the LoginManager file checks to ensure that user names exist in the local database or prompt users to create a new user account. the RegisterManager file ensures that all fields are entered and have the proper type of information showing. For instance, a user email must follow the "asd@xyz.com" format.
 
-[link to commit LoginManager:](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/4d8d16dfb575d091991d9013475b563a7729984e#762c7464f0fd966484e612d86660c2dfbf18f446_0_47)
-[link to commit RegisterManager:](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/107f401ec422e4ff967ddb9837921e95711eae02#f8b78a8c92a5fafeee2361f5f921606f26385d89_0_73)
+[link to commit LoginManager](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/4d8d16dfb575d091991d9013475b563a7729984e#762c7464f0fd966484e612d86660c2dfbf18f446_0_47)
+
+[link to commit RegisterManager](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/107f401ec422e4ff967ddb9837921e95711eae02#f8b78a8c92a5fafeee2361f5f921606f26385d89_0_73)
 
 ## ITERATION 1 FEEDBACK FIXES
 
@@ -61,17 +65,26 @@ Both of our application's LoginActivity and RegisterActivity files follow this d
 
 Login/Register Manager classes are created to handle the logic-related requirements for checking and validating user input. These activities now only ensure that fields are not empty before invoking their respective manager classes.
 
-[link to commit LoginManager:](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/4d8d16dfb575d091991d9013475b563a7729984e#762c7464f0fd966484e612d86660c2dfbf18f446_0_47)
-[link to commit RegisterManager:](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/107f401ec422e4ff967ddb9837921e95711eae02#f8b78a8c92a5fafeee2361f5f921606f26385d89_0_73)
+[link to commit LoginManager](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/4d8d16dfb575d091991d9013475b563a7729984e#762c7464f0fd966484e612d86660c2dfbf18f446_0_47)
+
+[link to commit RegisterManager](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/107f401ec422e4ff967ddb9837921e95711eae02#f8b78a8c92a5fafeee2361f5f921606f26385d89_0_73)
 
 ### Code Smell: ViewPDF.java
 
 The nested 'if' statements used to check which PDF files to load have been greatly simplified, as was brought to our attention in our iteration 1 feedback. PDF files names have also been approriately renamed to allow for better distinction between their use.
 
-[link to commit:](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/0ba3645bdeb69c9acbe24719b27452da3bcd314e)
+[link to commit](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/0ba3645bdeb69c9acbe24719b27452da3bcd314e)
 
-## Refractor our package to remove "com.example" and seperate files into packages based on tiers
+### Refractor our package to remove "com.example" and seperate files into packages based on tiers
 
 Our project package has been simplified as stated in our feedback. Our files were previously all lumped together in one folder. Now they are properly seperated into subfolder to reflect their tier within our application's architecture. 
 
-[link to commit:](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/107f401ec422e4ff967ddb9837921e95711eae02)
+[link to commit](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/107f401ec422e4ff967ddb9837921e95711eae02)
+
+### Issue opened by the grader : bugs on iteration 1
+[link to issue](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/issues/21)
+
+There were bugs in the workout suggestion feature, showing error messages immediately after selecting the workout and has a main page that only says "hello world."
+Our team fixed this error and also created a main dashboard where it allows users to navigate through different features in our app.
+
+[link to commit](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/31912b883051d8133d785afff04750145ac39d26)
