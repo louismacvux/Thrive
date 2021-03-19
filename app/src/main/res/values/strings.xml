@@ -100,6 +100,10 @@
     <string name="general_suggestion">General suggestion</string>
     <string name="lower_than_normal_range_related_symptoms">Lower than normal range - related symptoms:</string>
     <string name="higher_than_normal_range_related_symptoms">Higher than normal range - related symptoms:</string>
+    <string name="_23">23</string>
+    <string name="_172">172</string>
+    <string name="_130">130</string>
+    <string name="your_wellness_result">Your Wellness Result</string>
 
 
 </resources>

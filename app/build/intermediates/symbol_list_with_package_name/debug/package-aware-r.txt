@@ -2176,11 +2176,13 @@ id textView25
 id textView3
 id textView34
 id textView4
+id textView5
 id textView55
 id textView56
 id textView57
 id textView58
 id textView59
+id textView6
 id textView60
 id textView61
 id textView62
@@ -2205,6 +2207,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id title_workoutsuggestion
 id toggle
 id top
 id topPanel
@@ -2400,7 +2403,10 @@ mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string Thrive
 string _0_5_2_3
+string _130
 string _150_600
+string _172
+string _23
 string _36_48
 string _4_0_5_4
 string abc_action_bar_home_description
@@ -2583,6 +2589,7 @@ string workout_select
 string your_bmi_result_is
 string your_height
 string your_weight
+string your_wellness_result
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

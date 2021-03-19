@@ -10,11 +10,21 @@
     tools:context="com.comp3350.UI.WorkoutSuggestion">
 
     <TextView
+        android:id="@+id/title_workoutsuggestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Workout Suggestion"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="150dp"
         android:text="@string/workout_select"
         android:textAlignment="center"
         android:textSize="24sp"
