@@ -9,9 +9,9 @@ import com.comp3350.Database.BloodMarks.TSH;
 import com.comp3350.Database.BloodMarks.Testosterone;
 
 public class BloodInformationManager {
+
     //sends data from the data layer to the UI
-    public BloodInformationManager() {
-    }
+    public BloodInformationManager() { }
 
     TSH tsh = new TSH();
     Cortisol cortisol  = new Cortisol();

@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Cortisol implements IBlood{
-    float cortisol;
+    double cortisol;
 
-    public Cortisol(float cortisol){
+    public Cortisol(double cortisol){
         this.cortisol = cortisol;
     }
 
@@ -11,8 +11,7 @@ public class Cortisol implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        String result = "ℹ️ Cortisol is the primary stress hormone in the human body.";
-        return result;
+        return "ℹ️ Cortisol is the primary stress hormone in the human body.";
     }
 
     public String getHighSymptoms() {
@@ -22,4 +21,7 @@ public class Cortisol implements IBlood{
                 "Check out Thrive's cortisol balancing approach below.";
     }
 
+    public double getCortisol() {
+        return cortisol;
+    }
 }

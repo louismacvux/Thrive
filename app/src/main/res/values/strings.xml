@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Comp 3350</string>
-    <string name="username">username</string>
+    <string name="username">   username</string>
     <string name="password">password</string>
     <string name="login">login</string>
     <string name="not_registered">Not Registered?</string>
@@ -30,8 +30,10 @@
     <string name="gender">Gender?</string>
     <string name="how_old_are_you">How old are you?</string>
     <string name="weight_lbs">Weight (lbs)</string>
+    <string name="weight">weight</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="height">height</string>
     <string name="height_cm">Height (cm)</string>
     <string name="please_enter_all_of_the_entries_below">Please enter all of the entries below.</string>
     <string name="email_address">email address</string>
@@ -46,25 +48,6 @@
     <string name="dashboard_meal">dashboard-meal</string>
     <string name="dashboard_bmi">dashboard-bmi</string>
     <string name="dashboard_blood">dashboard-blood</string>
-    <string name="custom_your_info">Custom your weight or height if needed:</string>
-    <string name="weight">weight (pounds)</string>
-    <string name="height">height (cm)</string>
-    <string name="pounds">pounds</string>
-    <string name="cm">cm</string>
-    <string name="calculate">calculate</string>
-    <string name="calculate_data">Calculate using your personal data</string>
-    <string name="text_view">TextView</string>
-    <string name="your_height">Your height:</string>
-    <string name="your_weight">Your weight:</string>
-    <string name="your_bmi_result_is">Your BMI result is:</string>
-    <string name="if_you_leave_this_empty_your_bmi_result_is_based_on_your_personal_data">If you leave the row empty, your result will be calculated based on given information in your profile.</string>
-    <string name="select_activity_level">Please select your activity level:</string>
-    <string-array name="activity_level">
-        <item>Barely active</item>
-        <item>Active</item>
-        <item>Highly active</item>
-    </string-array>
-    <string name="calories_message">\t\t\t\t\t\t\t\t\tCalories/day is needed to maintain your current body composition.</string>
 
     <string name="blood_optimizer_text">Blood Optimizer</string>
     <string name="blood_optimizer_results">Blood Optimizer - Results</string>

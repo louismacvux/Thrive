@@ -1,9 +1,9 @@
 package com.comp3350.Database.BloodMarks;
 
 public class Iron implements IBlood{
-    float iron;
+    double iron;
 
-    public Iron(float iron){
+    public Iron(double iron){
         this.iron = iron;
     }
 
@@ -11,15 +11,16 @@ public class Iron implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        String result = "ℹ️ Iron is an essential element for blood production. It is also essential for oxygen distribution in the body.";
-        return result;
+        return "ℹ️ Iron is an essential element for blood production. It is also essential for oxygen distribution in the body.";
     }
 
-//    @Override
     public String getLowSymptoms() {
         return "Experiencing symptoms including getting pale, " +
                 "lack of energy, shortness of breath, rapid heartbeat and extreme fatigue? " +
                 "Check out Thrives low Iron recommendations.";
     }
 
+    public double getIron() {
+        return iron;
+    }
 }

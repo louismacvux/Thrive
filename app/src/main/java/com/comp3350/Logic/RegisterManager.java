@@ -9,7 +9,6 @@ public class RegisterManager{
     private String registerErrorMessage = "";
 
     public RegisterManager(DatabaseHelper dbHelper){
-
         this.dbHelper = dbHelper;
     }
 

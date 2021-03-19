@@ -527,7 +527,6 @@
             android:layout_height="40dp"
             android:layout_gravity="end"
             android:layout_marginEnd="32dp"
-            android:layout_marginBottom="30dp"
             android:text="@string/see_suggestions"
             android:onClick="femaleSugg"
             android:textColor="#FFFFFF"

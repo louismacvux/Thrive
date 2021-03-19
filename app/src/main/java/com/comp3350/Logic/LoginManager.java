@@ -6,7 +6,6 @@ import com.comp3350.Database.DatabaseHelper;
 public class LoginManager {
 
     private final DatabaseHelper db;
-//    private String loginErrorMessage = "";
 
     public LoginManager(DatabaseHelper db){
         this.db = db;
