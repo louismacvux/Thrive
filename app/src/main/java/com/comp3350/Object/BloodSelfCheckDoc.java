@@ -10,8 +10,8 @@ public enum BloodSelfCheckDoc {
     TestosteroneLow("Testosterone(Low).pdf"),
     EstradiolLow("Estradiol(Low).pdf"),
     EstradiolHigh("Estradiol(High).pdf"),
-    MaleRecomm("MaleRecom.pdf"),
-    FemaleRecomm("FemaleRecom.pdf");
+    MaleRecomm("GeneralMaleRecom.pdf"),
+    FemaleRecomm("GeneralFemaleRecom.pdf");
 
     String file_name;
 
