@@ -4,18 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WorkoutSuggestion"
+    android:layout_gravity="bottom"
+    android:background="#4DF89945"
     android:orientation="vertical"
-    android:layout_gravity="bottom">
+    tools:context="com.comp3350.UI.WorkoutSuggestion">
+
+    <TextView
+        android:id="@+id/title_workoutsuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Workout Suggestion"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:text="@string/workout_select"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,11 +35,15 @@
 
     <Spinner
         android:id="@+id/spinner_workout"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
         android:entries="@array/workouts"
-        android:spinnerMode="dialog"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:scrollbarSize="8dp"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -37,11 +53,11 @@
         android:id="@+id/button_next"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginHorizontal="20dp"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
         android:text="@string/next"
-        android:onClick="suggestResult"/>
+        android:textColor="#FFFFFF" />
 
 
 </LinearLayout>

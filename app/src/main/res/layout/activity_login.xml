@@ -1,74 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:orientation="vertical"
     android:layout_gravity="bottom"
+    android:background="#4DF89945"
     android:gravity="center"
-    android:background="@drawable/backdrop">
+    android:orientation="vertical"
+    tools:context="com.comp3350.UI.LoginActivity">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edittext_username"
+        app:layout_constraintEnd_toStartOf="@+id/edittext_username"
+        app:layout_constraintTop_toTopOf="@+id/edittext_username"
+        app:srcCompat="@drawable/user" />
+
+    <Button
+        android:id="@+id/button_login"
         android:layout_width="wrap_content"
-        android:layout_height="125dp"
-        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_password" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="104dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/not_registered"
+        android:textAlignment="center"
+        android:textColor="@color/primaryLightColor"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="@+id/button_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_login"
+        app:layout_constraintStart_toStartOf="@+id/button_login"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="147dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/thrive_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/edittext_username"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/user"
-        android:drawablePadding="24dp"
-        android:hint="@string/username" />
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:autofillHints=""
+        android:background="#00F4E5E5"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo" />
 
     <EditText
         android:id="@+id/edittext_password"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="#ffffff"
-        android:drawableLeft="@drawable/password"
-        android:hint="@string/password" />
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="150dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/login" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"/>
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="#00F4DDDD"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_username" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="150dp"
-        android:textAlignment="center"
-        android:text="@string/not_registered"
-        android:textColor="@color/white"
-        android:background="@color/black"
-        android:textStyle="italic" />
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/hrive"
+        android:textColor="#EF4444"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/login_logo"
+        app:layout_constraintTop_toTopOf="@+id/login_logo" />
 
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="100dp"
-        android:layout_height="45dp"
-        android:layout_marginHorizontal="150dp"
-        android:text="@string/register"
-        android:textColor="#ffffff"
-        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edittext_password"
+        app:layout_constraintEnd_toStartOf="@+id/edittext_password"
+        app:layout_constraintTop_toTopOf="@+id/edittext_password"
+        app:srcCompat="@drawable/lock" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
