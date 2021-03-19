@@ -160,6 +160,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
                 android:layout_marginRight="16dp"
+                android:visibility="invisible"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="6dp">
 

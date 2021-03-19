@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import com.comp3350.Logic.RegisterManager;
 import com.comp3350.Object.User;
 
 public class DatabaseHelper extends SQLiteOpenHelper

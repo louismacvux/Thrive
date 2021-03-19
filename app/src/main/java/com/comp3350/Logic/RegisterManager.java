@@ -5,12 +5,13 @@ import com.comp3350.Object.User;
 
 public class RegisterManager{
 
-    private final DatabaseHelper dbHelper;
+    private DatabaseHelper dbHelper = null;
     private String registerErrorMessage = "";
 
     public RegisterManager(DatabaseHelper dbHelper){
         this.dbHelper = dbHelper;
     }
+    public RegisterManager(){  }
 
     //This will return true when user is registered successfully and add the user
     //if all the fields are entered, password matches, and the user is a new user
@@ -74,7 +75,7 @@ public class RegisterManager{
         return pw.equals(confirmPw);
     }//end pwMatches
 
-    private boolean validateEmail(String email)
+    public boolean validateEmail(String email)
     {
         boolean result = false;
         String givenName = email.trim();
@@ -99,7 +100,7 @@ public class RegisterManager{
         return result;
     }
 
-    private boolean validateName(String name)
+    public boolean validateName(String name)
     {
         boolean result = false;
         String givenName = name.trim();
@@ -124,7 +125,7 @@ public class RegisterManager{
         return result;
     }
 
-    private boolean validatePass(String password)
+    public boolean validatePass(String password)
     {
         boolean result = false;
         String givenName = password.trim();
@@ -149,5 +150,7 @@ public class RegisterManager{
         return result;
     }
 
-    public String getRegErrorMessage(){ return registerErrorMessage; }//end registerErrorMessage
+    public String getRegErrorMessage(){
+        return registerErrorMessage;
+    }//end registerErrorMessage
 }//end class

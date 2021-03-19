@@ -35,32 +35,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d9434ff-11ca-4b76-80aa-c1b3f20e9737" name="Default Changelist" comment="revert">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Logic/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/WellnessCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/WellnessResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_wellness_result.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/wellness_calculator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/comp3350/WellnessCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
@@ -76,7 +51,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json" afterDir="false" />
@@ -200,8 +174,6 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/output-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat" afterDir="false" />
@@ -349,18 +321,19 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/output-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Estrodial(High).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/Estradiol(High).pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Estrodial(Low).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/Estradiol(Low).pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/GeneralFemaleRecom..pdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/GeneralFemaleRecom.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/assets/GeneralMaleRecom..pdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/GeneralMaleRecom.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Object/BloodSelfCheckDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Object/BloodSelfCheckDoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_information.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Logic/RegisterManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Logic/RegisterManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/GenderSelection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-v21/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-v21/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_analyze_result.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_marker_analyzer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/gender_selection.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests/RegisterManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests/RegisterManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/comp3350/WellnessCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests/WellnessCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +344,7 @@
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="1" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Nexus_7_API_23]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -429,7 +402,7 @@
     <property name="android-custom-viewC:/Users/isis_/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/comp3350" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="multi-representation-previewC:/Users/Michael Yau/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.3.0/b42a5159ef2c670d26ce08246ec5aaf8f92e5a42/material-1.3.0-sources.jar!/com/google/android/material/button/MaterialButton.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Michael Yau/AppData/Local/Android/Sdk/sources/android-23/android/view/View.java_selected" value="Custom views" />
@@ -470,7 +443,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Android JUnit.LoginManagerTest">
     <configuration name="BloodInformationTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Comp_3350.app" />
       <extension name="coverage">
@@ -487,41 +460,43 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BloodInformationTest.getGeneralInfoTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginManagerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Comp_3350.app" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.comp3350.UnitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-        <pattern>
-          <option name="PATTERN" value="com.comp3350.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.comp3350.UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="com.comp3350.UnitTests.BloodInformationTest" />
-      <option name="METHOD_NAME" value="getGeneralInfoTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.comp3350.UnitTests.LoginManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTestI1" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegisterManagerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Comp_3350.app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.comp3350.*" />
+          <option name="PATTERN" value="com.comp3350.UnitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.comp3350" />
-      <option name="MAIN_CLASS_NAME" value="com.comp3350.UnitTestI1" />
+      <option name="PACKAGE_NAME" value="com.comp3350.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="com.comp3350.UnitTests.RegisterManagerTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTests in Comp_3350.app" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Comp_3350.app" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <dir value="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -530,12 +505,12 @@
       <module name="Comp_3350.app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.comp3350.*" />
+          <option name="PATTERN" value="com.comp3350.UnitTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.comp3350" />
-      <option name="MAIN_CLASS_NAME" value="com.comp3350.WellnessCalculatorTest" />
+      <option name="PACKAGE_NAME" value="com.comp3350.UnitTests" />
+      <option name="MAIN_CLASS_NAME" value="com.comp3350.UnitTests.WellnessCalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -608,10 +583,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.LoginManagerTest" />
+        <item itemvalue="Android JUnit.UnitTests in Comp_3350.app" />
+        <item itemvalue="Android JUnit.RegisterManagerTest" />
         <item itemvalue="Android JUnit.WellnessCalculatorTest" />
         <item itemvalue="Android JUnit.BloodInformationTest" />
-        <item itemvalue="Android JUnit.BloodInformationTest.getGeneralInfoTest" />
-        <item itemvalue="Android JUnit.UnitTestI1" />
       </list>
     </recent_temporary>
   </component>
@@ -781,17 +757,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="784" y="140" key="#com.intellij.ide.util.ExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1614231803945" />
-    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1616115882960">
+    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1616154387842">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="329" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1614122378590" />
     <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.23.1440.836@0.23.1440.836" timestamp="1614803467765" />
     <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615260670296" />
-    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.25.1440.828@0.25.1440.828" timestamp="1616115882960" />
-    <state x="458" y="250" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1616112913627">
+    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.25.1440.828@0.25.1440.828" timestamp="1616154387842" />
+    <state x="458" y="250" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1616156312448">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
-    <state x="458" y="250" key="#com.intellij.ide.util.PackageChooserDialog/0.25.1440.828@0.25.1440.828" timestamp="1616112913627" />
+    <state x="458" y="250" key="#com.intellij.ide.util.PackageChooserDialog/0.25.1440.828@0.25.1440.828" timestamp="1616156312448" />
     <state x="499" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1614302098764">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -808,12 +784,12 @@
       <screen x="0" y="23" width="1440" height="836" />
     </state>
     <state x="484" y="329" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1440.836@0.23.1440.836" timestamp="1614466463072" />
-    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616081676983">
+    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616148133707">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614123715318" />
     <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.836@0.23.1440.836" timestamp="1614750625547" />
-    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.828@0.25.1440.828" timestamp="1616081676983" />
+    <state x="518" y="238" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.828@0.25.1440.828" timestamp="1616148133707" />
     <state x="69" y="98" width="1302" height="682" key="AVDManager" timestamp="1615243132753">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
@@ -840,38 +816,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614140991436" />
-    <state width="1494" height="195" key="GridCell.Tab.0.bottom" timestamp="1616125042016">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1616156368774">
+      <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616125042016" />
     <state width="936" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614141433632" />
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1614874855430" />
     <state width="1398" height="197" key="GridCell.Tab.0.bottom/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039528" />
-    <state width="1398" height="212" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1616115995862" />
-    <state width="1494" height="195" key="GridCell.Tab.0.center" timestamp="1616125042014">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1616156368774" />
+    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1616156368774">
+      <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616125042014" />
     <state width="936" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614141433631" />
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1614874855429" />
     <state width="1398" height="197" key="GridCell.Tab.0.center/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039527" />
-    <state width="1398" height="212" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1616115995861" />
-    <state width="1494" height="195" key="GridCell.Tab.0.left" timestamp="1616125042014">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1616156368774" />
+    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1616156368772">
+      <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616125042014" />
     <state width="936" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614141433631" />
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1614874855428" />
     <state width="1398" height="197" key="GridCell.Tab.0.left/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039526" />
-    <state width="1398" height="212" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1616115995861" />
-    <state width="1494" height="195" key="GridCell.Tab.0.right" timestamp="1616125042015">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1616156368772" />
+    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1616156368774">
+      <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616125042015" />
     <state width="936" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614141433632" />
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1614874855429" />
     <state width="1398" height="197" key="GridCell.Tab.0.right/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039527" />
-    <state width="1398" height="212" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1616115995862" />
+    <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1616156368774" />
     <state width="1398" height="212" key="GridCell.Tab.1.bottom" timestamp="1616115995862">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
@@ -920,11 +896,11 @@
     </state>
     <state x="93" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1614281414470" />
     <state x="116" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613767859621" />
-    <state x="582" y="262" key="chooseDestDirectoryDialog" timestamp="1616113645360">
+    <state x="582" y="262" key="chooseDestDirectoryDialog" timestamp="1616156315759">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613762990307" />
-    <state x="582" y="262" key="chooseDestDirectoryDialog/0.25.1440.828@0.25.1440.828" timestamp="1616113645360" />
+    <state x="582" y="262" key="chooseDestDirectoryDialog/0.25.1440.828@0.25.1440.828" timestamp="1616156315759" />
     <state x="94" y="94" width="1349" height="637" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614297663672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -933,18 +909,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="570" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1615893241692" />
-    <state x="481" y="127" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1616113645635">
+    <state x="748" y="138" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1616156315827">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
-    <state x="481" y="127" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.828@0.25.1440.828" timestamp="1616113645635" />
+    <state x="748" y="138" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.25.1440.828@0.25.1440.828" timestamp="1616156315827" />
     <state x="427" y="200" key="git4idea.merge.GitPullDialog" timestamp="1614290128014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="427" y="200" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1614290128014" />
-    <state x="560" y="224" key="refactoring.ChangeSignatureDialog" timestamp="1614533902556">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="826" y="152" key="refactoring.ChangeSignatureDialog" timestamp="1616155738525">
+      <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="560" y="224" key="refactoring.ChangeSignatureDialog/0.23.1440.836@0.23.1440.836" timestamp="1614533902556" />
+    <state x="826" y="152" key="refactoring.ChangeSignatureDialog/0.25.1440.828@0.25.1440.828" timestamp="1616155738525" />
     <state x="427" y="187" key="run.anything.popup" timestamp="1614282494343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -958,12 +935,19 @@
     <SUITE FILE_PATH="coverage/Comp_3350$BloodInformationTest.ic" NAME="BloodInformationTest Coverage Results" MODIFIED="1616115971632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.UnitTests.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Comp_3350$WellnessCalculatorTest.ic" NAME="WellnessCalculatorTest Coverage Results" MODIFIED="1616115156791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.comp3350.*</FILTER>
+    <SUITE FILE_PATH="coverage/Comp_3350$UnitTests_in_Comp_3350_app.ic" NAME="UnitTests in Comp_3350.app Coverage Results" MODIFIED="1616156256625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Comp_3350$LoginManagerTest.ic" NAME="LoginManagerTest Coverage Results" MODIFIED="1616156368682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.UnitTests.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Comp_3350$BloodInformationTest_getGeneralInfoTest.ic" NAME="BloodInformationTest.getGeneralInfoTest Coverage Results" MODIFIED="1616115602621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.UnitTests.*</FILTER>
       <FILTER>com.comp3350.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Comp_3350$WellnessCalculatorTest.ic" NAME="WellnessCalculatorTest Coverage Results" MODIFIED="1616155537987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.UnitTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Comp_3350$RegisterManagerTest.ic" NAME="RegisterManagerTest Coverage Results" MODIFIED="1616156220771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.UnitTests.*</FILTER>
     </SUITE>
   </component>
 </project>
