@@ -25,10 +25,11 @@ This technical debt is classified as deliberate and reckless. Our group was full
 
 This group's project has a heirarchy of objects, whose parent object class is named "Utility". In this commit, their are two children objects showing: ClockUtility and NoteUtility. Notes are objects that are invoked by these utility children classes.
 
-Consider the following: The ClockUtility child class has a function to get the current time 'getTime'. The NoteUtility class does NOT have this feature, however the Note _object_ has the same code. The 'getTime' fuction in the 'Note' object class is used to show users the last time a note was updated. 
+Consider the following: The ClockUtility child class has a function to get the current time 'getTime'. The NoteUtility class does NOT have this feature, however the Note object has the same code. The 'getTime' function in the 'Note' object class is used to show users the last time a note was updated.
 
-However, if you look at the Utility parent class, it has defined functions for getting and setting a utility's usage frequency. The Note class should not be tasked with tracking or displaying timestamps, given the implimentation of the Utility class heirarchy. 
+However, if you look at the Utility parent class, it has defined functions for getting and setting a utility's usage frequency. The Note class should not be tasked with tracking or displaying timestamps, given the implementation of the Utility class hierarchy.
 
+[link to issue](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/issues/42)
 [link to commit: ](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/tree/logic-development/app/src/main/java/com/comp3350a03/group03/youtitlties/objects)
 
 ## RETROSPECTIVE
@@ -46,7 +47,7 @@ After our second meeting, we updated our meeting notes and agreed upon tasks usi
 A DatabaseHelper class is implemented such that our other classes and activity files can interact with the application's permanent storage without directly issuing sql commands. Each class or activity can instead create a databaseHelper object with can then be used as needed. The databaseHelper object uses given parameters to then construct and apply the appropriate sql commands to the database.
 
 [link to commit](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/commit/06f0bc3571b826a3932a4a244287ddbffdcdd9dd)
-
+[link to issue](https://code.cs.umanitoba.ca/3350-winter-2021-a03/youtilities-comp3350-a03-group3/-/issues/42)
 ###Chain of Responsibility
 
 Both of our application's LoginActivity and RegisterActivity files follow this design practice, albeit minimally; their respective chains have only one link each. that being said, those chain-links are responsible for validating client input. for instance, the LoginManager file checks to ensure that user names exist in the local database or prompt users to create a new user account. the RegisterManager file ensures that all fields are entered and have the proper type of information showing. For instance, a user email must follow the "asd@xyz.com" format.
