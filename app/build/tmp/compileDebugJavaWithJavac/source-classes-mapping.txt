@@ -1,9 +1,10 @@
 com/comp3350/BuildConfig.java
  com.comp3350.BuildConfig
-com/comp3350/Object/BloodSelfCheckDoc.java
- com.comp3350.Object.BloodSelfCheckDoc
-com/comp3350/Database/BloodMarks/Creatinine.java
- com.comp3350.Database.BloodMarks.Creatinine
+com/comp3350/UI/RegisterActivity.java
+ com.comp3350.UI.RegisterActivity
+ com.comp3350.UI.RegisterActivity$1
+com/comp3350/Logic/RegisterManager.java
+ com.comp3350.Logic.RegisterManager
 com/comp3350/Database/Database.java
  com.comp3350.Database.Database
 com/comp3350/Object/WorkoutDoc.java
@@ -53,8 +54,7 @@ com/comp3350/Database/BloodMarks/Cortisol.java
  com.comp3350.Database.BloodMarks.Cortisol
 com/comp3350/UI/BloodInformation.java
  com.comp3350.UI.BloodInformation
-com/comp3350/UI/RegisterActivity.java
- com.comp3350.UI.RegisterActivity
- com.comp3350.UI.RegisterActivity$1
-com/comp3350/Logic/RegisterManager.java
- com.comp3350.Logic.RegisterManager
+com/comp3350/Database/BloodMarks/Creatinine.java
+ com.comp3350.Database.BloodMarks.Creatinine
+com/comp3350/Object/BloodSelfCheckDoc.java
+ com.comp3350.Object.BloodSelfCheckDoc

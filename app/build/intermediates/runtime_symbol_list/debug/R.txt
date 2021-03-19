@@ -1706,11 +1706,10 @@ int drawable notification_template_icon_low_bg 0x7f08009d
 int drawable notification_tile_bg 0x7f08009e
 int drawable notify_panel_notification_icon_bg 0x7f08009f
 int drawable running 0x7f0800a0
-int drawable scale 0x7f0800a1
-int drawable test_custom_background 0x7f0800a2
-int drawable tooltip_frame_dark 0x7f0800a3
-int drawable tooltip_frame_light 0x7f0800a4
-int drawable user 0x7f0800a5
+int drawable test_custom_background 0x7f0800a1
+int drawable tooltip_frame_dark 0x7f0800a2
+int drawable tooltip_frame_light 0x7f0800a3
+int drawable user 0x7f0800a4
 int id ALT 0x7f090000
 int id BOTTOM_END 0x7f090001
 int id BOTTOM_START 0x7f090002

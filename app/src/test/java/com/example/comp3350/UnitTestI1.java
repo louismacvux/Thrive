@@ -1,5 +1,8 @@
 package com.example.comp3350;
 
+import com.comp3350.Database.DatabaseBasic;
+import com.comp3350.Object.User;
+
 import junit.framework.AssertionFailedError;
 
 import org.junit.Test;
@@ -50,17 +53,6 @@ public class UnitTestI1 {
         }
 
         //test some getters and setters
-        testUser1.setAge(28);
-        try
-        {
-            numTests++;
-            assert(testUser1.getAge() == 28);
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
         try
         {
             numTests++;
