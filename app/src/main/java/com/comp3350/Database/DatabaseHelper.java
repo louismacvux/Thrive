@@ -37,8 +37,8 @@ public class DatabaseHelper extends SQLiteOpenHelper
     public void onCreate(SQLiteDatabase db)
     {
        String createTable = "CREATE TABLE " + TABLE_NAME + " (" + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_EMAIL + " TEXT, " +
-               COL_USERNAME + " TEXT, " + COL_GENDER + " TEXT, " + COL_WEIGHT + " INTEGER, " +
-               COL_AGE + " INTEGER, " + COL_HEIGHT + " INTEGER, " + COL_PW + " TEXT) ";
+               COL_USERNAME + " TEXT, " + COL_GENDER + " TEXT, " + COL_WEIGHT + " DOUBLE, " +
+               COL_AGE + " INTEGER, " + COL_HEIGHT + " DOUBLE, " + COL_PW + " TEXT) ";
         db.execSQL(createTable);
     }
 
@@ -95,9 +95,9 @@ public class DatabaseHelper extends SQLiteOpenHelper
             String userEmail = cursor.getString(1);
             String userName = cursor.getString(2);
             String userGender = cursor.getString(3);
-            double userWeight = cursor.getInt(4);
+            double userWeight = cursor.getDouble(4);
             int userAge = cursor.getInt(5);
-            double userHeight = cursor.getInt(6);
+            double userHeight = cursor.getDouble(6);
             String userPass = cursor.getString(7);
 
             result = new User(userID, userName, userEmail, userAge, userWeight, userGender, userHeight, userPass);

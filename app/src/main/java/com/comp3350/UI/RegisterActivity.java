@@ -61,6 +61,9 @@ public class RegisterActivity extends AppCompatActivity {
                 password = txtPassword.getText().toString();
                 rePass = txtConfirmPassword.getText().toString();
                 checkGender = txtGender.getCheckedRadioButtonId();
+                age = 0;
+                weight = 0;
+                height = 0;
 
                 if (checkGender == -1)
                 {
