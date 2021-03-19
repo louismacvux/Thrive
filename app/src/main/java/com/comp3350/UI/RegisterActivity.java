@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Database.DatabaseServices;
 import com.comp3350.R;
 import com.comp3350.Logic.RegisterManager;
 
@@ -39,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        db = new DatabaseHelper(this);
+        db = new DatabaseHelper(DatabaseServices.getDBPathName());
 
         txtEmail = findViewById(R.id.edittext_useremail);
         txtUsername = findViewById(R.id.edittext_username);

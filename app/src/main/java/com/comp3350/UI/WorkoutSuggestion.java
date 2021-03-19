@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.comp3350.Database.DatabaseServices;
 import com.comp3350.Object.User;
 import com.comp3350.Object.WorkoutDoc;
 import com.comp3350.R;
@@ -27,7 +28,7 @@ public class WorkoutSuggestion extends AppCompatActivity {
         setContentView(R.layout.workout_suggestion);
 
         Intent intent = getIntent();
-        DatabaseHelper dbHelper = new DatabaseHelper(WorkoutSuggestion.this);
+        DatabaseHelper dbHelper = new DatabaseHelper(DatabaseServices.getDBPathName());
         String currentUser = intent.getStringExtra("currentUser");
 
         User current= dbHelper.getSomeone(currentUser); //get current user from database
