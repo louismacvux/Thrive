@@ -22,12 +22,9 @@ public class RegisterManager{
         && validateEmail(email))){
             if (pwMatches(pw, confirmPw)){
                 if (!userExists(username)){
-                    User newUser = new User(-1, username, email, age, weight, gender, height, pw);
+                    User newUser = new User(email, username, gender, weight, age, height, pw);
                     dbHelper.addData(newUser);
                     result = true;
-                }
-                else{
-                    registerErrorMessage += "User already existed\n";
                 }
             }else{
                 registerErrorMessage += "Your confirmation password is different from your desired password\n";

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Database.DatabaseServices;
 import com.comp3350.Object.User;
 import com.comp3350.R;
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Intent intent;
         Intent i = getIntent();
-        DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
+        DatabaseHelper dbHelper = new DatabaseHelper();
 
         String currentUser = i.getStringExtra("currentUser");
         User current= dbHelper.getSomeone(currentUser);

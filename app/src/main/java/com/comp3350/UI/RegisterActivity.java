@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Database.DatabaseServices;
 import com.comp3350.R;
 import com.comp3350.Logic.RegisterManager;
 
@@ -39,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        db = new DatabaseHelper(this);
+        db = new DatabaseHelper();
 
         txtEmail = findViewById(R.id.edittext_useremail);
         txtUsername = findViewById(R.id.edittext_username);
@@ -61,9 +62,6 @@ public class RegisterActivity extends AppCompatActivity {
                 password = txtPassword.getText().toString();
                 rePass = txtConfirmPassword.getText().toString();
                 checkGender = txtGender.getCheckedRadioButtonId();
-                age = 0;
-                weight = 0;
-                height = 0;
 
                 if (checkGender == -1)
                 {
@@ -97,7 +95,7 @@ public class RegisterActivity extends AppCompatActivity {
                 //validate WEIGHT
                 if (!txtWeight.getText().toString().equals("")) {
                     try {
-                        weight = Double.parseDouble(txtWeight.getText().toString());
+                        weight = Integer.parseInt(txtWeight.getText().toString());
                     } catch (NumberFormatException e) {
                         System.out.println("NumberFormatException: " + e.getMessage());
                         Toast.makeText(RegisterActivity.this, "Please enter a number for WEIGHT",
