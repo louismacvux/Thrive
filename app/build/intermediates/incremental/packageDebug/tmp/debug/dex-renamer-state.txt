@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 #Fri Mar 19 13:18:22 CDT 2021
+=======
+#Wed Mar 24 09:06:21 CDT 2021
+>>>>>>> Stashed changes
 base.0=C\:\\Users\\isis_\\Documents\\Comp 3350\\thrive-Workout-Suggestion\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -35,8 +35,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+<<<<<<< Updated upstream
         copyDatabaseToDevice();
         DatabaseHelper db = new DatabaseHelper(DatabaseServices.getDBPathName());
+=======
+        DatabaseServices.setDB();
+        DatabaseHelper db = new DatabaseHelper();
+>>>>>>> Stashed changes
 
         //get the data from the GUI
         txtUsername = (EditText) findViewById(R.id.edittext_username);
@@ -82,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+<<<<<<< Updated upstream
     }
 
     private void copyDatabaseToDevice() {
@@ -134,6 +140,7 @@ public class LoginActivity extends AppCompatActivity {
                 in.close();
             }
         }
+=======
+>>>>>>> Stashed changes
     }
-
 }//end class

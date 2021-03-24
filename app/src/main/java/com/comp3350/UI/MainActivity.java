@@ -41,7 +41,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Intent intent;
         Intent i = getIntent();
+<<<<<<< Updated upstream
         DatabaseHelper dbHelper = new DatabaseHelper(DatabaseServices.getDBPathName());
+=======
+        DatabaseHelper dbHelper = new DatabaseHelper();
+>>>>>>> Stashed changes
 
         String currentUser = i.getStringExtra("currentUser");
         User current= dbHelper.getSomeone(currentUser);

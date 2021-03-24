@@ -40,7 +40,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+<<<<<<< Updated upstream
         db = new DatabaseHelper(DatabaseServices.getDBPathName());
+=======
+        db = new DatabaseHelper();
+>>>>>>> Stashed changes
 
         txtEmail = findViewById(R.id.edittext_useremail);
         txtUsername = findViewById(R.id.edittext_username);

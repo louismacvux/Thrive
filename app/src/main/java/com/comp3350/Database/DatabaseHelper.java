@@ -7,10 +7,12 @@ import com.comp3350.Object.User;
 
 public class DatabaseHelper implements Database
 {
+<<<<<<< Updated upstream
     private final String dbPath;
+=======
+>>>>>>> Stashed changes
 
     private static final String TABLE_NAME = "profiles";
-    private static final String COL_ID = "ID";
     private static final String COL_EMAIL = "email";
     private static final String COL_USERNAME = "user_name";
     private static final String COL_GENDER = "gender";
@@ -20,6 +22,7 @@ public class DatabaseHelper implements Database
     private static final String COL_PW = "password";
 
 
+<<<<<<< Updated upstream
     public DatabaseHelper (String dbPath)
     {
        this.dbPath = dbPath;
@@ -28,6 +31,13 @@ public class DatabaseHelper implements Database
     private Connection connection() throws SQLException {
         return DriverManager.getConnection("jdbc:hsqldb:file:" + dbPath +
                 ";shutdown=true", "SA", "");
+=======
+    public DatabaseHelper (){
+    }
+
+    private Connection connection() throws SQLException {
+        return DriverManager.getConnection("jdbc:hsqldb:file:/data/data/com.example.comp3350/profilesdb;ifexists=false;shutdown=true", "SA", "");
+>>>>>>> Stashed changes
     }
 
 
@@ -37,12 +47,22 @@ public class DatabaseHelper implements Database
         //assume we didn't add a new user to the table
         boolean result = false;
 
+<<<<<<< Updated upstream
         try (Connection con = connection())
         {
             PreparedStatement pstmt = con.prepareStatement(
                     "insert into " + TABLE_NAME + " (" + COL_EMAIL + ", "  +COL_USERNAME + ", " +
                             COL_GENDER + ", " + COL_WEIGHT + ", " + COL_AGE + ", " + COL_HEIGHT + ", " +
                             COL_PW + ") values (?, ?, ?, ?, ?, ?, ?);");
+=======
+        System.out.println(newUser.toString());
+        try (Connection con = connection())
+        {
+            PreparedStatement pstmt = con.prepareStatement(
+                    "insert into profiles (" + COL_EMAIL + ", "  + COL_USERNAME + ", " +
+                            COL_GENDER + ", "  + COL_WEIGHT + ", "  + COL_AGE + ", " +
+                            COL_HEIGHT + ", " +  COL_PW + ") values (?, ?, ?, ?, ?, ?, ?);");
+>>>>>>> Stashed changes
 
             pstmt.setString(1, newUser.getEmail());
             pstmt.setString(2, newUser.getName());
@@ -52,6 +72,10 @@ public class DatabaseHelper implements Database
             pstmt.setDouble(6, newUser.getHeight());
             pstmt.setString(7, newUser.getPassword());
 
+<<<<<<< Updated upstream
+=======
+            pstmt.executeUpdate();
+>>>>>>> Stashed changes
             pstmt.close();
         }
         catch (SQLException e) {
@@ -74,18 +98,29 @@ public class DatabaseHelper implements Database
         try (Connection con = connection())
         {
             PreparedStatement pstmt = con.prepareStatement(
+<<<<<<< Updated upstream
                     "Select " + COL_USERNAME + " From " + TABLE_NAME + " where " + COL_USERNAME + " = ?;"
             );
             pstmt.setString(3, name);
+=======
+                    "Select * From " + TABLE_NAME + " where " + COL_USERNAME + " = ?;"
+            );
+            pstmt.setString(1, name);
+>>>>>>> Stashed changes
 
             ResultSet resultSet = pstmt.executeQuery();
 
             if (resultSet.next())
             {
                 // at least 1 row (hopefully one row!) exists. Get the data
+<<<<<<< Updated upstream
                 result = new User(resultSet.getInt(COL_ID), resultSet.getString(COL_USERNAME),
                         resultSet.getString(COL_EMAIL), resultSet.getInt(COL_AGE),
                         resultSet.getDouble(COL_WEIGHT), resultSet.getString(COL_GENDER),
+=======
+                result = new User(resultSet.getString(COL_EMAIL), resultSet.getString(COL_USERNAME),
+                        resultSet.getString(COL_GENDER), resultSet.getDouble(COL_WEIGHT), resultSet.getInt(COL_AGE),
+>>>>>>> Stashed changes
                         resultSet.getDouble(COL_HEIGHT), resultSet.getString(COL_PW));
 
             }
@@ -154,7 +189,7 @@ public class DatabaseHelper implements Database
         return result;
     }
 
-    public boolean updateInfo(String id, String column, String data)
+    public boolean updateInfo(String name, String column, String data)
     {
         boolean result = false;
 
@@ -187,18 +222,31 @@ public class DatabaseHelper implements Database
         try (Connection con = connection())
         {
             PreparedStatement pstmt = con.prepareStatement(
+<<<<<<< Updated upstream
                     "Select " + COL_ID + " from " + TABLE_NAME + " where "+ COL_ID +
                             "  = ?;");
 
             pstmt.setInt(1, Integer.parseInt(id));
+=======
+                    "Select " + COL_USERNAME + " from " + TABLE_NAME + " where "+ COL_USERNAME +
+                            "  = ?;");
+
+            pstmt.setString(1, name);
+>>>>>>> Stashed changes
             ResultSet resultSet = pstmt.executeQuery();
 
             if (resultSet.next())
             {
                 pstmt = con.prepareStatement(
+<<<<<<< Updated upstream
                         "Update " + TABLE_NAME + " set " + column + " = " + data + "  where " + COL_ID +
                                 "  = ?;");
                 pstmt.setInt(1, Integer.parseInt(id));
+=======
+                        "Update " + TABLE_NAME + " set " + column + " = " + data + "  where " + COL_USERNAME +
+                                "  = ?;");
+                pstmt.setString(1, name);
+>>>>>>> Stashed changes
                 result = true;
             }
             pstmt.close();

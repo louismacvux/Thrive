@@ -74,7 +74,11 @@ public class WellnessCalculator extends AppCompatActivity {
 
         calculate.setOnClickListener(v -> {
             Intent intent = getIntent();
+<<<<<<< Updated upstream
             dbHelper = new DatabaseHelper(DatabaseServices.getDBPathName());
+=======
+            dbHelper = new DatabaseHelper();
+>>>>>>> Stashed changes
             String userName = intent.getStringExtra("currentUser");
 
             currentUser = dbHelper.getSomeone(userName);

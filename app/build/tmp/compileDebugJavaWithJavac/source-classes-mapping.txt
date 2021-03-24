@@ -14,10 +14,17 @@ com/comp3350/Object/BloodSelfCheckDoc.java
  com.comp3350.Object.BloodSelfCheckDoc
 com/comp3350/Database/BloodMarks/Estradiol.java
  com.comp3350.Database.BloodMarks.Estradiol
+<<<<<<< Updated upstream
 com/comp3350/Database/BloodMarks/Cortisol.java
  com.comp3350.Database.BloodMarks.Cortisol
 com/comp3350/Database/DatabaseServices.java
  com.comp3350.Database.DatabaseServices
+=======
+com/comp3350/Database/BloodMarks/Testosterone.java
+ com.comp3350.Database.BloodMarks.Testosterone
+com/comp3350/Database/BloodMarks/Cortisol.java
+ com.comp3350.Database.BloodMarks.Cortisol
+>>>>>>> Stashed changes
 com/comp3350/Database/BloodMarks/Iron.java
  com.comp3350.Database.BloodMarks.Iron
 com/comp3350/UI/WellnessResult.java
@@ -28,8 +35,11 @@ com/comp3350/UI/ViewPDF.java
  com.comp3350.UI.ViewPDF
 com/comp3350/Database/BloodMarks/IBlood.java
  com.comp3350.Database.BloodMarks.IBlood
+<<<<<<< Updated upstream
 com/comp3350/Database/BloodMarks/Testosterone.java
  com.comp3350.Database.BloodMarks.Testosterone
+=======
+>>>>>>> Stashed changes
 com/comp3350/Logic/RegisterManager.java
  com.comp3350.Logic.RegisterManager
 com/comp3350/UI/RegisterActivity.java
@@ -37,8 +47,11 @@ com/comp3350/UI/RegisterActivity.java
  com.comp3350.UI.RegisterActivity$1
 com/comp3350/Database/Database.java
  com.comp3350.Database.Database
+<<<<<<< Updated upstream
 com/comp3350/Database/DatabaseBasic.java
  com.comp3350.Database.DatabaseBasic
+=======
+>>>>>>> Stashed changes
 com/comp3350/Logic/Calculator.java
  com.comp3350.Logic.Calculator
 com/comp3350/Object/User.java
@@ -56,6 +69,13 @@ com/comp3350/Database/DatabaseHelper.java
  com.comp3350.Database.DatabaseHelper
 com/comp3350/Logic/LoginManager.java
  com.comp3350.Logic.LoginManager
+<<<<<<< Updated upstream
+=======
+com/comp3350/Database/DatabaseServices.java
+ com.comp3350.Database.DatabaseServices
+com/comp3350/Database/DatabaseBasic.java
+ com.comp3350.Database.DatabaseBasic
+>>>>>>> Stashed changes
 com/comp3350/UI/LoginActivity.java
  com.comp3350.UI.LoginActivity
  com.comp3350.UI.LoginActivity$1

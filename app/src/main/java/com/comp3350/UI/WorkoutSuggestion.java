@@ -28,7 +28,11 @@ public class WorkoutSuggestion extends AppCompatActivity {
         setContentView(R.layout.workout_suggestion);
 
         Intent intent = getIntent();
+<<<<<<< Updated upstream
         DatabaseHelper dbHelper = new DatabaseHelper(DatabaseServices.getDBPathName());
+=======
+        DatabaseHelper dbHelper = new DatabaseHelper();
+>>>>>>> Stashed changes
         String currentUser = intent.getStringExtra("currentUser");
 
         User current= dbHelper.getSomeone(currentUser); //get current user from database
