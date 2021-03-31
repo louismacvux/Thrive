@@ -80,8 +80,8 @@ public class DatabaseHelper implements Database
             if (resultSet.next())
             {
                 // at least 1 row (hopefully one row!) exists. Get the data
-                result = new User(resultSet.getString(COL_EMAIL), resultSet.getString(COL_USERNAME),
-                        resultSet.getString(COL_GENDER), resultSet.getDouble(COL_WEIGHT), resultSet.getInt(COL_AGE),
+                result = new User(resultSet.getString(COL_USERNAME), resultSet.getString(COL_EMAIL),
+                        resultSet.getInt(COL_AGE), resultSet.getDouble(COL_WEIGHT), resultSet.getString(COL_GENDER),
                         resultSet.getDouble(COL_HEIGHT), resultSet.getString(COL_PW));
 
             }

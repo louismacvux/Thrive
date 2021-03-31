@@ -23,7 +23,7 @@ public class User {
                 '}';
     }
 
-    public User (String email, String name, String gender, double weight, int age, double height, String password)
+    public User (String name, String email, int age, double weight, String gender, double height, String password)
     {
         this.name = name;
         this.email = email;

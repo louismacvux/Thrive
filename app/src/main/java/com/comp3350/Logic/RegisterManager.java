@@ -22,7 +22,7 @@ public class RegisterManager{
         && validateEmail(email))){
             if (pwMatches(pw, confirmPw)){
                 if (!userExists(username)){
-                    User newUser = new User(email, username, gender, weight, age, height, pw);
+                    User newUser = new User(username, email, age, weight, gender, height, pw);
                     dbHelper.addData(newUser);
                     result = true;
                 }

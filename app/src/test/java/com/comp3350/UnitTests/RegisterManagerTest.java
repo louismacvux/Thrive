@@ -19,7 +19,7 @@ public class RegisterManagerTest {
 
     @Before
     public void setUp() throws Exception {
-        u1 = new User(1, "emma", "emma@gmail.com", 18, 140,
+        u1 = new User("emma", "emma@gmail.com", 18, 140,
                 "female", 160.8, "emma1234");
     }
 

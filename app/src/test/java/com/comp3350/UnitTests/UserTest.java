@@ -38,7 +38,7 @@ public class UserTest {
         }
 
         //test full constructor for users
-        User testUser2 = new User(1, "myName", "myEmail", 24,
+        User testUser2 = new User("myName", "myEmail", 24,
                 160, "female", 160.0, "myPass");
         try
         {
@@ -98,7 +98,7 @@ public class UserTest {
         DatabaseBasic dbTester = new DatabaseBasic();
 
         //make some Users to ASSERT adding to dbTester
-        User testUser3 = new User(1, "Jolly", "jolly@gmail.com", 24,
+        User testUser3 = new User("Jolly", "jolly@gmail.com", 24,
                 160, "female", 160.0, "JollyPass");
         try
         {
@@ -110,7 +110,7 @@ public class UserTest {
             failedTests++;
             System.out.println(fail.getMessage());
         }
-        User testUser4 = new User(2, "Holly", "Holly@gmail.com", 25,
+        User testUser4 = new User("Holly", "Holly@gmail.com", 25,
                 160, "female", 160.0, "HollyPass");
         try
         {
@@ -123,7 +123,7 @@ public class UserTest {
             System.out.println(fail.getMessage());
         }
 
-        User testUser5 = new User(3, "Polly", "Polly@gmail.com", 26,
+        User testUser5 = new User("Polly", "Polly@gmail.com", 26,
                 160, "female", 160.0, "PollyPass");
         try
         {
@@ -136,7 +136,7 @@ public class UserTest {
             System.out.println(fail.getMessage());
         }
 
-        User testUser6 = new User(4, "Sally", "Sally@gmail.com", 27,
+        User testUser6 = new User("Sally", "Sally@gmail.com", 27,
                 160, "female", 160.0, "SallyPass");
         try
         {
@@ -163,7 +163,7 @@ public class UserTest {
         }
 
         //test getSomeone returns null if it can't find that user
-        User testUser7 =  new User(5, "Juan Diego", "jDizzle@gmail.com", 26,
+        User testUser7 =  new User("Juan Diego", "jDizzle@gmail.com", 26,
                 160, "female", 160.0, "PollyPass");
         temp = dbTester.getSomeone(testUser7.getName());
         try
