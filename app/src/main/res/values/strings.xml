@@ -17,11 +17,25 @@
         <item>Build muscle</item>
         <item>Loose fat</item>
     </string-array>
+    <string-array name="veg">
+        <item>--Select--</item>
+        <item>3100 calories</item>
+        <item>2600 calories</item>
+        <item>2300 calories</item>
+        <item>1900 calories</item>
+    </string-array>
+    <string-array name="nonVeg">
+        <item>--Select--</item>
+        <item>3100 calories</item>
+        <item>2600 calories</item>
+        <item>2200 calories</item>
+        <item>1800 calories</item>
+    </string-array>
     <string name="gender_select">Please select your gender:</string>
     <string name="workout_select">Please select a workout:</string>
     <string name="next">Get your workout suggestion</string>
-    <string name="hrive">hrive</string>
     <string name="thrive_logo">thrive_logo</string>
+    <string name="hrive">hrive</string>
     <string name="registration">Registration</string>
     <string name="background_pattern">background pattern</string>
     <string name="welcome_to_thrive">Welcome to Thrive!</string>

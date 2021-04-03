@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
-            android:rowCount="3"
+            android:rowCount="2"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
             >
@@ -47,7 +47,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="6dp">
 
@@ -61,7 +61,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:contentDescription="@string/dashboard_bmi"
                         android:src="@drawable/bmi" />
 
                     <TextView
@@ -81,9 +80,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_columnWeight="2"
                 android:layout_margin="12dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="6dp">
 
@@ -97,7 +96,6 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:contentDescription="@string/dashboard_blood"
                         android:src="@drawable/bloodsample" />
 
                     <TextView
@@ -108,7 +106,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView25"
+                        android:id="@+id/textView34"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Self Check"
@@ -123,10 +121,10 @@
                 android:id="@+id/cardview_workoutPlan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
+                android:layout_rowWeight="2"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="6dp">
 
@@ -140,16 +138,14 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:contentDescription="@string/dashboard_workout"
                         android:src="@drawable/running" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="@string/workout_plan"
+                        android:text="Workout Plan"
                         android:textSize="18sp" />
-
 
                 </LinearLayout>
 
@@ -158,12 +154,11 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview_mealPlan"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+                android:layout_height="104dp"
+                android:layout_rowWeight="2"
+                android:layout_columnWeight="2"
                 android:layout_margin="12dp"
-                android:layout_marginEnd="16dp"
-                android:visibility="invisible"
+                android:layout_marginRight="16dp"
                 app:cardCornerRadius="6dp"
                 app:cardElevation="6dp">
 
@@ -172,13 +167,11 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    android:visibility="invisible">
+                    android:padding="16dp">
 
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:contentDescription="@string/dashboard_meal"
                         android:src="@drawable/breakfast" />
 
                     <TextView
@@ -187,16 +180,12 @@
                         android:layout_marginTop="12dp"
                         android:text="@string/meal_plan"
                         android:textSize="18sp" />
-
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-
-
-
         </GridLayout>
+
 
     </LinearLayout>
 </ScrollView>
