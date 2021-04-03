@@ -10,7 +10,6 @@ import junit.framework.AssertionFailedError;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.robolectric.RuntimeEnvironment;
 
 public class LoginTest {
 
