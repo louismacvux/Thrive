@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.comp3350.Database.DatabaseHelper;
-import com.comp3350.Database.DatabaseServices;
 import com.comp3350.Object.User;
 import com.comp3350.R;
 
@@ -60,6 +59,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else if (v.getId() == R.id.cardview_bmi){
             intent = new Intent(MainActivity.this, WellnessCalculator.class);
+            intent.putExtra("currentUser", current.getName());
+            startActivity(intent);
+        }
+        else if (v.getId() == R.id.cardview_mealPlan){
+            intent = new Intent(MainActivity.this, MealPlan.class);
             intent.putExtra("currentUser", current.getName());
             startActivity(intent);
         }
