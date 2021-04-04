@@ -207,13 +207,26 @@ public class DatabaseHelper implements Database
         return result;
     }
 
-    public boolean removeUser(User user)
+    public boolean removeUser(String name)
     {
         //assume we didn't remove the user from the db
         boolean result = false;
 
-        if (!checkName(user.getName()))
+        if (checkName(name))
         {
+            try (Connection con = connection())
+            {
+                PreparedStatement pstmt = con.prepareStatement(
+                        "Delete from " + TABLE_NAME + " where "+ COL_USERNAME +
+                                "  = ?;");
+                pstmt.setString(1, name);
+                pstmt.executeUpdate();
+                pstmt.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace(System.out);
+            }
             result = true;
         }
         return result;

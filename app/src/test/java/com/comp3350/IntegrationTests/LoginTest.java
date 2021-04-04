@@ -12,14 +12,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class LoginTest {
+    //integration test of LoginManager and DatabaseHelper classes
 
-    private DatabaseHelper dbHelper;
     private LoginManager loginManager;
 
     @Before
     public void setUp() throws Exception {
         DatabaseServices.setDB();
-        dbHelper = new DatabaseHelper();
+        DatabaseHelper dbHelper = new DatabaseHelper();
         User testUser1 = new User("testUser1", "testUser1@email.com", 20, 150, "Male", 175, "password");
         User testUser2 = new User("testUser2", "testUser2@email.com", 22, 140, "Male", 170, "password");
         dbHelper.addData(testUser1);
@@ -72,6 +72,18 @@ public class LoginTest {
             System.out.println(fail.getMessage());
         }
 
+        //test testUser1 with wrong password login successful or not
+        try
+        {
+            num_tested++;
+            assert (!loginManager.proceedLogin("testUser1", "wrongPassword"));
+        }
+        catch (AssertionFailedError fail)
+        {
+            failed_test++;
+            System.out.println(fail.getMessage());
+        }
+
         System.out.println("*** LOGIN TESTS ***");
         System.out.println(num_tested + " tests run, " + (num_tested - failed_test) + " passed," + failed_test + " failed.");
     }
@@ -93,11 +105,11 @@ public class LoginTest {
             System.out.println(fail.getMessage());
         }
 
-        //test user who is not registered is found successful or not
+        //test testUser2 is found successful or not
         try
         {
             num_tested++;
-            assert (!loginManager.foundUser("unknown"));
+            assert (loginManager.foundUser("testUser2"));
         }
         catch (AssertionFailedError fail)
         {
@@ -105,11 +117,11 @@ public class LoginTest {
             System.out.println(fail.getMessage());
         }
 
-        //test testUser1 found successful or not
+        //test user who is not registered is found successful or not
         try
         {
             num_tested++;
-            assert (loginManager.foundUser("testUser1"));
+            assert (!loginManager.foundUser("unknown"));
         }
         catch (AssertionFailedError fail)
         {

@@ -205,7 +205,7 @@ public class UnitTestI1 {
         try
         {
             numTests++;
-            assert(dbTester.removeUser(temp));
+            assert(dbTester.removeUser(temp.getName()));
         }
         catch (AssertionFailedError fail)
         {
@@ -217,7 +217,7 @@ public class UnitTestI1 {
         try
         {
             numTests++;
-            assert (!dbTester.removeUser(temp));
+            assert (!dbTester.removeUser(temp.getName()));
         }
         catch (AssertionFailedError fail)
         {
