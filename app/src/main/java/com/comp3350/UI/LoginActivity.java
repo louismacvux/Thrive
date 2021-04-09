@@ -56,30 +56,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LoginManager loginManager = new LoginManager(db);
+                String toast;
 
-                userName = txtUsername.getText().toString();
-                userPass = txtPassword.getText().toString();
-
-                if (userName.isEmpty() || userPass.isEmpty())
-                {
-                    Toast.makeText(LoginActivity.this, "Please enter both username and password",
-                            Toast.LENGTH_LONG).show();
+                toast = loginManager.validateUser(txtUsername.getText().toString(), txtPassword.getText().toString());
+                Toast.makeText(LoginActivity.this,toast,Toast.LENGTH_LONG).show();
+                if (toast == "Successfully logged in"){
+                    Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    MainIntent.putExtra("currentUser", userName);
+                    startActivity(MainIntent);
                 }
-                else {
-//                    boolean checkUserPass = loginManager.proceedLogin(userName, userPass);
-                    if (loginManager.proceedLogin(userName, userPass)) {
-                        Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                        MainIntent.putExtra("currentUser", userName);
-                        startActivity(MainIntent);
-                    } else if (loginManager.foundUser(userName)) {
-                        Toast.makeText(LoginActivity.this, "Incorrect Password",
-                                Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(LoginActivity.this,"No such user... SIGN UP!",
-                                Toast.LENGTH_LONG).show();
-                    }
-                }
-
             }
         });
     }
