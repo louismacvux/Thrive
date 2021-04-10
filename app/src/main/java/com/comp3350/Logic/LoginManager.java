@@ -10,7 +10,7 @@ public class LoginManager {
         this.db = db;
     }
 
-    private boolean proceedLogin (String username, String password){
+    public boolean proceedLogin(String username, String password){
         return db.checkCredentials(username, password);
     }
 
@@ -31,7 +31,7 @@ public class LoginManager {
            return toast;
     }
 
-    private boolean foundUser (String username){
+    public boolean foundUser(String username){
         return db.checkName(username);
     }
 

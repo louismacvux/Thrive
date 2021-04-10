@@ -1,6 +1,6 @@
 package com.comp3350;
 
-import com.comp3350.Logic.LoginManager;
+import com.comp3350.UnitTests.LoginManagerTest;
 import com.comp3350.UnitTests.BloodInformationTest;
 import com.comp3350.UnitTests.RegisterManagerTest;
 import com.comp3350.UnitTests.UserTest;
@@ -16,6 +16,7 @@ import org.junit.runners.Suite;
         BloodInformationTest.class,
         RegisterManagerTest.class,
         WellnessCalculatorTest.class,
+        LoginManagerTest.class
 })
 
 public class AllTests {
