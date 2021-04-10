@@ -1,6 +1,9 @@
 package com.comp3350.Logic;
+import android.widget.Toast;
+
 import com.comp3350.Database.DatabaseHelper;
 import com.comp3350.Object.User;
+import com.comp3350.UI.RegisterActivity;
 
 
 public class RegisterManager{
@@ -15,84 +18,99 @@ public class RegisterManager{
 
     //This will return true when user is registered successfully and add the user
     //if all the fields are entered, password matches, and the user is a new user
-    public boolean registered(String email, String username, String pw, String confirmPw, String gender, int age, double weight, double height){
+    public boolean registered(String email, String username, String pw, String confirmPw, String gender, int genderRadioBtn, String string_age, String string_weight, String string_height){
         boolean result = false;
+        registerErrorMessage = "";
+        //separate each booleans instead of return together because it is necessary for concatenating error message
+        boolean validate_name = validateName(username);
+        boolean validate_email = validateEmail(email);
+        boolean validate_pass = validatePass(pw);
+        boolean validate_confirmPw = validateConfirmPass(pw, confirmPw);
+        boolean genderClicked = radioBtnClicked(genderRadioBtn, "gender");
+        int age = parseInt(string_age, "age");
+        double weight = parseDouble(string_weight, "weight");
+        double height = parseDouble(string_height, "height");
 
-        if (!fieldEmpty(email, username, pw, confirmPw, gender, age, weight, height) && (validateName(username) && validatePass(pw)
-        && validateEmail(email))){
-            if (pwMatches(pw, confirmPw)){
-                if (!userExists(username)){
-                    User newUser = new User(username, email, age, weight, gender, height, pw);
-                    dbHelper.addData(newUser);
-                    result = true;
-                }
-                else{
-                    registerErrorMessage += "User already existed\n";
-                }
-            }else{
-                registerErrorMessage += "Your confirmation password is different from your desired password\n";
+        if (validate_name && validate_email && validate_pass && validate_confirmPw && genderClicked && !(age <= 0) && !(weight <= 0) && !(height <= 0)){
+            if (!userExists(username)){
+                User newUser = new User(username, email, age, weight, gender, height, pw);
+                dbHelper.addData(newUser);
+                result = true;
             }
         }
 
         return result;
     }//end registered
 
-    public boolean fieldEmpty(String email, String username, String pw, String confirmPw, String gender, int age, double weight, double height){
-        boolean result = false;
-        if (email.equals("")){
-            registerErrorMessage += "Please enter your email\n";
-            result = true;
+    public int parseInt(String num, String fieldName) {
+        int result = -1;
+        if(!num.isEmpty()) {
+            try {
+                result = Integer.parseInt(num);
+            }
+            catch (NumberFormatException e) {
+                System.out.println("NumberFormatException: " + e.getMessage());
+                registerErrorMessage += "Please enter a correct value for " + fieldName +"\n";
+            }
         }
-        if (username.equals("")){
-            registerErrorMessage += "Please enter your username\n";
-            result = true;
-        }
-        if (pw.equals("")){
-            registerErrorMessage += "Please enter your password\n";
-            result = true;
-        }
-        if (confirmPw.equals("")){
-            registerErrorMessage += "Please enter your confirmation password\n";
-            result = true;
-        }
-        if (age == 0){
-            registerErrorMessage += "Please enter your age\n";
-            result = true;
-        }
-        if (weight == 0){
-            registerErrorMessage += "Please enter your weight in lbs\n";
-            result = true;
-        }
-        if (height == 0){
-            registerErrorMessage += "Please enter your height in cm\n";
-            result = true;
+        if(result <= 0) {
+            registerErrorMessage += "Please enter your " + fieldName +"\n";
         }
         return result;
-    }//end fieldEmpty
+    }//end parseInt
+
+    public double parseDouble(String num, String fieldName) {
+        double result = -1;
+        if(!num.isEmpty()) {
+            try {
+                result = Double.parseDouble(num);
+            }
+            catch (NumberFormatException e) {
+                System.out.println("NumberFormatException: " + e.getMessage());
+                registerErrorMessage += "Please enter a correct value for " + fieldName +"\n";
+            }
+        }
+        if(result <= 0) {
+            registerErrorMessage += "Please enter your " + fieldName +"\n";
+        }
+        return result;
+    }//end parseDouble
+
+    public boolean radioBtnClicked(int radioBtn, String buttonName){
+        if(radioBtn != -1) {
+            return true;
+        }
+        else {
+            registerErrorMessage += "Please indicate your " + buttonName +"\n";
+            return false;
+        }
+    }
 
     public boolean userExists(String username){
-        return dbHelper.checkName(username);
+        if(dbHelper.checkName(username)) {
+            registerErrorMessage += "User already existed, please choose other username\n";
+            return true;
+        }
+        else {
+            return false;
+        }
     }//end userExists
-
-    public boolean pwMatches(String pw, String confirmPw){
-        return pw.equals(confirmPw);
-    }//end pwMatches
 
     public boolean validateEmail(String email)
     {
         boolean result = false;
-        String givenName = email.trim();
-        String whiteSpace = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        String input = email.trim();
+        String email_format = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
-        if (givenName.isEmpty())
+        if (input.isEmpty())
         {
-            registerErrorMessage += "Email cannot be empty\n";
+            registerErrorMessage += "Please enter your email\n";
         }
-        else if (givenName.length() > 40)
+        else if (input.length() > 40)
         {
             registerErrorMessage += "Email must be less than 40 characters\n";
         }
-        else if (!givenName.matches(whiteSpace))
+        else if (!input.matches(email_format))
         {
             registerErrorMessage += "Email must be formatted as abc@efg.com\n";
         }
@@ -101,57 +119,79 @@ public class RegisterManager{
             result = true;
         }
         return result;
-    }
+    }//end validateEmail
 
     public boolean validateName(String name)
     {
         boolean result = false;
-        String givenName = name.trim();
+        String input = name.trim();
         String whiteSpace = "\\A\\w{1,20}\\z";
 
-        if (givenName.isEmpty())
+        if (input.isEmpty())
         {
-            registerErrorMessage += "User name cannot be empty\n";
+            registerErrorMessage += "Please enter your username\n";
         }
-        else if (givenName.length() > 20)
+        else if (input.length() > 20)
         {
-            registerErrorMessage += "User name must be less than 20 characters...\n";
+            registerErrorMessage += "Username must be less than 20 characters...\n";
         }
-        else if (!givenName.matches(whiteSpace))
+        else if (!input.matches(whiteSpace))
         {
-            registerErrorMessage += "User name cannot have blank spaces...\n";
+            registerErrorMessage += "Username cannot have blank spaces...\n";
         }
         else
         {
             result = true;
         }
         return result;
-    }
+    }//end validateName
 
     public boolean validatePass(String password)
     {
         boolean result = false;
-        String givenName = password.trim();
-        String whiteSpace = "\\A\\w{1,20}\\z";
+        String input = password.trim();
+        String whiteSpace = "\\A\\w{1,30}\\z";
 
-        if (givenName.isEmpty())
+        if (input.isEmpty())
         {
-            registerErrorMessage += "PASSWORD cannot be empty...\n";
+            registerErrorMessage += "Please enter your password\n";
         }
-        else if (givenName.length() > 20)
+        else if (input.length() > 30)
         {
-            registerErrorMessage += "PASSWORD must be less than 20 characters...\n";
+            registerErrorMessage += "Password must be less than 30 characters...\n";
         }
-        else if (!givenName.matches(whiteSpace))
+        else if (input.length() < 6)
         {
-            registerErrorMessage += "PASSWORD cannot have blank spaces...\n";
+            registerErrorMessage += "Password must be more than 6 characters...\n";
+        }
+        else if (!input.matches(whiteSpace))
+        {
+            registerErrorMessage += "Password cannot have blank spaces...\n";
         }
         else
         {
             result = true;
         }
         return result;
-    }
+    }//end validatePass
+
+    public boolean validateConfirmPass(String password, String confirmPassword){
+        if(password.equals(confirmPassword)) {
+            if(confirmPassword.isEmpty()) {
+                registerErrorMessage += "Please enter your confirmation password\n";
+            }
+            return true;
+        }
+        else {
+            if(confirmPassword.isEmpty()) {
+                registerErrorMessage += "Please enter your confirmation password\n";
+            }
+            else {
+                registerErrorMessage += "Your confirmation password is different from your desired password\n";
+            }
+            return false;
+        }
+    }//end validateConfirmPass
 
     public String getRegErrorMessage(){
         return registerErrorMessage;

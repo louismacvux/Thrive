@@ -29,9 +29,11 @@ public class RegisterActivity extends AppCompatActivity {
     private String password;
     private String rePass;
     private String gender;
-    private int age, checkGender;
-    private double weight;
-    private double height;
+    private String age;
+    private String weight;
+    private String height;
+    private int checkGender;
+
 
     DatabaseHelper db;
 
@@ -61,76 +63,22 @@ public class RegisterActivity extends AppCompatActivity {
                 name = txtUsername.getText().toString();
                 password = txtPassword.getText().toString();
                 rePass = txtConfirmPassword.getText().toString();
+                age = txtAge.getText().toString();
+                weight = txtWeight.getText().toString();
+                height = txtHeight.getText().toString();
                 checkGender = txtGender.getCheckedRadioButtonId();
-                age = 0;
-                weight = 0;
-                height = 0;
-
-                if (checkGender == -1)
-                {
-                    Toast.makeText(com.comp3350.UI.RegisterActivity.this, "Please indicate a gender",
-                            Toast.LENGTH_LONG).show();
-                }
-                else
-                {
-                    switch (checkGender)
-                    {
-                        case R.id.radioBtn_female:
-                            gender = "Female";
-                            break;
-
-                        case R.id.radioBtn_male:
-                            gender = "Male";
-                            break;
-                    }
-                }
-                //validate AGE
-                if (!txtAge.getText().toString().equals("")) {
-                    //try to get numeric values from age, weight and height
-                    try {
-                        age = Integer.parseInt(txtAge.getText().toString());
-                    } catch (NumberFormatException e) {
-                        System.out.println("NumberFormatException: " + e.getMessage());
-                        Toast.makeText(RegisterActivity.this, "Please enter a number for AGE",
-                                Toast.LENGTH_LONG).show();
-                    }
-                }
-                //validate WEIGHT
-                if (!txtWeight.getText().toString().equals("")) {
-                    try {
-                        weight = Double.parseDouble(txtWeight.getText().toString());
-                    } catch (NumberFormatException e) {
-                        System.out.println("NumberFormatException: " + e.getMessage());
-                        Toast.makeText(RegisterActivity.this, "Please enter a number for WEIGHT",
-                                Toast.LENGTH_LONG).show();
-                    }
-                }
-
-                //validate HEIGHT
-                if (!txtHeight.getText().toString().equals("")) {
-                    try {
-                        height = Double.parseDouble(txtHeight.getText().toString());
-                    } catch (NumberFormatException e) {
-                        System.out.println("NumberFormatException: " + e.getMessage());
-                        Toast.makeText(RegisterActivity.this, "Please enter a number for HEIGHT",
-                                Toast.LENGTH_LONG).show();
-                    }
-                }
 
                 RegisterManager registerManager = new RegisterManager(db);
 
-                if (registerManager.registered(email, name, password, rePass, gender, age, weight, height)){ //if registration was successful
+                if (registerManager.registered(email, name, password, rePass, gender, checkGender, age, weight, height)){ //if registration was successful
                     //create new user and if database is successfully added, go to login
 
-                    Toast.makeText(RegisterActivity.this, "Registration Complete",
-                            Toast.LENGTH_LONG).show();
-                    Intent enterStats = new Intent(RegisterActivity.this,
-                            LoginActivity.class);
+                    Toast.makeText(RegisterActivity.this, "Registration Complete", Toast.LENGTH_LONG).show();
+                    Intent enterStats = new Intent(RegisterActivity.this, LoginActivity.class);
                     startActivity(enterStats);
 
                 }else{
-                    Toast.makeText(RegisterActivity.this, registerManager.getRegErrorMessage(),
-                            Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegisterActivity.this, registerManager.getRegErrorMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });//end registerSetOnClock

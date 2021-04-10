@@ -23,22 +23,7 @@ public class RegisterManagerTest {
                 "female", 160.8, "emma1234");
     }
 
-//    @Test
-//    public void registered() {
-//        //pw != confirmpw
-//        assert(!manager.registered("bob@gmail.com", "bob", "bob1234", "bab1234",
-//                "male", 32, 140, 170));
-//
-//        //registered properly
-//        assert(manager.registered("bob@gmail.com", "bob", "bob1234", "bob1234",
-//                "male", 32, 140, 170));
-//
-//        //does it return false when there is the same user?
-//        assert(!manager.registered("bob@gmail.com", "bob", "bob1234", "bob1234",
-//                "male", 32, 140, 170));
-//    }
-
-    @Test
+    /*@Test
     public void fieldEmpty() {
         assert(!manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
                 "male", 32, 140, 170));
@@ -54,22 +39,41 @@ public class RegisterManagerTest {
                 "male", 32, 140, 170)); //empty confirmpw
         assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
                 "male", 0, 0, 0)); //invalid numbers
-    }
-
-//    @Test
-//    public void userExists() {
-//        assert(manager.userExists("emma"));
-//        assert(!manager.userExists("shoudnotbethere"));
-//    }
+    }*/
 
     @Test
-    public void pwMatches() {
-        String pw = "thisisPassword";
-        String confirm = "thisisPassword";
-        String wrongConfirm = "thisisWrong";
+    public void parseInt(){
+        String string_int = "22";
+        String string_double = "24.8";
+        String string_long = "22222222222222222222";
+        String string = "Thisisstring";
+        String zero = "0";
 
-        assert(manager.pwMatches(pw, confirm));
-        assert(!manager.pwMatches(pw, wrongConfirm));
+        assert(manager.parseInt(string_int, "test") == 22);
+        assert(manager.parseInt(string_double, "test") == -1);
+        assert(manager.parseInt(string_long, "test") == -1);
+        assert(manager.parseInt(string, "test") == -1);
+        assert(manager.parseInt(zero, "test") == 0);
+    }
+
+    @Test
+    public void parseDouble(){
+        String string_double = "24.8";
+        String string_int = "25";
+        String string = "Thisisstring";
+        String zero = "0";
+
+        assert(manager.parseDouble(string_double, "test") == 24.8);
+        assert(manager.parseDouble(string_int, "test") == 25);
+        assert(manager.parseDouble(string, "test") == -1);
+        assert(manager.parseDouble(zero, "test") == 0);
+    }
+
+    @Test
+    public void radioBtnClicked(){
+        assert(manager.radioBtnClicked(1, "test button"));
+        assert(manager.radioBtnClicked(0, "test button"));
+        assert(!manager.radioBtnClicked(-1, "test button"));
     }
 
     @Test
@@ -102,13 +106,26 @@ public class RegisterManagerTest {
     @Test
     public void validatePass(){
         String pw = u1.getPassword();
-        String tooLong = "thisisaveryverylongpassword";
+        String tooLong = "thisisaveryveryveryverylongpassword";
+        String tooShort = "short";
         String withSpaces = "emma 1234";
 
         assert(manager.validatePass(pw));
         assert(!manager.validatePass(""));
         assert(!manager.validatePass(tooLong));
+        assert(!manager.validatePass(tooShort));
         assert(!manager.validatePass(withSpaces));
+    }
+
+    @Test
+    public void validateConfirmPass() {
+        String pw = "thisisPassword";
+        String confirm = "thisisPassword";
+        String wrongConfirm = "thisisWrong";
+
+        assert(manager.validateConfirmPass(pw, confirm));
+        assert(!manager.validateConfirmPass(pw, wrongConfirm));
+        assert(manager.validateConfirmPass("",""));
     }
 
 

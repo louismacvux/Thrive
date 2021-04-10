@@ -43,7 +43,7 @@ public class RegisterTest {
         try
         {
             num_tested++;
-            assert (!registerManager.registered("userAlpha@email.com", "userAlpha", "pass", "pass", "Male", 24,  145, 170));
+            assert (!registerManager.registered("userAlpha@email.com", "userAlpha", "pass", "pass", "Male", 1, "24",  "145", "170"));
         }
         catch (AssertionFailedError fail)
         {
@@ -56,7 +56,7 @@ public class RegisterTest {
         try
         {
             num_tested++;
-            assert (!registerManager.registered("userBeta2@email.com", "userBeta", "password", "password", "Male", 20,  135, 165));
+            assert (!registerManager.registered("userBeta2@email.com", "userBeta", "password", "password", "Male", 1, "20",  "135", "165"));
         }
         catch (AssertionFailedError fail)
         {
@@ -68,7 +68,7 @@ public class RegisterTest {
         try
         {
             num_tested++;
-            assert (registerManager.registered("userCharlie@email.com", "userCharlie", "password", "password", "Male", 20,  140, 172));
+            assert (registerManager.registered("userCharlie@email.com", "userCharlie", "password", "password", "Male", 1, "20",  "140", "172"));
         }
         catch (AssertionFailedError fail)
         {

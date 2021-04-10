@@ -58,9 +58,12 @@ public class LoginActivity extends AppCompatActivity {
                 LoginManager loginManager = new LoginManager(db);
                 String toast;
 
-                toast = loginManager.validateUser(txtUsername.getText().toString(), txtPassword.getText().toString());
+                userName = txtUsername.getText().toString();
+                userPass = txtPassword.getText().toString();
+
+                toast = loginManager.validateUser(userName, userPass);
                 Toast.makeText(LoginActivity.this,toast,Toast.LENGTH_LONG).show();
-                if (toast == "Successfully logged in"){
+                if (toast.equals("Successfully logged in")){
                     Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
                     MainIntent.putExtra("currentUser", userName);
                     startActivity(MainIntent);
