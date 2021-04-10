@@ -35,9 +35,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d9434ff-11ca-4b76-80aa-c1b3f20e9737" name="Default Changelist" comment="revert">
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/comp3350/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/comp3350/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/comp3350/IntegrationTests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/comp3350/IntegrationTests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Doc1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Doc2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Doc3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Doc4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Doc5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/Doc6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Cortisol.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Cortisol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Creatinine.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Creatinine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Estradiol.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Estradiol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Glucose.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Glucose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/IBlood.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/IBlood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Iron.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Iron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/TSH.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/TSH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Testosterone.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Database/BloodMarks/Testosterone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Logic/BloodInformationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Logic/BloodInformationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Object/BloodSelfCheckDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/Object/BloodSelfCheckDoc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/BloodInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/BloodInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_information.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_blood_information.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +94,7 @@
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="1" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[emulator-5554]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -463,13 +509,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="784" y="140" key="#com.intellij.ide.util.ExportDialog/0.0.1536.824@0.0.1536.824" timestamp="1614231803945" />
-    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1616154387842">
+    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1617507988513">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="329" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1614122378590" />
     <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.23.1440.836@0.23.1440.836" timestamp="1614803467765" />
     <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615260670296" />
-    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.25.1440.828@0.25.1440.828" timestamp="1616154387842" />
+    <state x="247" y="215" key="#com.intellij.ide.util.MemberChooser/0.25.1440.828@0.25.1440.828" timestamp="1617507988513" />
     <state x="458" y="250" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1616156312448">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
@@ -509,13 +555,13 @@
     <state x="786" y="283" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613762769566" />
     <state x="569" y="249" key="AndroidCreateResourceFileDialog/0.23.1440.836@0.23.1440.836" timestamp="1614443586091" />
     <state x="569" y="249" key="AndroidCreateResourceFileDialog/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615261432202" />
-    <state x="603" y="272" key="AndroidCreateXmlResourceDialog" timestamp="1616172483387">
+    <state x="603" y="272" key="AndroidCreateXmlResourceDialog" timestamp="1618071615094">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state x="804" y="310" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613763183526" />
     <state x="603" y="272" key="AndroidCreateXmlResourceDialog/0.23.1440.836@0.23.1440.836" timestamp="1614801760088" />
     <state x="603" y="272" key="AndroidCreateXmlResourceDialog/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615259976927" />
-    <state x="603" y="272" key="AndroidCreateXmlResourceDialog/0.25.1440.828@0.25.1440.828" timestamp="1616172483387" />
+    <state x="603" y="272" key="AndroidCreateXmlResourceDialog/0.25.1440.828@0.25.1440.828" timestamp="1618071615094" />
     <state x="489" y="189" key="AndroidProcessChooserDialog" timestamp="1616172167409">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
@@ -528,7 +574,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614140991436" />
-    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1616185827140">
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom" timestamp="1618027693740">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616125042016" />
@@ -536,9 +582,9 @@
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1614874855430" />
     <state width="1398" height="197" key="GridCell.Tab.0.bottom/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039528" />
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167173011" />
-    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1616185827140" />
+    <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1618027693740" />
     <state width="1397" height="205" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722786" />
-    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1616185827140">
+    <state width="1398" height="205" key="GridCell.Tab.0.center" timestamp="1618027693740">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616125042014" />
@@ -546,9 +592,9 @@
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1614874855429" />
     <state width="1398" height="197" key="GridCell.Tab.0.center/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039527" />
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167173006" />
-    <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1616185827140" />
+    <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1618027693740" />
     <state width="1397" height="205" key="GridCell.Tab.0.center/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722786" />
-    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1616185827140">
+    <state width="1398" height="205" key="GridCell.Tab.0.left" timestamp="1618027693740">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616125042014" />
@@ -556,9 +602,9 @@
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1614874855428" />
     <state width="1398" height="197" key="GridCell.Tab.0.left/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039526" />
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167172993" />
-    <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1616185827140" />
+    <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1618027693740" />
     <state width="1397" height="205" key="GridCell.Tab.0.left/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722783" />
-    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1616185827140">
+    <state width="1398" height="205" key="GridCell.Tab.0.right" timestamp="1618027693740">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616125042015" />
@@ -566,7 +612,7 @@
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1614874855429" />
     <state width="1398" height="197" key="GridCell.Tab.0.right/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039527" />
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167173007" />
-    <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1616185827140" />
+    <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1618027693740" />
     <state width="1397" height="205" key="GridCell.Tab.0.right/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722786" />
     <state width="1398" height="212" key="GridCell.Tab.1.bottom" timestamp="1616115995862">
       <screen x="0" y="25" width="1440" height="828" />

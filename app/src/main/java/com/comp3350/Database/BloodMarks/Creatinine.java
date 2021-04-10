@@ -1,5 +1,8 @@
 package com.comp3350.Database.BloodMarks;
 
+import com.comp3350.R;
+import com.comp3350.UI.MainActivity;
+
 public class Creatinine implements IBlood{
     double creatinine;
 
@@ -11,15 +14,22 @@ public class Creatinine implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        return "ℹ️ Creatinine is a byproduct of the bodies metabolic activities and can be used to accurately gauge ones kidney function.";
+        return MainActivity.getContext().getString(R.string.creatinineGeneral);
     }
 
+    @Override
+    public String getLowSymptoms() {
+        return MainActivity.getContext().getString(R.string.creatinineLowSymptoms);
+    }
+
+    @Override
     public String getHighSymptoms() {
-        return "Experiencing any of the following symptoms including urination issues, " +
-                "muscle cramp, chest pain, increase in thirst or heavy fatigue? Check out Thrive's high creatinine remedies.";
+        return MainActivity.getContext().getString(R.string.creatinineHighSymptoms);
     }
 
-    public double getCreatinine() {
+    @Override
+    public double getLevels() {
         return creatinine;
     }
+
 }

@@ -1,5 +1,8 @@
 package com.comp3350.Database.BloodMarks;
 
+import com.comp3350.R;
+import com.comp3350.UI.MainActivity;
+
 public class TSH implements IBlood {
     double tsh;
 
@@ -11,22 +14,21 @@ public class TSH implements IBlood {
 
     @Override
     public String getGeneralInfo() {
-        return "ℹ️ TSH, also referred to as Thyroid-Stimulating Hormone, is a pituitary hormone that " +
-                "stimulates the thyroid gland, which is responsible for the metabolism of almost every tissue is in the body.";
+        return MainActivity.getContext().getString(R.string.tshGeneral);
     }
 
+    @Override
     public String getLowSymptoms() {
-        return "Experiencing increased sensitivity to cold, weight " +
-                "gain, heavier than normal or irregular menstrual periods(women) or fatigue? " +
-                "Check out Thrive's low TSH balancing strategies.";
+        return MainActivity.getContext().getString(R.string.tshLowSymptoms);
     }
 
+    @Override
     public String getHighSymptoms() {
-        return "Experiencing a slow heart rate, thinning of hair, fertility issues or swelling " +
-                "of the face and neck? Check out Thrive's high TSH balancing strategies.";
+        return MainActivity.getContext().getString(R.string.tshHighSymptoms);
     }
 
-    public double getTsh() {
+    @Override
+    public double getLevels() {
         return tsh;
     }
 }//end class

@@ -3,6 +3,7 @@ package com.comp3350.UI;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,11 +15,13 @@ import com.comp3350.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private CardView bmi, bloodOptimizerSelfCheck, workoutPlan, mealPlan;
+    private static Context theContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        theContext = this;
 
         //define the cards
         bmi = (CardView) findViewById(R.id.cardview_bmi);
@@ -74,5 +77,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            case R.id.cardview_workoutPlan : intent = new Intent(this, WorkoutSuggestion.class); break;
 //            case R.id.cardview_mealPlan : intent = new Intent(this, MealPlan.class); break;
 //        }
+    }
+
+    public static Context getContext(){
+        return theContext;
     }
 }

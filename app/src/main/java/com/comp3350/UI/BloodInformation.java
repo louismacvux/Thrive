@@ -19,10 +19,11 @@ public class BloodInformation extends AppCompatActivity {
              ironGeneralInfo, testGeneralInfo, estraGeneralInfo;
     TextView generalMaleSugg, generalFemaleSugg;
 
-    TextView tshLow, tshHigh, cortisolHigh, creatinineHigh, glucoseLow,
-             glucoseHigh, ironLow, testLow, estraLow, estraHigh;
+    TextView tshLow, tshHigh, cortisolLow, cortisolHigh, creatinineLow, creatinineHigh, glucoseLow,
+             glucoseHigh, ironLow, ironHigh, testLow, testHigh, estraLow, estraHigh;
 
-    Button tshLowBtn, tshHighBtn, cortisolHighBtn, creatinineHighBtn, glucoseHighBtn, ironLowBtn,
+    Button tshLowBtn, tshHighBtn, cortisolLowBtn, cortisolHighBtn, creatinineLowBtn, creatinineHighBtn,
+           glucoseLowBtn, glucoseHighBtn, ironLowBtn, ironHighBtn,
            testLowBtn, estraLowBtn, estraHighBtn, generalMBtn, generalFBtn;
 
     BloodInformationManager bloodInfoManager = new BloodInformationManager();
@@ -48,34 +49,42 @@ public class BloodInformation extends AppCompatActivity {
         //symptoms
         tshLow = (TextView) findViewById(R.id.tsh_low_info);
         tshHigh = (TextView) findViewById(R.id.tsh_high_info);
+        cortisolLow = (TextView) findViewById(R.id.cortisol_low_info);
         cortisolHigh = (TextView) findViewById(R.id.cortisol_high_info);
+        creatinineLow = (TextView) findViewById(R.id.creatinine_low_info);
         creatinineHigh = (TextView) findViewById(R.id.creatinine_high_info);
         glucoseLow = (TextView) findViewById(R.id.glucose_low_info);
         glucoseHigh = (TextView) findViewById(R.id.glucose_high_info);
         ironLow = (TextView) findViewById(R.id.iron_low_info);
+        ironHigh = (TextView) findViewById(R.id.iron_high_info);
         testLow = (TextView) findViewById(R.id.test_low_info);
+        testHigh = (TextView) findViewById(R.id.test_high_info);
         estraLow = (TextView) findViewById(R.id.estra_low_info);
         estraHigh = (TextView) findViewById(R.id.estra_high_info);
 
         //suggestion buttons
         tshLowBtn = (Button) findViewById(R.id.tsh_low_sugg); //bloodMark = 1
         tshHighBtn = (Button) findViewById(R.id.tsh_high_sugg); //bloodMark = 2
-        cortisolHighBtn = (Button) findViewById(R.id.cortisol_high_sugg); //bloodMark = 3
-        creatinineHighBtn = (Button) findViewById(R.id.creatinine_high_sugg); //bloodMark = 4
-        glucoseHighBtn = (Button) findViewById(R.id.glucose_high_sugg); //bloodMark = 5
-        ironLowBtn = (Button) findViewById(R.id.iron_low_sugg); //bloodMark = 6
-        testLowBtn = (Button) findViewById(R.id.test_low_sugg); //bloodMark = 7
-        estraLowBtn = (Button) findViewById(R.id.estra_low_sugg); //bloodMark = 8
-        estraHighBtn = (Button) findViewById(R.id.estra_high_sugg); //bloodMark = 9
-        generalMBtn = (Button) findViewById(R.id.general_m_sugg); //bloodMark = 10
-        generalFBtn = (Button) findViewById(R.id.general_f_sugg); //bloodMark = 11
+        cortisolLowBtn = (Button) findViewById(R.id.cortisol_low_sugg); //bloodMark = 3
+        cortisolHighBtn = (Button) findViewById(R.id.cortisol_high_sugg); //bloodMark = 4
+        creatinineLowBtn = (Button) findViewById(R.id.creatinine_low_sugg); //bloodMark = 5
+        creatinineHighBtn = (Button) findViewById(R.id.creatinine_high_sugg); //bloodMark = 6
+        glucoseLowBtn = (Button) findViewById(R.id.glucose_low_sugg); //bloodMark = 7
+        glucoseHighBtn = (Button) findViewById(R.id.glucose_high_sugg); //bloodMark = 8
+        ironLowBtn = (Button) findViewById(R.id.iron_low_sugg); //bloodMark = 9
+        ironHighBtn = (Button) findViewById(R.id.iron_high_sugg); //bloodMark = 10
+        testLowBtn = (Button) findViewById(R.id.test_low_sugg); //bloodMark = 11
+        estraLowBtn = (Button) findViewById(R.id.estra_low_sugg); //bloodMark = 12
+        estraHighBtn = (Button) findViewById(R.id.estra_high_sugg); //bloodMark = 13
+        generalMBtn = (Button) findViewById(R.id.general_m_sugg); //bloodMark = 14
+        generalFBtn = (Button) findViewById(R.id.general_f_sugg); //bloodMark = 15
 
         //Printing our all the general information about the blood markers onto the screen
         printGeneralInfo(tshGeneralInfo, cortisolGeneralInfo, creatinineGeneralInfo, glucoseGeneralInfo,
                         ironGeneralInfo, testGeneralInfo, estraGeneralInfo, generalMaleSugg, generalFemaleSugg);
 
-        printSymptomInfo(tshLow, tshHigh, cortisolHigh, creatinineHigh,
-                        glucoseLow, glucoseHigh, ironLow, testLow, estraLow, estraHigh);
+        printSymptomInfo(tshLow, tshHigh, cortisolLow, cortisolHigh, creatinineLow, creatinineHigh,
+                        glucoseLow, glucoseHigh, ironLow, ironHigh, testLow, testHigh, estraLow, estraHigh);
 
 
     }//end onCreate
@@ -103,18 +112,22 @@ public class BloodInformation extends AppCompatActivity {
 
     }//end printGeneralInfo
 
-    public void printSymptomInfo(TextView tshLow, TextView tshHigh, TextView cortisolHigh,
-                                 TextView creatinineHigh, TextView glucoseLow,
-                                 TextView glucoseHigh, TextView ironLow, TextView testLow,
-                                 TextView estraLow, TextView estraHigh){
+    public void printSymptomInfo(TextView tshLow, TextView tshHigh, TextView cortisolLow, TextView cortisolHigh,
+                                 TextView creatinineLow, TextView creatinineHigh, TextView glucoseLow,
+                                 TextView glucoseHigh, TextView ironLow, TextView ironHigh, TextView testLow,
+                                 TextView testHigh, TextView estraLow, TextView estraHigh){
         tshLow.setText(bloodInfoManager.getTSHLow());
         tshHigh.setText(bloodInfoManager.getTSHHigh());
+        cortisolLow.setText(bloodInfoManager.getCortisolLow());
         cortisolHigh.setText(bloodInfoManager.getCortisolHigh());
+        creatinineLow.setText(bloodInfoManager.getCreatinineLow());
         creatinineHigh.setText(bloodInfoManager.getCreatinineHigh());
         glucoseLow.setText(bloodInfoManager.getGlucoseLow());
         glucoseHigh.setText(bloodInfoManager.getGlucoseHigh());
         ironLow.setText(bloodInfoManager.getIronLow());
+        ironHigh.setText(bloodInfoManager.getIronHigh());
         testLow.setText(bloodInfoManager.getTestLow());
+        testHigh.setText(bloodInfoManager.getTestHigh());
         estraLow.setText(bloodInfoManager.getEstraLow());
         estraHigh.setText(bloodInfoManager.getEstraHigh());
     }//end printSymptomInfo
@@ -122,15 +135,19 @@ public class BloodInformation extends AppCompatActivity {
     //onclick
     public void tshLow(View v){ suggestions(1); }
     public void tshHigh(View v){ suggestions(2); }
-    public void cortisolHigh(View v){ suggestions(3); }
-    public void creatinineHigh(View v){ suggestions(4); }
-    public void glucoseHigh(View v){ suggestions(5); }
-    public void ironLow(View v){ suggestions(6); }
-    public void testLow(View v){ suggestions(7); }
-    public void estraLow(View v){ suggestions(8); }
-    public void estraHigh(View v){ suggestions(9); }
-    public void maleSugg(View v){ suggestions(10); }
-    public void femaleSugg(View v){ suggestions(11); }
+    public void cortisolLow(View v){ suggestions(3); }
+    public void cortisolHigh(View v){ suggestions(4); }
+    public void creatinineLow(View v){ suggestions(5); }
+    public void creatinineHigh(View v){ suggestions(6); }
+    public void glucoseLow(View v){ suggestions(7); }
+    public void glucoseHigh(View v){ suggestions(8); }
+    public void ironLow(View v){ suggestions(9); }
+    public void ironHigh(View v){ suggestions(10); }
+    public void testLow(View v){ suggestions(11); }
+    public void estraLow(View v){ suggestions(12); }
+    public void estraHigh(View v){ suggestions(13); }
+    public void maleSugg(View v){ suggestions(14); }
+    public void femaleSugg(View v){ suggestions(15); }
 
     //tells the PDF viewer which one to show the user
     public void suggestions (int bloodMark){
@@ -140,15 +157,19 @@ public class BloodInformation extends AppCompatActivity {
         switch(bloodMark){
             case 1 : selected_sugg = BloodSelfCheckDoc.TSHLow; break; //low TSH
             case 2 : selected_sugg = BloodSelfCheckDoc.TSHHigh; break; //high TSH
-            case 3 : selected_sugg = BloodSelfCheckDoc.CortisolHigh; break; //high cortisol
-            case 4 : selected_sugg = BloodSelfCheckDoc.CreatinineHigh; break; //high creatinine
-            case 5 : selected_sugg = BloodSelfCheckDoc.GlucoseHigh; break; //high glucose
-            case 6 : selected_sugg = BloodSelfCheckDoc.IronLow; break; //low iron
-            case 7 : selected_sugg = BloodSelfCheckDoc.TestosteroneLow; break; //low testosterone
-            case 8 : selected_sugg = BloodSelfCheckDoc.EstradiolLow; break; //low estradiol
-            case 9 : selected_sugg = BloodSelfCheckDoc.EstradiolHigh; break; //high estradiol
-            case 10 : selected_sugg = BloodSelfCheckDoc.MaleRecomm; break; //Male no symptoms
-            case 11 : selected_sugg = BloodSelfCheckDoc.FemaleRecomm; break; //Female no symptoms
+            case 3 : selected_sugg = BloodSelfCheckDoc.CortisolLow; break; //low cortisol
+            case 4 : selected_sugg = BloodSelfCheckDoc.CortisolHigh; break; //high cortisol
+            case 5 : selected_sugg = BloodSelfCheckDoc.CreatinineLow; break; //low creatinine
+            case 6 : selected_sugg = BloodSelfCheckDoc.CreatinineHigh; break; //high creatinine
+            case 7 : selected_sugg = BloodSelfCheckDoc.GlucoseLow; break; //low glucose
+            case 8 : selected_sugg = BloodSelfCheckDoc.GlucoseHigh; break; //high glucose
+            case 9 : selected_sugg = BloodSelfCheckDoc.IronLow; break; //low iron
+            case 10 : selected_sugg = BloodSelfCheckDoc.IronHigh; break; //high iron
+            case 11 : selected_sugg = BloodSelfCheckDoc.TestosteroneLow; break; //low testosterone
+            case 12 : selected_sugg = BloodSelfCheckDoc.EstradiolLow; break; //low estradiol
+            case 13 : selected_sugg = BloodSelfCheckDoc.EstradiolHigh; break; //high estradiol
+            case 14 : selected_sugg = BloodSelfCheckDoc.MaleRecomm; break; //Male no symptoms
+            case 15 : selected_sugg = BloodSelfCheckDoc.FemaleRecomm; break; //Female no symptoms
         }
 
         bundle.putString("fileName", selected_sugg.getFileName());

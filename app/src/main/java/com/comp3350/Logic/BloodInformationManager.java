@@ -33,12 +33,16 @@ public class BloodInformationManager {
     //symptoms
     public String getTSHLow() { return tsh.getLowSymptoms(); }
     public String getTSHHigh() { return tsh.getHighSymptoms(); }
-    public String getCortisolHigh() {return cortisol.getHighSymptoms(); }
+    public String getCortisolLow() { return cortisol.getLowSymptoms(); }
+    public String getCortisolHigh() { return cortisol.getHighSymptoms(); }
+    public String getCreatinineLow() { return creatinine.getLowSymptoms(); }
     public String getCreatinineHigh() { return creatinine.getHighSymptoms(); }
     public String getGlucoseLow() { return glucose.getLowSymptoms(); }
     public String getGlucoseHigh() { return glucose.getHighSymptoms(); }
     public String getIronLow() { return iron.getLowSymptoms(); }
+    public String getIronHigh() { return iron.getHighSymptoms(); }
     public String getTestLow() { return testosterone.getLowSymptoms(); }
+    public String getTestHigh() { return testosterone.getHighSymptoms(); }
     public String getEstraLow() { return estradiol.getLowSymptoms(); }
     public String getEstraHigh() { return estradiol.getHighSymptoms(); }
 }//end class
