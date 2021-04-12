@@ -36,6 +36,5 @@ public class DatabaseServices {
             System.out.println("Error in creating database");
             e.printStackTrace(System.out);
         }
-
     }
 }

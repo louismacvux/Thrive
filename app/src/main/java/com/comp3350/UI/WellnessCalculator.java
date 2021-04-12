@@ -83,7 +83,6 @@ public class WellnessCalculator extends AppCompatActivity {
 
             //Do the calculation
             calculator = new Calculator(string_weight, string_height, currentUser, activity_level);
-            calculator.calculate();
 
             //get back the result
             maintenance_calories = calculator.getMC();

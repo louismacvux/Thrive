@@ -7,9 +7,27 @@ public class User {
     private String email;
     private int age;
     private double weight;
-    private String gender;
     private double height;
     private String password;
+
+    private gender me;
+
+
+    //0 = male, 1 = female
+    enum gender
+    {
+        MALE("Male", 0),
+        FEMALE("Female", 1);
+
+        String stringValue;
+        int intValue;
+
+        private gender(String toString, int value) {
+            stringValue = toString;
+            intValue = value;
+        }
+
+    }
 
     @Override
     public String toString() {
@@ -18,18 +36,26 @@ public class User {
                 ", email='" + email + '\'' +
                 ", age=" + age +
                 ", weight=" + weight +
-                ", gender='" + gender + '\'' +
+                ", gender='" + me.stringValue + '\'' +
                 ", height=" + height +
                 '}';
     }
 
-    public User (String name, String email, int age, double weight, String gender, double height, String password)
+    public User (String name, String email, int age, double weight, String givenGender, double height, String password)
     {
         this.name = name;
         this.email = email;
         this.age = age;
         this.weight = weight;
-        this.gender = gender;
+
+        if (givenGender.equals("Male"))
+        {
+            me = me.MALE;
+        }
+        else
+        {
+            me = me.FEMALE;
+        }
         this.height = height;
         this.password = password;
     }
@@ -56,7 +82,7 @@ public class User {
     }
 
     public void setGender(String gender, DatabaseHelper db) {
-        this.gender = gender;
+        this.me.stringValue = gender;
         db.updateInfo(name, "COL_GENDER", gender);
     }
 
@@ -86,15 +112,15 @@ public class User {
     }
 
     public String getGender() {
-        return gender;
+        return me.stringValue;
     }
 
     public int  getGenderInt() {
-        if (gender.equalsIgnoreCase("Male"))
+        if (me.stringValue.equalsIgnoreCase("Male"))
         {
             return 0;
         }
-        else if (gender.equalsIgnoreCase("Female"))
+        else if (me.stringValue.equalsIgnoreCase("Female"))
         {
             return 1;
         }

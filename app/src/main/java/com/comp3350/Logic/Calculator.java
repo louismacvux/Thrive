@@ -17,6 +17,7 @@ public class Calculator {
         this.string_height = string_height;
         this.activity_level = activity_level;
         this.user = user;
+        calculate();
     }
 
     public double calculateBMI(double weight, double height){
@@ -82,7 +83,7 @@ public class Calculator {
     }
 
     public double getBMI(){
-        return bmi;
+            return bmi;
     }
 
     public double getMC() {

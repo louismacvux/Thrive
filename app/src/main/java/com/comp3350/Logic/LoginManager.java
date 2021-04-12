@@ -23,7 +23,7 @@ public class LoginManager {
                if (proceedLogin(userName, userPass)){
                     toast = "Successfully logged in";
                }else if (foundUser(userName)){
-                   toast = "Incorrect Password";
+                   toast = "Incorrect User Name or Password entered";
                }else {
                    toast = "No such user... SIGN UP!";
                }
