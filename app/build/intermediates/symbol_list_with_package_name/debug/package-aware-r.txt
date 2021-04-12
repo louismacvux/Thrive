@@ -2508,6 +2508,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string female
+string femaleGeneral
 string flags
 string gender
 string gender_select
@@ -2534,6 +2535,7 @@ string let_s_get_you_started_with_some_basic_information
 string login
 string lower_than_normal_range_related_symptoms
 string male
+string maleGeneral
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection

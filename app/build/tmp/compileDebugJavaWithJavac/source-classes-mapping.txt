@@ -50,8 +50,9 @@ com/comp3350/Logic/Calculator.java
  com.comp3350.Logic.Calculator
 com/comp3350/Object/User.java
  com.comp3350.Object.User
-com/comp3350/UI/MainActivity.java
- com.comp3350.UI.MainActivity
+ com.comp3350.Object.User$gender
+com/comp3350/Database/BloodMarks/Creatinine.java
+ com.comp3350.Database.BloodMarks.Creatinine
 com/comp3350/UI/WellnessResult.java
  com.comp3350.UI.WellnessResult
 com/comp3350/Logic/LoginManager.java
@@ -60,9 +61,9 @@ com/comp3350/Database/BloodMarks/Cortisol.java
  com.comp3350.Database.BloodMarks.Cortisol
 com/comp3350/Database/DatabaseServices.java
  com.comp3350.Database.DatabaseServices
-com/comp3350/UI/BloodInformation.java
- com.comp3350.UI.BloodInformation
-com/comp3350/Database/BloodMarks/Creatinine.java
- com.comp3350.Database.BloodMarks.Creatinine
 com/comp3350/Object/BloodSelfCheckDoc.java
  com.comp3350.Object.BloodSelfCheckDoc
+com/comp3350/UI/BloodInformation.java
+ com.comp3350.UI.BloodInformation
+com/comp3350/UI/MainActivity.java
+ com.comp3350.UI.MainActivity

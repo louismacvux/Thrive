@@ -194,4 +194,12 @@
         Thrive\'s high estrogen balancing approach below.</string>
     <string name="no_suggestion">no suggestion</string>
 
+    <!--General male and female suggestion texts - BloodInformation.java-->
+    <string name="maleGeneral">If you are not aware of any specific deficiencies and have any of the
+        following symptoms including heart condition risk, lack of deep sleep, improper digestion numbness
+        and weakness of limbs or memory loss, check out Thrives general recommendations that might be a quick fix.</string>
+    <string name="femaleGeneral">If you are not aware of any specific deficiencies and have any of
+                the following symptoms including severe pms, extreme fatigue, depression, lack of sleep,
+                hair fall or skin or nail problems, check out Thrives general recommendations that might be a quick fix.</string>
+
 </resources>

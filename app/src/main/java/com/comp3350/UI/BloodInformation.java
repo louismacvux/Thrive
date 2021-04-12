@@ -6,7 +6,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.comp3350.Logic.BloodInformationManager;
@@ -14,20 +13,24 @@ import com.comp3350.Object.BloodSelfCheckDoc;
 import com.comp3350.R;
 
 public class BloodInformation extends AppCompatActivity {
-    
-    TextView tshGeneralInfo, cortisolGeneralInfo, creatinineGeneralInfo, glucoseGeneralInfo,
-             ironGeneralInfo, testGeneralInfo, estraGeneralInfo;
-    TextView generalMaleSugg, generalFemaleSugg;
 
-    TextView tshLow, tshHigh, cortisolLow, cortisolHigh, creatinineLow, creatinineHigh, glucoseLow,
-             glucoseHigh, ironLow, ironHigh, testLow, testHigh, estraLow, estraHigh;
+    //When adding a new blood marker:
+    //1. place the new id for new blood marks in the following arrays "generalInfoArray" and "symptomsArray"
+    //2. add manager methods in "generalLocal" and symptomLocal" arrays placed in printGeneralInfo() and printSymptomInfo()
+    //in the same order that will show up on the interface/UI
+    private static final int[] generalInfoArray = {R.id.tshGeneralInfo, R.id.cortisolGeneralInfo,
+            R.id.creatinineGeneralInfo, R.id.glucoseGeneralInfo, R.id.ironGeneralInfo, R.id.testGeneralInfo,
+            R.id.estraGeneralInfo, R.id.generalMaleSugg, R.id.generalFemaleSugg};
 
-    Button tshLowBtn, tshHighBtn, cortisolLowBtn, cortisolHighBtn, creatinineLowBtn, creatinineHighBtn,
-           glucoseLowBtn, glucoseHighBtn, ironLowBtn, ironHighBtn,
-           testLowBtn, estraLowBtn, estraHighBtn, generalMBtn, generalFBtn;
+    private static final int[] symptomsArray = {R.id.tsh_low_info, R.id.tsh_high_info,
+            R.id.cortisol_low_info, R.id.cortisol_high_info, R.id.creatinine_low_info, R.id.creatinine_high_info,
+            R.id.glucose_low_info, R.id.glucose_high_info, R.id.iron_low_info, R.id.iron_high_info,
+            R.id.test_low_info, R.id.test_high_info, R.id.estra_low_info, R.id.estra_high_info};
+
+    private TextView[] generalInfo = new TextView[generalInfoArray.length];
+    private TextView[] symptoms = new TextView[symptomsArray.length];
 
     BloodInformationManager bloodInfoManager = new BloodInformationManager();
-
     BloodSelfCheckDoc selected_sugg;
 
     @Override
@@ -36,100 +39,42 @@ public class BloodInformation extends AppCompatActivity {
         setContentView(R.layout.activity_blood_information);
 
         //general info
-        tshGeneralInfo = (TextView) findViewById(R.id.tshGeneralInfo);
-        cortisolGeneralInfo = (TextView) findViewById(R.id.cortisolGeneralInfo);
-        creatinineGeneralInfo = (TextView) findViewById(R.id.creatinineGeneralInfo);
-        glucoseGeneralInfo = (TextView) findViewById(R.id.glucoseGeneralInfo);
-        ironGeneralInfo = (TextView) findViewById(R.id.ironGeneralInfo);
-        testGeneralInfo = (TextView) findViewById(R.id.testGeneralInfo);
-        estraGeneralInfo = (TextView) findViewById(R.id.estraGeneralInfo);
-        generalMaleSugg = (TextView) findViewById(R.id.generalMaleSugg);
-        generalFemaleSugg = (TextView) findViewById(R.id.generalFemaleSugg);
+        for (int i = 0; i < generalInfoArray.length; i ++)
+            generalInfo[i] = (TextView) findViewById(generalInfoArray[i]);
 
         //symptoms
-        tshLow = (TextView) findViewById(R.id.tsh_low_info);
-        tshHigh = (TextView) findViewById(R.id.tsh_high_info);
-        cortisolLow = (TextView) findViewById(R.id.cortisol_low_info);
-        cortisolHigh = (TextView) findViewById(R.id.cortisol_high_info);
-        creatinineLow = (TextView) findViewById(R.id.creatinine_low_info);
-        creatinineHigh = (TextView) findViewById(R.id.creatinine_high_info);
-        glucoseLow = (TextView) findViewById(R.id.glucose_low_info);
-        glucoseHigh = (TextView) findViewById(R.id.glucose_high_info);
-        ironLow = (TextView) findViewById(R.id.iron_low_info);
-        ironHigh = (TextView) findViewById(R.id.iron_high_info);
-        testLow = (TextView) findViewById(R.id.test_low_info);
-        testHigh = (TextView) findViewById(R.id.test_high_info);
-        estraLow = (TextView) findViewById(R.id.estra_low_info);
-        estraHigh = (TextView) findViewById(R.id.estra_high_info);
+        for (int i = 0; i < symptomsArray.length; i ++)
+            symptoms[i] = (TextView) findViewById(symptomsArray[i]);
 
-        //suggestion buttons
-        tshLowBtn = (Button) findViewById(R.id.tsh_low_sugg); //bloodMark = 1
-        tshHighBtn = (Button) findViewById(R.id.tsh_high_sugg); //bloodMark = 2
-        cortisolLowBtn = (Button) findViewById(R.id.cortisol_low_sugg); //bloodMark = 3
-        cortisolHighBtn = (Button) findViewById(R.id.cortisol_high_sugg); //bloodMark = 4
-        creatinineLowBtn = (Button) findViewById(R.id.creatinine_low_sugg); //bloodMark = 5
-        creatinineHighBtn = (Button) findViewById(R.id.creatinine_high_sugg); //bloodMark = 6
-        glucoseLowBtn = (Button) findViewById(R.id.glucose_low_sugg); //bloodMark = 7
-        glucoseHighBtn = (Button) findViewById(R.id.glucose_high_sugg); //bloodMark = 8
-        ironLowBtn = (Button) findViewById(R.id.iron_low_sugg); //bloodMark = 9
-        ironHighBtn = (Button) findViewById(R.id.iron_high_sugg); //bloodMark = 10
-        testLowBtn = (Button) findViewById(R.id.test_low_sugg); //bloodMark = 11
-        estraLowBtn = (Button) findViewById(R.id.estra_low_sugg); //bloodMark = 12
-        estraHighBtn = (Button) findViewById(R.id.estra_high_sugg); //bloodMark = 13
-        generalMBtn = (Button) findViewById(R.id.general_m_sugg); //bloodMark = 14
-        generalFBtn = (Button) findViewById(R.id.general_f_sugg); //bloodMark = 15
-
-        //Printing our all the general information about the blood markers onto the screen
-        printGeneralInfo(tshGeneralInfo, cortisolGeneralInfo, creatinineGeneralInfo, glucoseGeneralInfo,
-                        ironGeneralInfo, testGeneralInfo, estraGeneralInfo, generalMaleSugg, generalFemaleSugg);
-
-        printSymptomInfo(tshLow, tshHigh, cortisolLow, cortisolHigh, creatinineLow, creatinineHigh,
-                        glucoseLow, glucoseHigh, ironLow, ironHigh, testLow, testHigh, estraLow, estraHigh);
-
+        //Printing our all the information about the blood markers onto the screen
+        printGeneralInfo(generalInfo);
+        printSymptomInfo(symptoms);
 
     }//end onCreate
 
     @SuppressLint("SetTextI18n")
-    public void printGeneralInfo(TextView tsh, TextView cortisol, TextView creatinine, TextView glucose,
-                                 TextView iron, TextView testosterone, TextView estradiol,
-                                 TextView generalMaleSugg, TextView generalFemaleSugg){
-        tsh.setText(bloodInfoManager.getTSHGeneral());
-        cortisol.setText(bloodInfoManager.getCortisolGeneral());
-        creatinine.setText(bloodInfoManager.getCreatinineGeneral());
-        glucose.setText(bloodInfoManager.getGlucoseGeneral());
-        iron.setText(bloodInfoManager.getIronGeneral());
-        testosterone.setText(bloodInfoManager.getTestGeneral());
-        estradiol.setText(bloodInfoManager.getEstraGeneral());
+    public void printGeneralInfo(TextView[] generalInfo){
+        String[] generalLocal = {bloodInfoManager.getTSHGeneral(), bloodInfoManager.getCortisolGeneral(),
+                bloodInfoManager.getCreatinineGeneral(), bloodInfoManager.getGlucoseGeneral(),
+                bloodInfoManager.getIronGeneral(), bloodInfoManager.getTestGeneral(),
+                bloodInfoManager.getEstraGeneral(), getString(R.string.maleGeneral),
+                getString(R.string.femaleGeneral)};
 
-        generalMaleSugg.setText("If you are not aware of any specific deficiencies and have any of the " +
-                "following symptoms including heart condition risk, lack of deep sleep, improper digestion, " +
-                "numbness and weakness of limbs or memory loss, check out Thrives general recommendations " +
-                "that might be a quick fix.");
-
-        generalFemaleSugg.setText("If you are not aware of any specific deficiencies and have any of " +
-                "the following symptoms including severe pms, extreme fatigue, depression, lack of sleep, " +
-                "hair fall or skin or nail problems, check out Thrives general recommendations that might be a quick fix.");
+        for (int i = 0; i < generalInfo.length; i ++)
+            generalInfo[i].setText(generalLocal[i]);
 
     }//end printGeneralInfo
 
-    public void printSymptomInfo(TextView tshLow, TextView tshHigh, TextView cortisolLow, TextView cortisolHigh,
-                                 TextView creatinineLow, TextView creatinineHigh, TextView glucoseLow,
-                                 TextView glucoseHigh, TextView ironLow, TextView ironHigh, TextView testLow,
-                                 TextView testHigh, TextView estraLow, TextView estraHigh){
-        tshLow.setText(bloodInfoManager.getTSHLow());
-        tshHigh.setText(bloodInfoManager.getTSHHigh());
-        cortisolLow.setText(bloodInfoManager.getCortisolLow());
-        cortisolHigh.setText(bloodInfoManager.getCortisolHigh());
-        creatinineLow.setText(bloodInfoManager.getCreatinineLow());
-        creatinineHigh.setText(bloodInfoManager.getCreatinineHigh());
-        glucoseLow.setText(bloodInfoManager.getGlucoseLow());
-        glucoseHigh.setText(bloodInfoManager.getGlucoseHigh());
-        ironLow.setText(bloodInfoManager.getIronLow());
-        ironHigh.setText(bloodInfoManager.getIronHigh());
-        testLow.setText(bloodInfoManager.getTestLow());
-        testHigh.setText(bloodInfoManager.getTestHigh());
-        estraLow.setText(bloodInfoManager.getEstraLow());
-        estraHigh.setText(bloodInfoManager.getEstraHigh());
+    public void printSymptomInfo(TextView[] symptoms){
+        String[] symptomLocal = {bloodInfoManager.getTSHLow(), bloodInfoManager.getTSHHigh(),
+                bloodInfoManager.getCortisolLow(), bloodInfoManager.getCortisolHigh(), bloodInfoManager.getCreatinineLow(),
+                bloodInfoManager.getCreatinineHigh(), bloodInfoManager.getGlucoseLow(), bloodInfoManager.getGlucoseHigh(),
+                bloodInfoManager.getIronLow(), bloodInfoManager.getIronHigh(), bloodInfoManager.getTestLow(),
+                bloodInfoManager.getTestHigh(), bloodInfoManager.getEstraLow(), bloodInfoManager.getEstraHigh()};
+
+        for (int i = 0; i < symptoms.length; i ++)
+            symptoms[i].setText(symptomLocal[i]);
+
     }//end printSymptomInfo
 
     //onclick
