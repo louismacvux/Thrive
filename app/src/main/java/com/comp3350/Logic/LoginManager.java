@@ -10,19 +10,15 @@ public class LoginManager {
         this.db = db;
     }
 
-    public boolean proceedLogin(String username, String password){
-        return db.checkCredentials(username, password);
-    }
-
     public String validateUser(String userName, String userPass){
            String toast = "";
            if (userName.isEmpty() || userPass.isEmpty()){
                toast = "Please enter both username and password";
            }
            else {
-               if (proceedLogin(userName, userPass)){
+               if (db.checkCredentials(userName, userPass)){
                     toast = "Successfully logged in";
-               }else if (foundUser(userName)){
+               }else if (db.checkName(userName)){
                    toast = "Incorrect Password";
                }else {
                    toast = "No such user... SIGN UP!";
@@ -31,8 +27,5 @@ public class LoginManager {
            return toast;
     }
 
-    public boolean foundUser(String username){
-        return db.checkName(username);
-    }
 
 }//end class

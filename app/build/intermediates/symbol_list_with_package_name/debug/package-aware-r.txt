@@ -1727,6 +1727,7 @@ id FUNCTION
 id Gender_specific
 id META
 id NO_DEBUG
+id NonVegSpin
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -1734,6 +1735,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id VegSpin
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2051,7 +2053,6 @@ id multiply
 id navigation_header_container
 id never
 id noScroll
-id nonVegSpin
 id none
 id normal
 id notification_background
@@ -2254,7 +2255,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id vegSpin
 id view_offset_helper
 id visible
 id weight_result
