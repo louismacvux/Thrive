@@ -34,16 +34,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d9434ff-11ca-4b76-80aa-c1b3f20e9737" name="Default Changelist" comment="revert">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/MealPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/comp3350/UI/MealPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_meal_plan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_meal_plan.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests/BloodInformationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/comp3350/UnitTests/BloodInformationTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7d9434ff-11ca-4b76-80aa-c1b3f20e9737" name="Default Changelist" comment="revert" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
