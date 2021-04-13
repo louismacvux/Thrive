@@ -39,7 +39,7 @@ public class UserTest {
 
         //test full constructor for users
         User testUser2 = new User("myName", "myEmail", 24,
-                160, "female", 160.0, "myPass");
+                160, "Female", 160.0, "myPass");
         try
         {
             numTests++;
@@ -67,7 +67,7 @@ public class UserTest {
         try
         {
             numTests++;
-            assert(testUser2.getGender().equals("female"));
+            assert(testUser2.getGender().equals("Female"));
         }
         catch (AssertionFailedError fail)
         {
@@ -99,7 +99,7 @@ public class UserTest {
 
         //make some Users to ASSERT adding to dbTester
         User testUser3 = new User("Jolly", "jolly@gmail.com", 24,
-                160, "female", 160.0, "JollyPass");
+                160, "Female", 160.0, "JollyPass");
         try
         {
             numTests++;
@@ -111,7 +111,7 @@ public class UserTest {
             System.out.println(fail.getMessage());
         }
         User testUser4 = new User("Holly", "Holly@gmail.com", 25,
-                160, "female", 160.0, "HollyPass");
+                160, "Female", 160.0, "HollyPass");
         try
         {
             numTests++;
@@ -124,7 +124,7 @@ public class UserTest {
         }
 
         User testUser5 = new User("Polly", "Polly@gmail.com", 26,
-                160, "female", 160.0, "PollyPass");
+                160, "Female", 160.0, "PollyPass");
         try
         {
 
@@ -137,7 +137,7 @@ public class UserTest {
         }
 
         User testUser6 = new User("Sally", "Sally@gmail.com", 27,
-                160, "female", 160.0, "SallyPass");
+                160, "Female", 160.0, "SallyPass");
         try
         {
             numTests++;
@@ -164,7 +164,7 @@ public class UserTest {
 
         //test getSomeone returns null if it can't find that user
         User testUser7 =  new User("Juan Diego", "jDizzle@gmail.com", 26,
-                160, "female", 160.0, "PollyPass");
+                160, "Female", 160.0, "PollyPass");
         temp = dbTester.getSomeone(testUser7.getName());
         try
         {
