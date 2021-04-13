@@ -38,6 +38,8 @@ dependencies {
     implementation files('libs/sqlite-jdbc-3.34.0.jar')
     testImplementation 'org.robolectric:robolectric:3.0'
     testImplementation 'junit:junit:4.+'
+    testImplementation 'org.mockito:mockito-inline:3.7.7'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.7.7'
     testImplementation files('libs/hsqldb.jar')
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

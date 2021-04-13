@@ -21,14 +21,14 @@ public class WellnessCalculatorTest {
 
     //User who only get
     User user0 = new User("Peter Parker", "PP@example.com",
-            25, 170, "male", 170, "123456");
+            25, 170, "Male", 170, "123456");
     Calculator male = new Calculator("","", user0, 1.4); //26.74 & 1804.64 & 2526.49
     Calculator male_custom_weight = new Calculator("150", "", user0, 1.2); //23.59 & 1680.09 & 2016.11
     Calculator male_custom_height = new Calculator("", "185", user0, 1.7); //22.58 & 1879.64 & 3195.38
     Calculator male_custom_data = new Calculator("150", "185", user0, 1.4); //19.92 & 1755.09 & 2457.13
 
     User user1 = new User("Mary Jane", "MJ@example.com",
-            22, 150, "female", 160, "7890");
+            22, 150, "Female", 160, "7890");
     Calculator female = new Calculator("", "", user1, 1.7); //26.63 & 1494.15 & 2540.05
     Calculator female_custom_weight = new Calculator("140", "", user1, 1.4); //24.86 & 1450.51 & 2030.71
     Calculator female_custom_height = new Calculator("", "165", user1, 1.2); //25.04 & 1503.15 & 1803.77
