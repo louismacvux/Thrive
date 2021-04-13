@@ -30,10 +30,8 @@ com/comp3350/Database/DatabaseBasic.java
  com.comp3350.Database.DatabaseBasic
 com/comp3350/Logic/BloodInformationManager.java
  com.comp3350.Logic.BloodInformationManager
-com/comp3350/UI/MealPlan.java
- com.comp3350.UI.MealPlan
- com.comp3350.UI.MealPlan$1
- com.comp3350.UI.MealPlan$2
+com/comp3350/UI/BloodInformation.java
+ com.comp3350.UI.BloodInformation
 com/comp3350/UI/ViewPDF.java
  com.comp3350.UI.ViewPDF
 com/comp3350/Database/BloodMarks/IBlood.java
@@ -63,7 +61,9 @@ com/comp3350/Database/DatabaseServices.java
  com.comp3350.Database.DatabaseServices
 com/comp3350/Object/BloodSelfCheckDoc.java
  com.comp3350.Object.BloodSelfCheckDoc
-com/comp3350/UI/BloodInformation.java
- com.comp3350.UI.BloodInformation
 com/comp3350/UI/MainActivity.java
  com.comp3350.UI.MainActivity
+com/comp3350/UI/MealPlan.java
+ com.comp3350.UI.MealPlan
+ com.comp3350.UI.MealPlan$1
+ com.comp3350.UI.MealPlan$2
