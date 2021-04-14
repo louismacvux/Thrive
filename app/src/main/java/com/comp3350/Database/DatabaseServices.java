@@ -15,8 +15,8 @@ public class DatabaseServices {
             " email VARCHAR(50), user_name VARCHAR(50), gender VARCHAR(50)," +
             " weight DOUBLE, age INTEGER, height DOUBLE, password VARCHAR(50) );";
 
-        public static void setDB()
-        {
+    public static void setDB()
+    {
 
         try {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");

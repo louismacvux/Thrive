@@ -6,69 +6,69 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml
+8-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml
+9-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:5:5-80
-11-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:5:22-77
+11-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:5:5-80
+11-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:5:22-77
 12
 13    <application
-13-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:7:5-29:19
+13-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:7:5-29:19
 14        android:allowBackup="true"
-14-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:8:9-35
+14-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.3.1] /Users/MacBookAir/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.3.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/8dbd859d1cd89239b42e7382b4fc40d7/core-1.3.1/AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:9:9-43
+17-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:9:9-43
 18        android:label="@string/Thrive"
-18-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:10:9-39
+18-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:10:9-39
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:11:9-54
+19-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:12:9-35
+20-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:12:9-35
 21        android:theme="@style/Theme.Comp3350" >
-21-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:13:9-46
+21-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:13:9-46
 22        <activity android:name="com.comp3350.UI.MainActivity" />
-22-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:14:9-53
-22-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:14:19-50
+22-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-53
+22-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:19-50
 23        <activity android:name="com.comp3350.UI.RegisterActivity" />
-23-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:15:9-57
-23-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:15:19-54
+23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:9-57
+23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:19-54
 24        <activity android:name="com.comp3350.UI.LoginActivity" >
-24-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:16:9-22:20
-24-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:16:19-51
+24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:9-22:20
+24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:19-51
 25            <intent-filter>
-25-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:17:13-21:29
+25-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:17:13-21:29
 26                <action android:name="android.intent.action.MAIN" />
-26-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:18:17-69
-26-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:18:25-66
+26-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:18:17-69
+26-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:18:25-66
 27
 28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:20:17-77
-28-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:20:27-74
+28-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:17-77
+28-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:27-74
 29            </intent-filter>
 30        </activity>
 31        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
-31-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:23:9-58
-31-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:23:19-55
+31-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-58
+31-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-55
 32        <activity android:name="com.comp3350.UI.ViewPDF" />
-32-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:24:9-48
-32-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:24:19-45
+32-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-48
+32-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-45
 33        <activity android:name="com.comp3350.UI.WellnessResult" />
-33-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:25:9-55
-33-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:25:19-52
+33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-55
+33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-52
 34        <activity android:name="com.comp3350.UI.WellnessCalculator" />
-34-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:26:9-59
-34-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:26:19-56
+34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-59
+34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:19-56
 35        <activity android:name="com.comp3350.UI.BloodInformation" />
-35-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:27:9-57
-35-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:27:19-54
+35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:9-57
+35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:19-54
 36        <activity android:name="com.comp3350.UI.MealPlan" />
-36-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:28:9-49
-36-->/Users/MacBookAir/Desktop/COMP 3350/Thrive/app/src/main/AndroidManifest.xml:28:19-46
+36-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:9-49
+36-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:19-46
 37    </application>
 38
 39</manifest>

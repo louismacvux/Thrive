@@ -13,33 +13,32 @@ import static org.junit.Assert.*;
 
 public class RegisterManagerTest {
 
-//    DatabaseHelper db = new DatabaseHelper();
     RegisterManager manager = new RegisterManager();
     User u1;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         u1 = new User("emma", "emma@gmail.com", 18, 140,
                 "female", 160.8, "emma1234");
     }
 
-    /*@Test
-    public void fieldEmpty() {
-        assert(!manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
-                "male", 32, 140, 170));
-
-        //empty fields
-        assert(manager.fieldEmpty("", "bob", "bob1234", "bob1234",
-                "male", 32, 140, 170)); //empty email
-        assert(manager.fieldEmpty("bob@gmail.com", "", "bob1234", "bob1234",
-                "male", 32, 140, 170)); //empty username
-        assert(manager.fieldEmpty("bob@gmail.com", "bob", "", "bob1234",
-                "male", 32, 140, 170)); //empty pw
-        assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "",
-                "male", 32, 140, 170)); //empty confirmpw
-        assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
-                "male", 0, 0, 0)); //invalid numbers
-    }*/
+//    @Test
+//    public void fieldEmpty() {
+//        assert(!manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
+//                "male", 32, 140, 170));
+//
+//        //empty fields
+//        assert(manager.fieldEmpty("", "bob", "bob1234", "bob1234",
+//                "male", 32, 140, 170)); //empty email
+//        assert(manager.fieldEmpty("bob@gmail.com", "", "bob1234", "bob1234",
+//                "male", 32, 140, 170)); //empty username
+//        assert(manager.fieldEmpty("bob@gmail.com", "bob", "", "bob1234",
+//                "male", 32, 140, 170)); //empty pw
+//        assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "",
+//                "male", 32, 140, 170)); //empty confirmpw
+//        assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
+//                "male", 0, 0, 0)); //invalid numbers
+//    }
 
     @Test
     public void parseInt(){
@@ -130,7 +129,7 @@ public class RegisterManagerTest {
 
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         u1 = null;
     }
 }

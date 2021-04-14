@@ -18,215 +18,64 @@ import static org.junit.Assert.*;
  */
 public class UserTest {
     @Test
-    public void testUserObjects() throws Exception
-    {
-        int failedTests = 0;
-        int numTests = 0;
+    public void testUserObjects() {
         User testUser1 = new User();
 
         //test blank user creation
-        try
-        {
-            numTests++;
-            assert (testUser1 != null);
-            System.out.println("Blank user successfully created...");
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert (testUser1 != null);
 
         //test full constructor for users
         User testUser2 = new User("myName", "myEmail", 24,
                 160, "Female", 160.0, "myPass");
-        try
-        {
-            numTests++;
-            assert (testUser2 != null);
-            System.out.println("Regular user successfully created...");
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert (testUser2 != null);
 
         //test some getters and setters
-        try
-        {
-            numTests++;
-            assert(testUser1.getAge() != 915);
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
-
-        try
-        {
-            numTests++;
-            assert(testUser2.getGender().equals("Female"));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
-
-        try
-        {
-            numTests++;
-            assert(testUser2.getGenderInt() == 1);
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
-        System.out.println("*** USER TESTS ***");
-        System.out.println(numTests + " tests run, " + (numTests - failedTests) + " passed," +
-                failedTests + " failed.");
+        assert(testUser1.getAge() != 915);
+        assert(testUser2.getGender().equals("Female"));
+        assert(testUser2.getGenderInt() == 1);
     }
 
     @Test
-    public void testDatabaseMethods() throws Exception
-    {
-        int failedTests = 0;
-        int numTests = 0;
+    public void testDatabaseMethods() {
         DatabaseBasic dbTester = new DatabaseBasic();
 
         //make some Users to ASSERT adding to dbTester
         User testUser3 = new User("Jolly", "jolly@gmail.com", 24,
                 160, "Female", 160.0, "JollyPass");
-        try
-        {
-            numTests++;
-            assert(dbTester.addData(testUser3));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(dbTester.addData(testUser3));
+
         User testUser4 = new User("Holly", "Holly@gmail.com", 25,
                 160, "Female", 160.0, "HollyPass");
-        try
-        {
-            numTests++;
-            assert(dbTester.addData(testUser4));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(dbTester.addData(testUser4));
 
         User testUser5 = new User("Polly", "Polly@gmail.com", 26,
                 160, "Female", 160.0, "PollyPass");
-        try
-        {
-
-            assert(dbTester.addData(testUser5));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(dbTester.addData(testUser5));
 
         User testUser6 = new User("Sally", "Sally@gmail.com", 27,
                 160, "Female", 160.0, "SallyPass");
-        try
-        {
-            numTests++;
-            assert(dbTester.addData(testUser6));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(dbTester.addData(testUser6));
 
         //test getSomeone
         User temp = dbTester.getSomeone(testUser3.getName());
-        try
-        {
-
-            assert(temp.getName().equals(testUser3.getName()));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(temp.getName().equals(testUser3.getName()));
 
         //test getSomeone returns null if it can't find that user
         User testUser7 =  new User("Juan Diego", "jDizzle@gmail.com", 26,
                 160, "Female", 160.0, "PollyPass");
         temp = dbTester.getSomeone(testUser7.getName());
-        try
-        {
-            numTests++;
-            assert(temp == null);
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(temp == null);
 
         //test checkCredentials
         temp = testUser4;
-
-        try
-        {
-            numTests++;
-            assert(dbTester.checkCredentials(temp.getName(), temp.getPassword()));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
-        try
-        {
-            numTests++;
-            assert(!dbTester.checkCredentials("this won't", "work"));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
+        assert(dbTester.checkCredentials(temp.getName(), temp.getPassword()));
+        assert(!dbTester.checkCredentials("this won't", "work"));
 
         //test removeUser
-        try
-        {
-            numTests++;
-            assert(dbTester.removeUser(temp.getName()));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
-
+        assert(dbTester.removeUser(temp.getName()));
         temp = testUser7;                        //not in the db
-        try
-        {
-            numTests++;
-            assert (!dbTester.removeUser(temp.getName()));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failedTests++;
-            System.out.println(fail.getMessage());
-        }
-        System.out.println("*** DATABASE TESTS ***");
-        System.out.println(numTests + " tests run, " + (numTests - failedTests) + " passed," +
-                failedTests + " failed.");
+        assert (!dbTester.removeUser(temp.getName()));
+
     }
 }
 

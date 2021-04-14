@@ -61,39 +61,5 @@ public class BloodInformationTest {
         assertNotNull(testosterone);
         assertNotNull(estradiol);
 
-//        assert (newManager.getTSHGeneral().equals(tsh.getGeneralInfo()));
-//        assert (newManager.getCortisolGeneral().equals(cortisol.getGeneralInfo()));
-//        assert (newManager.getCreatinineGeneral().equals(creatinine.getGeneralInfo()));
-//        assert (newManager.getGlucoseGeneral().equals(glucose.getGeneralInfo()));
-//        assert (newManager.getIronGeneral().equals(iron.getGeneralInfo()));
-//        assert (newManager.getTestGeneral().equals(testosterone.getGeneralInfo()));
-//        assert (newManager.getEstraGeneral().equals(estradiol.getGeneralInfo()));
-//        assert (newManager.getTSHLow().equals(tsh.getLowSymptoms()));
-//        assert (newManager.getTSHHigh().equals(tsh.getHighSymptoms()));
-//        assert (newManager.getCortisolHigh().equals(cortisol.getHighSymptoms()));
-//        assert (newManager.getGlucoseLow().equals(glucose.getLowSymptoms()));
-//        assert (newManager.getGlucoseHigh().equals(glucose.getHighSymptoms()));
-//        assert (newManager.getIronLow().equals(iron.getLowSymptoms()));
-//        assert (newManager.getTestLow().equals(testosterone.getLowSymptoms()));
-//        assert (newManager.getEstraLow().equals(estradiol.getLowSymptoms()));
-//        assert (newManager.getEstraHigh().equals(estradiol.getHighSymptoms()));
-
-//        assert (!newManager.getTSHGeneral().isEmpty());
-//        assertNotNull (newManager.getCortisolGeneral());
-//        assertNotNull (newManager.getCreatinineGeneral());
-//        assertNotNull (newManager.getGlucoseGeneral());
-//        assertNotNull (newManager.getIronGeneral());
-//        assertNotNull (newManager.getTestGeneral());
-//        assertNotNull (newManager.getEstraGeneral());
-//        assertNotNull (newManager.getTSHLow());
-//        assertNotNull (newManager.getTSHHigh());
-//        assertNotNull (newManager.getCortisolHigh());
-//        assertNotNull (newManager.getGlucoseLow());
-//        assertNotNull (newManager.getGlucoseHigh());
-//        assertNotNull (newManager.getIronLow());
-//        assertNotNull (newManager.getTestLow());
-//        assertNotNull (newManager.getEstraLow());
-//        assertNotNull (newManager.getEstraHigh());
-
     }
 }

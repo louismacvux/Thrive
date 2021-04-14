@@ -11,13 +11,8 @@ import static org.junit.Assert.*;
 
 /**
  * Test regarding the function of the calculations: BMI and BMR
- *
- *
  */
 public class CalculatorTest {
-
-    int num_tested = 0;
-    int failed_test = 0;
 
     //User who only get
     User user0 = new User("Peter Parker", "PP@example.com",
@@ -37,10 +32,7 @@ public class CalculatorTest {
 
     @Test
     //test the calculation
-    public void testBMICal() throws Exception {
-        num_tested = 0;
-        failed_test = 0;
-
+    public void testBMICal() {
         male.calculate();
         male_custom_weight.calculate();
         male_custom_height.calculate();
@@ -51,86 +43,24 @@ public class CalculatorTest {
         female_custom_data.calculate();
 
         //BMI - try with user data
-        try {
-            num_tested++;
-            assertEquals(male.getBMI(), 26.74, 0.009);
-        } catch (AssertionFailedError e) {
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try {
-            num_tested++;
-            assertEquals(female.getBMI(), 26.63, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male.getBMI(), 26.74, 0.009);
+        assertEquals(female.getBMI(), 26.63, 0.009);
 
         //BMI - try with custom weight
-        try {
-            num_tested++;
-            assertEquals(male_custom_weight.getBMI(), 23.59, 0.009);
-        } catch (AssertionFailedError e) {
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try {
-            num_tested++;
-            assertEquals(female_custom_weight.getBMI(), 24.86, 0.009 );
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male_custom_weight.getBMI(), 23.59, 0.009);
+        assertEquals(female_custom_weight.getBMI(), 24.86, 0.009 );
 
         //BMI - try with custom height
-        try {
-            num_tested++;
-            assertEquals(male_custom_height.getBMI(), 22.58, 0.009);
-        } catch (AssertionFailedError e) {
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try {
-            num_tested++;
-            assertEquals(female_custom_height.getBMI(), 25.04, 0.009 );
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male_custom_height.getBMI(), 22.58, 0.009);
+        assertEquals(female_custom_height.getBMI(), 25.04, 0.009 );
 
         //BMI - try with custom data
-        try {
-            num_tested++;
-            assertEquals(male_custom_data.getBMI(), 19.92, 0.009);
-        } catch (AssertionFailedError e) {
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try {
-            num_tested++;
-            assertEquals(female_custom_data.getBMI(), 24.60, 0.009 );
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        System.out.println("*** BMI CALCULATING TESTS ***");
-        System.out.println(num_tested + " tests run, " + (num_tested - failed_test) + " passed," + failed_test + " failed.");
+        assertEquals(male_custom_data.getBMI(), 19.92, 0.009);
+        assertEquals(female_custom_data.getBMI(), 24.60, 0.009 );
     }
 
     @Test
-    public void testMCCal() throws Exception{
-        num_tested = 0;
-        failed_test = 0;
-
+    public void testMCCal() {
         male.calculate();
         male_custom_weight.calculate();
         male_custom_height.calculate();
@@ -141,83 +71,21 @@ public class CalculatorTest {
         female_custom_data.calculate();
 
         //MC - try with user data
-        try{
-            num_tested++;
-            assertEquals(male.getMC(), 2526.49, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try{
-            num_tested++;
-            assertEquals(female.getMC(), 2540.05, 0.009);
-        }
-        catch (AssertionFailedError e) {
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male.getMC(), 2526.49, 0.009);
+        assertEquals(female.getMC(), 2540.05, 0.009);
 
         //MC - try with custom weight
-        try{
-            num_tested++;
-            assertEquals(male_custom_weight.getMC(), 2016.11, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try{
-            num_tested++;
-            assertEquals(female_custom_weight.getMC(), 2030.71, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male_custom_weight.getMC(), 2016.11, 0.009);
+        assertEquals(female_custom_weight.getMC(), 2030.71, 0.009);
 
         //MC - try with custom height
-        try{
-            num_tested++;
-            assertEquals(male_custom_height.getMC(), 3195.38, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        try{
-            num_tested++;
-            assertEquals(female_custom_height.getMC(), 1803.77, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male_custom_height.getMC(), 3195.38, 0.009);
+        assertEquals(female_custom_height.getMC(), 1803.77, 0.009);
 
         //MC - try with custom data
-        try{
-            num_tested++;
-            assertEquals(male_custom_data.getMC(), 2457.13, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
+        assertEquals(male_custom_data.getMC(), 2457.13, 0.009);
+        assertEquals(female_custom_data.getMC(), 2376.38, 0.009);
 
-        try{
-            num_tested++;
-            assertEquals(female_custom_data.getMC(), 2376.38, 0.009);
-        }
-        catch (AssertionFailedError e){
-            failed_test++;
-            System.out.println(e.getMessage());
-        }
-
-        System.out.println("*** MC CALCULATING TESTS ***");
-        System.out.println(num_tested + " tests run, " + (num_tested - failed_test) + " passed," + failed_test + " failed.");
     }
 
 }

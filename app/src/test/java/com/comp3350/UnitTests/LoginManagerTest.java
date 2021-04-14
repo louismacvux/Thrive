@@ -25,7 +25,7 @@ public class LoginManagerTest {
     DatabaseHelper dbmock;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         dbmock = mock(DatabaseHelper.class);
         login = new LoginManager(dbmock);
     }
