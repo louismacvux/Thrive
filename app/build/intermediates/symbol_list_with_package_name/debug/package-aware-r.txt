@@ -2072,6 +2072,7 @@ id password_toggle
 id path
 id pathRelative
 id pdfView
+id pdf_fileName
 id peekHeight
 id percent
 id pin
