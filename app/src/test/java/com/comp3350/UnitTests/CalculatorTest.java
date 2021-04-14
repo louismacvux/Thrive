@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  *
  *
  */
-public class WellnessCalculatorTest {
+public class CalculatorTest {
 
     int num_tested = 0;
     int failed_test = 0;

@@ -4,7 +4,7 @@ import com.comp3350.UnitTests.LoginManagerTest;
 import com.comp3350.UnitTests.BloodInformationTest;
 import com.comp3350.UnitTests.RegisterManagerTest;
 import com.comp3350.UnitTests.UserTest;
-import com.comp3350.UnitTests.WellnessCalculatorTest;
+import com.comp3350.UnitTests.CalculatorTest;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -15,7 +15,7 @@ import org.junit.runners.Suite;
         UserTest.class,
         BloodInformationTest.class,
         RegisterManagerTest.class,
-        WellnessCalculatorTest.class,
+        CalculatorTest.class,
         LoginManagerTest.class
 })
 
