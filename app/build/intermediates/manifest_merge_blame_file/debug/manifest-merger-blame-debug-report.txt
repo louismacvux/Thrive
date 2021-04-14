@@ -29,46 +29,47 @@
 19-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
 20-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:12:9-35
-21        android:theme="@style/Theme.Comp3350" >
-21-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:13:9-46
-22        <activity android:name="com.comp3350.UI.MainActivity" />
-22-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-53
-22-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:19-50
-23        <activity android:name="com.comp3350.UI.RegisterActivity" />
-23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:9-57
-23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:19-54
-24        <activity android:name="com.comp3350.UI.LoginActivity" >
-24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:9-22:20
-24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:19-51
-25            <intent-filter>
-25-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:17:13-21:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:18:17-69
-26-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:18:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:17-77
-28-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:27-74
-29            </intent-filter>
-30        </activity>
-31        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
-31-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-58
-31-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-55
-32        <activity android:name="com.comp3350.UI.ViewPDF" />
-32-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-48
-32-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-45
-33        <activity android:name="com.comp3350.UI.WellnessResult" />
-33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-55
-33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-52
-34        <activity android:name="com.comp3350.UI.WellnessCalculator" />
-34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-59
-34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:19-56
-35        <activity android:name="com.comp3350.UI.BloodInformation" />
-35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:9-57
-35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:19-54
-36        <activity android:name="com.comp3350.UI.MealPlan" />
-36-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:9-49
-36-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:19-46
-37    </application>
-38
-39</manifest>
+21        android:testOnly="true"
+22        android:theme="@style/Theme.Comp3350" >
+22-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:13:9-46
+23        <activity android:name="com.comp3350.UI.MainActivity" />
+23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-53
+23-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:19-50
+24        <activity android:name="com.comp3350.UI.RegisterActivity" />
+24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:9-57
+24-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:19-54
+25        <activity android:name="com.comp3350.UI.LoginActivity" >
+25-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:9-22:20
+25-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:19-51
+26            <intent-filter>
+26-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:18:17-69
+27-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:17-77
+29-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.comp3350.UI.WorkoutSuggestion" />
+32-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-58
+32-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-55
+33        <activity android:name="com.comp3350.UI.ViewPDF" />
+33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-48
+33-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-45
+34        <activity android:name="com.comp3350.UI.WellnessResult" />
+34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-55
+34-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-52
+35        <activity android:name="com.comp3350.UI.WellnessCalculator" />
+35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-59
+35-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:19-56
+36        <activity android:name="com.comp3350.UI.BloodInformation" />
+36-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:9-57
+36-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:19-54
+37        <activity android:name="com.comp3350.UI.MealPlan" />
+37-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:9-49
+37-->/Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:19-46
+38    </application>
+39
+40</manifest>

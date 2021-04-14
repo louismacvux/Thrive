@@ -38,8 +38,10 @@ com/comp3350/UI/ViewPDF.java
  com.comp3350.UI.ViewPDF
 com/comp3350/Database/BloodMarks/IBlood.java
  com.comp3350.Database.BloodMarks.IBlood
-com/comp3350/Database/BloodMarks/Creatinine.java
- com.comp3350.Database.BloodMarks.Creatinine
+com/comp3350/UI/LoginActivity.java
+ com.comp3350.UI.LoginActivity
+ com.comp3350.UI.LoginActivity$1
+ com.comp3350.UI.LoginActivity$2
 com/comp3350/Database/BloodMarks/TSH.java
  com.comp3350.Database.BloodMarks.TSH
 com/comp3350/Database/BloodMarks/Testosterone.java
@@ -57,13 +59,11 @@ com/comp3350/Logic/LoginManager.java
  com.comp3350.Logic.LoginManager
 com/comp3350/Database/BloodMarks/Cortisol.java
  com.comp3350.Database.BloodMarks.Cortisol
-com/comp3350/Object/BloodSelfCheckDoc.java
- com.comp3350.Object.BloodSelfCheckDoc
-com/comp3350/UI/BloodInformation.java
- com.comp3350.UI.BloodInformation
 com/comp3350/Database/DatabaseServices.java
  com.comp3350.Database.DatabaseServices
-com/comp3350/UI/LoginActivity.java
- com.comp3350.UI.LoginActivity
- com.comp3350.UI.LoginActivity$1
- com.comp3350.UI.LoginActivity$2
+com/comp3350/UI/BloodInformation.java
+ com.comp3350.UI.BloodInformation
+com/comp3350/Database/BloodMarks/Creatinine.java
+ com.comp3350.Database.BloodMarks.Creatinine
+com/comp3350/Object/BloodSelfCheckDoc.java
+ com.comp3350.Object.BloodSelfCheckDoc
