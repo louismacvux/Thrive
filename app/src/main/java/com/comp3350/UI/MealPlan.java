@@ -30,6 +30,8 @@ public class MealPlan extends AppCompatActivity {
         String currentUser = i.getStringExtra("currentUser");
         current = dbHelper.getSomeone(currentUser);
 
+        selected = null;
+
         //non-vegetarian
         Spinner nonVegSpin = findViewById(R.id.NonVegSpin);
         nonVegSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -37,16 +39,20 @@ public class MealPlan extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case 0: break;
+                    case 0: selected = null; break;
                     case 1: selected = MealDoc.NonVeg3100; break;
                     case 2: selected = MealDoc.NonVeg2600; break;
                     case 3: selected = MealDoc.NonVeg2300; break;
                     case 4: selected = MealDoc.NonVeg1900; break;
                 }
-                String text = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-                if (selected != null)
+                if (position != 0) {
+                    String text = parent.getItemAtPosition(position).toString();
+                    Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+                }
+                if (selected != null) {
                     showMeal();
+                    nonVegSpin.setSelection(0);
+                }
             }
 
             @Override
@@ -55,21 +61,26 @@ public class MealPlan extends AppCompatActivity {
 
         //vegetarian
         Spinner vegSpin = findViewById(R.id.VegSpin);
+        vegSpin.setSelection(0);
         vegSpin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case 0: break;
+                    case 0: selected = null; break;
                     case 1: selected = MealDoc.Veg3100; break;
                     case 2: selected = MealDoc.Veg2600; break;
                     case 3: selected = MealDoc.Veg2200; break;
                     case 4: selected = MealDoc.Veg1800; break;
                 }
-                String text = parent.getItemAtPosition(position).toString();
-                Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
-                if (selected != null)
+                if (position != 0) {
+                    String text = parent.getItemAtPosition(position).toString();
+                    Toast.makeText(parent.getContext(), text, Toast.LENGTH_SHORT).show();
+                }
+                if (selected != null) {
                     showMeal();
+                    vegSpin.setSelection(0);
+                }
             }
 
             @Override
