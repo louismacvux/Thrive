@@ -1,23 +1,14 @@
 package com.comp3350.Database;
+import java.sql.*;
+import com.comp3350.Database.DatabaseServices;
 
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.DatabaseUtils;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
-import com.comp3350.Logic.RegisterManager;
 import com.comp3350.Object.User;
 
-public class DatabaseHelper extends SQLiteOpenHelper
+public class DatabaseHelper implements Database
 {
-    private static final String TAG = "DatabaseHelper";
 
-    private static final String FILE_NAME = "users.db";
     private static final String TABLE_NAME = "profiles";
-    private static final String COL_ID = "ID";
     private static final String COL_EMAIL = "email";
     private static final String COL_USERNAME = "user_name";
     private static final String COL_GENDER = "gender";
@@ -27,106 +18,107 @@ public class DatabaseHelper extends SQLiteOpenHelper
     private static final String COL_PW = "password";
 
 
-    public DatabaseHelper (Context context)
-    {
-        super(context, FILE_NAME, null, 1);
+    public DatabaseHelper (){
     }
 
-    //this will only process when we create a new database
-    @Override
-    public void onCreate(SQLiteDatabase db)
-    {
-       String createTable = "CREATE TABLE " + TABLE_NAME + " (" + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_EMAIL + " TEXT, " +
-               COL_USERNAME + " TEXT, " + COL_GENDER + " TEXT, " + COL_WEIGHT + " DOUBLE, " +
-               COL_AGE + " INTEGER, " + COL_HEIGHT + " DOUBLE, " + COL_PW + " TEXT) ";
-        db.execSQL(createTable);
+    private Connection connection() throws SQLException {
+        return DriverManager.getConnection("jdbc:hsqldb:file:/data/data/com.example.comp3350/profilesdb;ifexists=false;shutdown=true", "SA", "");
     }
 
-    //this runs only when we update the version of the application
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
-        onCreate(db);
-    }
+
 
     public boolean addData(User newUser)
     {
-        //assume we didn't add data(item) to the table
+        //assume we didn't add a new user to the table
         boolean result = false;
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
 
-        //insert user data in database file
-        contentValues.put(COL_EMAIL, newUser.getEmail());
-        contentValues.put(COL_USERNAME, newUser.getName());
-        contentValues.put(COL_GENDER, newUser.getGender());
-        contentValues.put(COL_WEIGHT, newUser.getWeight());
-        contentValues.put(COL_AGE, newUser.getAge());
-        contentValues.put(COL_HEIGHT, newUser.getHeight());
-        contentValues.put(COL_PW, newUser.getPassword());
+        System.out.println(newUser.toString());
+        try (Connection con = connection())
+        {
+            PreparedStatement pstmt = con.prepareStatement(
+                    "insert into profiles (" + COL_EMAIL + ", "  + COL_USERNAME + ", " +
+                            COL_GENDER + ", "  + COL_WEIGHT + ", "  + COL_AGE + ", " +
+                            COL_HEIGHT + ", " +  COL_PW + ") values (?, ?, ?, ?, ?, ?, ?);");
 
-        Log.d(TAG, "addData: Adding a new user to " + TABLE_NAME);
+            pstmt.setString(1, newUser.getEmail());
+            pstmt.setString(2, newUser.getName());
+            pstmt.setString(3, newUser.getGender());
+            pstmt.setDouble(4, newUser.getWeight());
+            pstmt.setInt(5, newUser.getAge());
+            pstmt.setDouble(6, newUser.getHeight());
+            pstmt.setString(7, newUser.getPassword());
 
-        // -1 if not inserted, otherwise it was inserted
-        long check = db.insert(TABLE_NAME, null, contentValues);
-        db.close();
+            pstmt.executeUpdate();
+            pstmt.close();
+        }
+        catch (SQLException e) {
+            System.out.println("Error in adding a new user...");
+            e.printStackTrace(System.out);
+        }
 
-        if (check  != -1)
+        User checker = getSomeone(newUser.getName());
+
+        if (checker != null)
         {
             result = true;
         }
         return result;
     }
 
-    public User getSomeone(String name)
-    {
-        User result;
+    public User getSomeone(String name) {
+        User result = null;
 
-        //Query the database to pull a user
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor;
-        cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE " + COL_USERNAME + " = ?", new String[] {name});
-
-        //if we found our user
-        if (cursor.moveToFirst())
+        try (Connection con = connection())
         {
-            int userID = cursor.getInt(0);
-            String userEmail = cursor.getString(1);
-            String userName = cursor.getString(2);
-            String userGender = cursor.getString(3);
-            double userWeight = cursor.getDouble(4);
-            int userAge = cursor.getInt(5);
-            double userHeight = cursor.getDouble(6);
-            String userPass = cursor.getString(7);
+            PreparedStatement pstmt = con.prepareStatement(
+                    "Select * From " + TABLE_NAME + " where " + COL_USERNAME + " = ?;"
+            );
+            pstmt.setString(1, name);
 
-            result = new User(userID, userName, userEmail, userAge, userWeight, userGender, userHeight, userPass);
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next())
+            {
+                // at least 1 row (hopefully one row!) exists. Get the data
+                result = new User(resultSet.getString(COL_USERNAME), resultSet.getString(COL_EMAIL),
+                        resultSet.getInt(COL_AGE), resultSet.getDouble(COL_WEIGHT), resultSet.getString(COL_GENDER),
+                        resultSet.getDouble(COL_HEIGHT), resultSet.getString(COL_PW));
+
+            }
+            pstmt.close();
+            resultSet.close();
         }
-        //empty User
-        else
-        {
-            result = null;
+        catch (SQLException e) {
+            System.out.println("Error in finding user: " + name);
+            e.printStackTrace(System.out);
         }
-        //close db and cursor when done
-        db.close();
-        cursor.close();
+
         return result;
     }
+
 
     public boolean checkCredentials(String givenName, String givenPassword)
     {
         boolean result = false;
 
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME +
-                " WHERE " + COL_USERNAME + " = ? AND " + COL_PW + " = ?", new String[] {givenName, givenPassword});
-
-        cursor.moveToFirst();
-        String help = DatabaseUtils.dumpCursorToString(cursor);
-        Log.d(TAG, help);
-        if (cursor.getCount() > 0)
+        try (Connection con = connection())
         {
-            result = true;
+            PreparedStatement pstmt = con.prepareStatement(
+                    "Select " + COL_PW + " from " + TABLE_NAME + " where "+ COL_PW +
+                            "  = ?;");
+            pstmt.setString(1, givenPassword);
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next() && checkName(givenName))
+            {
+                result = true;
+            }
+            pstmt.close();
+            resultSet.close();
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace(System.out);
         }
         return result;
     }
@@ -136,63 +128,105 @@ public class DatabaseHelper extends SQLiteOpenHelper
     {
         boolean result = false;
 
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME +
-                " WHERE " +  COL_USERNAME + " = ?", new String[] {givenName});
-
-        cursor.moveToFirst();
-        String help = DatabaseUtils.dumpCursorToString(cursor);
-        Log.d(TAG, help);
-
-        if (cursor.getCount() > 0)
+        try (Connection con = connection())
         {
-            result = true;
+            PreparedStatement pstmt = con.prepareStatement(
+                    "Select " + COL_USERNAME + " from " + TABLE_NAME + " where "+ COL_USERNAME +
+                            "  = ?;");
+            pstmt.setString(1, givenName);
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next())
+            {
+                result = true;
+            }
+            pstmt.close();
+            resultSet.close();
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace(System.out);
         }
         return result;
     }
 
-    public boolean updateInfo(String id, String column, String data)
+    public boolean updateInfo(String name, String column, String data)
     {
         boolean result = false;
 
-        //parse the string to an 'int' if necessary
-        SQLiteDatabase db = this.getWritableDatabase();
-        try
+        //parse the string to an 'int' if necessary, for AGE
+        if (column.equals(COL_AGE))
         {
-            Integer.parseInt(data);
+            try
+            {
+                Integer.parseInt(data);
+            }
+            catch (NumberFormatException e)
+            {
+                System.out.println(e.getMessage());
+            }
         }
-        catch (NumberFormatException e)
+
+        //parse the string to an 'int' if necessary, for AGE
+        if (column.equals(COL_HEIGHT)|| column.equals(COL_WEIGHT))
         {
-            System.out.println(e.getMessage());
+            try
+            {
+                Double.parseDouble(data);
+            }
+            catch (NumberFormatException e)
+            {
+                System.out.println(e.getMessage());
+            }
         }
 
-        //CV object is used to add/update our DB
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(column, data);
-
-        //checker -> will be the number of rows affected
-        int checker = db.update(TABLE_NAME, contentValues, "ID = ?", new String[] {id} );
-
-        if (checker > 0)
+        try (Connection con = connection())
         {
-            result = true;
+            PreparedStatement pstmt = con.prepareStatement(
+                    "Select " + COL_USERNAME + " from " + TABLE_NAME + " where "+ COL_USERNAME +
+                            "  = ?;");
+
+            pstmt.setString(1, name);
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next())
+            {
+                pstmt = con.prepareStatement(
+                        "Update " + TABLE_NAME + " set " + column + " = " + data + "  where " + COL_USERNAME +
+                                "  = ?;");
+                pstmt.setString(1, name);
+                result = true;
+            }
+            pstmt.close();
+            resultSet.close();
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace(System.out);
         }
         return result;
     }
 
-    public boolean deleteUser(String name)
+    public boolean removeUser(String name)
     {
         //assume we didn't remove the user from the db
         boolean result = false;
 
-        //Query the database to pull a user
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor;
-        cursor = db.rawQuery("DELETE FROM " + TABLE_NAME + " WHERE " + COL_USERNAME + " = ?", new String[] {name});
-
-        if (!checkName(name))
+        if (checkName(name))
         {
+            try (Connection con = connection())
+            {
+                PreparedStatement pstmt = con.prepareStatement(
+                        "Delete from " + TABLE_NAME + " where "+ COL_USERNAME +
+                                "  = ?;");
+                pstmt.setString(1, name);
+                pstmt.executeUpdate();
+                pstmt.close();
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace(System.out);
+            }
             result = true;
         }
         return result;

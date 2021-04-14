@@ -1,5 +1,8 @@
 package com.comp3350.Database.BloodMarks;
 
+import com.comp3350.R;
+import com.comp3350.UI.MainActivity;
+
 public class Iron implements IBlood{
     double iron;
 
@@ -11,16 +14,21 @@ public class Iron implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        return "ℹ️ Iron is an essential element for blood production. It is also essential for oxygen distribution in the body.";
+        return MainActivity.getContext().getString(R.string.ironGeneral);
     }
 
+    @Override
     public String getLowSymptoms() {
-        return "Experiencing symptoms including getting pale, " +
-                "lack of energy, shortness of breath, rapid heartbeat and extreme fatigue? " +
-                "Check out Thrives low Iron recommendations.";
+        return MainActivity.getContext().getString(R.string.ironLowSymptoms);
     }
 
-    public double getIron() {
+    @Override
+    public String getHighSymptoms(){
+        return MainActivity.getContext().getString(R.string.ironHighSymptoms);
+    }
+
+    @Override
+    public double getLevels() {
         return iron;
     }
 }

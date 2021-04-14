@@ -7,6 +7,12 @@
     tools:context="com.comp3350.UI.WorkoutSuggestion"
     android:background="@color/design_default_color_background">
 
+    <TextView
+        android:id="@+id/pdf_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfView"
         android:layout_width="match_parent"

@@ -9,6 +9,7 @@
 - MainActivity : The main dashboard of the app where each card navigates to each of the features.
 - WorkoutSuggestion : Feature UI for workout suggestions to users.
 - BloodInformation : Feature UI for providing general information about some of the main blood markers, possible symptoms when it is out of the normal range, and suggestions that users can look up.
+- MealPlan : Feature UI for providing meal plans based on the users' maintenance calories and dietary preference (vegetarian or non-vegetarian).
 - WellnessCalculator : Feature UI for users to see their current BMI and calorie intake to maintain their weight.
 - WellnessResult : Result from the wellness calculator.
 - ViewPDF : Class to show documents from the WorkoutDoc & BloodSelfCheckDoc objects.

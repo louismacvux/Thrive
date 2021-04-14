@@ -1,5 +1,8 @@
 package com.comp3350.Database.BloodMarks;
 
+import com.comp3350.R;
+import com.comp3350.UI.MainActivity;
+
 public class Estradiol implements IBlood{
     double estradiol;
 
@@ -11,22 +14,21 @@ public class Estradiol implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        return "ℹ️ Estradiol, also referred to as estrogen, is one of the most vital sexual " +
-                "hormone for women. It regulates to a large context much of women's sexual function " +
-                "/ development, metabolism of important metabolites, insulin sensitivity and body composition. ";
+        return MainActivity.getContext().getString(R.string.estradiolGeneral);
     }
 
+    @Override
     public String getLowSymptoms() {
-        return "Are having irregular periods, hot flashes, mood swings, " +
-                "fatigue or depression? Check out Thrive's low estrogen balancing approach below.";
+        return MainActivity.getContext().getString(R.string.estradiolLowSymptoms);
     }
 
+    @Override
     public String getHighSymptoms() {
-        return "Experiencing symptoms such as bloating, cold hands and feet, low " +
-                "sex drive and hair loss? Check out Thrives high estrogen balancing approach below.";
+        return MainActivity.getContext().getString(R.string.estradiolHighSymptoms);
     }
 
-    public double getEstradiol() {
+    @Override
+    public double getLevels() {
         return estradiol;
     }
 }

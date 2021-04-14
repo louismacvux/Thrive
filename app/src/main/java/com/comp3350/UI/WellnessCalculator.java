@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.comp3350.Database.DatabaseHelper;
+import com.comp3350.Database.DatabaseServices;
 import com.comp3350.Object.User;
 import com.comp3350.R;
 
@@ -73,7 +74,7 @@ public class WellnessCalculator extends AppCompatActivity {
 
         calculate.setOnClickListener(v -> {
             Intent intent = getIntent();
-            dbHelper = new DatabaseHelper(WellnessCalculator.this);
+            dbHelper = new DatabaseHelper();
             String userName = intent.getStringExtra("currentUser");
 
             currentUser = dbHelper.getSomeone(userName);
@@ -82,7 +83,6 @@ public class WellnessCalculator extends AppCompatActivity {
 
             //Do the calculation
             calculator = new Calculator(string_weight, string_height, currentUser, activity_level);
-            calculator.calculate();
 
             //get back the result
             maintenance_calories = calculator.getMC();

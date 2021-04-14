@@ -1,5 +1,8 @@
 package com.comp3350.Database.BloodMarks;
 
+import com.comp3350.R;
+import com.comp3350.UI.MainActivity;
+
 public class Testosterone implements IBlood{
     double testosterone;
 
@@ -12,16 +15,21 @@ public class Testosterone implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        return "ℹ️ Testosterone is one of the most vital sexual hormones, specifically for males. " +
-                "It regulates to a large context much of men's sexual function, mood stability, body composition and bone mass.";
+        return MainActivity.getContext().getString(R.string.testGeneral);
     }
 
+    @Override
     public String getLowSymptoms() {
-        return "Having symptoms such as lack of appetite, decrease in sexual libido, worse body fat distribution and depression? " +
-                "Check out Thrives testosterone balancing strategies below.";
+        return MainActivity.getContext().getString(R.string.testLowSymptoms);
     }
 
-    public double getTestosterone() {
+    @Override
+    public String getHighSymptoms(){
+        return MainActivity.getContext().getString(R.string.testHighSymptoms);
+    }
+
+    @Override
+    public double getLevels() {
         return testosterone;
     }
 }

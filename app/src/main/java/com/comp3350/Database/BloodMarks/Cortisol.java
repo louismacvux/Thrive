@@ -1,5 +1,8 @@
 package com.comp3350.Database.BloodMarks;
 
+import com.comp3350.R;
+import com.comp3350.UI.MainActivity;
+
 public class Cortisol implements IBlood{
     double cortisol;
 
@@ -11,17 +14,21 @@ public class Cortisol implements IBlood{
 
     @Override
     public String getGeneralInfo() {
-        return "ℹ️ Cortisol is the primary stress hormone in the human body.";
+        return MainActivity.getContext().getString(R.string.cortisolGeneral);
     }
 
+    @Override
+    public String getLowSymptoms() {
+        return MainActivity.getContext().getString(R.string.cortisolLowSymptoms);
+    }
+
+    @Override
     public String getHighSymptoms() {
-        return "Experiencing symptoms including muscle weakness, unmanageable fatigue, " +
-                "difficulty concentrating or weight gain (bloating)? There is a very high chance you " +
-                "have stressed yourself out and have elevated levels of cortisol in your body. " +
-                "Check out Thrive's cortisol balancing approach below.";
+        return MainActivity.getContext().getString(R.string.cortisolHighSymptoms);
     }
 
-    public double getCortisol() {
+    @Override
+    public double getLevels() {
         return cortisol;
     }
 }

@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
 MERGED from [com.google.android.material:material:1.3.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/0b040ae6fd7360855475a012c5af81a6/material-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/44b21666f861b2b454523071d69d07d7/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/781e993504d261a502c7e6703c7d0a0d/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/8596e58185d3853d996280c94381bbf5/jetified-pdfium-android-1.7.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/2d2710744d3f92a73ddd3918b39cf218/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/205c3f2e8e70a10bc22df4643cb32764/jetified-pdfium-android-1.7.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -45,20 +45,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/suhjinkang/.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/1435e0b5216c3fd72a2d6579c29d3ee1/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/035487676af6db782633ffbdc1d98b21/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/3fd5b4b866d23b43b0e15439a0ee99e7/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:3:5-27
 		INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
 		INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:1-31:12
 		INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:2:11-69
@@ -67,7 +67,7 @@ ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:5:5
 	android:name
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:5:22-77
 application
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:7:5-28:19
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:7:5-29:19
 MERGED from [com.google.android.material:material:1.3.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/0b040ae6fd7360855475a012c5af81a6/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/0b040ae6fd7360855475a012c5af81a6/material-1.3.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
@@ -91,17 +91,17 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/suhj
 	android:theme
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:13:9-46
 activity#com.comp3350.UI.MainActivity
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-65
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:9-53
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:19-62
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:14:19-50
 activity#com.comp3350.UI.RegisterActivity
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:9-69
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:9-57
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:19-66
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:15:19-54
 activity#com.comp3350.UI.LoginActivity
 ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:19-63
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:16:19-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
@@ -113,25 +113,29 @@ ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:
 	android:name
 		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.comp3350.UI.WorkoutSuggestion
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-70
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:9-58
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-67
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:23:19-55
 activity#com.comp3350.UI.ViewPDF
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-60
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:9-48
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-57
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:24:19-45
 activity#com.comp3350.UI.WellnessResult
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-66
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:9-55
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-64
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:25:19-52
 activity#com.comp3350.UI.WellnessCalculator
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-70
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:9-59
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:19-68
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:26:19-56
 activity#com.comp3350.UI.BloodInformation
-ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:9-68
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:9-57
 	android:name
-		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:19-66
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:27:19-54
+activity#com.comp3350.UI.MealPlan
+ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:9-49
+	android:name
+		ADDED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml:28:19-46
 uses-sdk
 INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/suhjinkang/Desktop/thrive/app/src/main/AndroidManifest.xml
@@ -142,10 +146,10 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/suhjinkang
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/73327337a728e12c5c3cdecdb4b7e327/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/44b21666f861b2b454523071d69d07d7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/44b21666f861b2b454523071d69d07d7/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/781e993504d261a502c7e6703c7d0a0d/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/781e993504d261a502c7e6703c7d0a0d/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/8596e58185d3853d996280c94381bbf5/jetified-pdfium-android-1.7.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/8596e58185d3853d996280c94381bbf5/jetified-pdfium-android-1.7.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/2d2710744d3f92a73ddd3918b39cf218/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/2d2710744d3f92a73ddd3918b39cf218/jetified-android-pdf-viewer-2.8.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/205c3f2e8e70a10bc22df4643cb32764/jetified-pdfium-android-1.7.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/205c3f2e8e70a10bc22df4643cb32764/jetified-pdfium-android-1.7.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/suhjinkang/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44

@@ -8,5 +8,5 @@ public interface Database {
     User getSomeone(String name);
     boolean checkCredentials(String givenName, String givenPassword);
     boolean checkName(String givenName);
-    boolean removeUser(User input);
+    boolean removeUser(String name);
 }

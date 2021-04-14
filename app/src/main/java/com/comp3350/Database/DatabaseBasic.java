@@ -77,7 +77,7 @@ public class DatabaseBasic implements Database
         return result;
     }
 
-    public boolean removeUser(User input)
+    public boolean removeUser(String input)
     {
         //assume we did not remove the user
         boolean result = false;
@@ -86,7 +86,7 @@ public class DatabaseBasic implements Database
         for (int i = 0; i < data.size() && !result; i++)
         {
             temp = (User) data.get(i);
-            if (temp == input)
+            if (temp.getName() == input)
             {
                 data.remove(i);
                 System.out.println("User " + temp.getName() + " has been deleted");
@@ -96,7 +96,7 @@ public class DatabaseBasic implements Database
 
         if (!result)
         {
-            System.out.println("ERROR: USER "+ input.getName() +
+            System.out.println("ERROR: USER "+ input +
                     " WAS NOT FOUND, WAS NOT REMOVED");
         }
 

@@ -3,82 +3,96 @@ import com.comp3350.Database.DatabaseHelper;
 
 
 public class User {
-    private int id;
     private String name;
     private String email;
     private int age;
     private double weight;
-    private String gender;
     private double height;
     private String password;
+
+    private gender me;
+
+
+    //0 = male, 1 = female
+    enum gender
+    {
+        MALE("Male", 0),
+        FEMALE("Female", 1);
+
+        String stringValue;
+        int intValue;
+
+        private gender(String toString, int value) {
+            stringValue = toString;
+            intValue = value;
+        }
+
+    }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", age=" + age +
                 ", weight=" + weight +
-                ", gender='" + gender + '\'' +
+                ", gender='" + me.stringValue + '\'' +
                 ", height=" + height +
                 '}';
     }
 
-    public User (int id, String name, String email, int age, double weight, String gender, double height, String password)
+    public User (String name, String email, int age, double weight, String givenGender, double height, String password)
     {
-        this.id = id;
         this.name = name;
         this.email = email;
         this.age = age;
         this.weight = weight;
-        this.gender = gender;
+
+        if (givenGender.equals("Male"))
+        {
+            me = me.MALE;
+        }
+        else
+        {
+            me = me.FEMALE;
+        }
         this.height = height;
         this.password = password;
     }
     public User(){}
 
-    public void setId(int id, DatabaseHelper db) {
-        this.id = id;
-        db.updateInfo("id", "COL_ID", "id");
-    }
-
     public void setName(String name,  DatabaseHelper db) {
         this.name = name;
-        db.updateInfo("id", "COL_NAME", name);
+        db.updateInfo(name, "COL_NAME", name);
     }
 
     public void setEmail(String email,  DatabaseHelper db) {
         this.email = email;
-        db.updateInfo("id", "COL_EMAIL", email);
+        db.updateInfo(name, "COL_EMAIL", email);
     }
 
     public void setAge(int age, DatabaseHelper db) {
         this.age = age;
-        db.updateInfo("id", "COL_AGE", String.valueOf(age));
+        db.updateInfo(name, "COL_AGE", String.valueOf(age));
     }
 
     public void setWeight(double weight, DatabaseHelper db) {
         this.weight = weight;
-        db.updateInfo("id", "COL_WEIGHT", String.valueOf(weight));
+        db.updateInfo(name, "COL_WEIGHT", String.valueOf(weight));
     }
 
     public void setGender(String gender, DatabaseHelper db) {
-        this.gender = gender;
-        db.updateInfo("id", "COL_GENDER", gender);
+        this.me.stringValue = gender;
+        db.updateInfo(name, "COL_GENDER", gender);
     }
 
     public void setHeight(double height, DatabaseHelper db) {
         this.height = height;
-        db.updateInfo("id", "COL_HEIGHT", String.valueOf(height));
+        db.updateInfo(name, "COL_HEIGHT", String.valueOf(height));
     }
 
     public void setPassword(String password, DatabaseHelper db) { this.password = password;
-        db.updateInfo("id", "COL_PW", password);
-    }
-
-    public int getId() {
-        return id;
+        db.updateInfo(name, "COL_PW", password);
     }
 
     public String getName() {
@@ -98,15 +112,15 @@ public class User {
     }
 
     public String getGender() {
-        return gender;
+        return me.stringValue;
     }
 
     public int  getGenderInt() {
-        if (gender.equalsIgnoreCase("Male"))
+        if (me.stringValue.equalsIgnoreCase("Male"))
         {
             return 0;
         }
-        else if (gender.equalsIgnoreCase("Female"))
+        else if (me.stringValue.equalsIgnoreCase("Female"))
         {
             return 1;
         }

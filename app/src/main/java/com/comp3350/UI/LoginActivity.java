@@ -1,6 +1,9 @@
 package com.comp3350.UI;
+import com.comp3350.Database.DatabaseServices;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.comp3350.Database.DatabaseHelper;
 import com.comp3350.Logic.LoginManager;
 import com.comp3350.R;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -27,8 +35,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-        db = new DatabaseHelper(this);
+        DatabaseServices.setDB();
+        DatabaseHelper db = new DatabaseHelper();
 
         //get the data from the GUI
         txtUsername = (EditText) findViewById(R.id.edittext_username);
@@ -48,33 +56,19 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LoginManager loginManager = new LoginManager(db);
+                String toast;
 
                 userName = txtUsername.getText().toString();
                 userPass = txtPassword.getText().toString();
 
-                if (userName.isEmpty() || userPass.isEmpty())
-                {
-                    Toast.makeText(LoginActivity.this, "Please enter both username and password",
-                            Toast.LENGTH_LONG).show();
+                toast = loginManager.validateUser(userName, userPass);
+                Toast.makeText(LoginActivity.this,toast,Toast.LENGTH_LONG).show();
+                if (toast.equals("Successfully logged in")){
+                    Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    MainIntent.putExtra("currentUser", userName);
+                    startActivity(MainIntent);
                 }
-                else {
-//                    boolean checkUserPass = loginManager.proceedLogin(userName, userPass);
-                    if (loginManager.proceedLogin(userName, userPass)) {
-                        Intent MainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                        MainIntent.putExtra("currentUser", userName);
-                        startActivity(MainIntent);
-                    } else if (loginManager.foundUser(userName)) {
-                        Toast.makeText(LoginActivity.this, "Incorrect Password",
-                                Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(LoginActivity.this,"No such user... SIGN UP!",
-                                Toast.LENGTH_LONG).show();
-                    }
-                }
-
             }
         });
-
     }
-
 }//end class
