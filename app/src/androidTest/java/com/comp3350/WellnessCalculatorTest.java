@@ -61,8 +61,9 @@ public class WellnessCalculatorTest {
         onView(withId(R.id.button_login)).perform(click());
 
         //test that user is using wellness calculator feature to get his wellness number
-        //no custom data and select barely active
         onView(withId(R.id.cardview_bmi)).perform(click());
+        //no custom data and select barely active
+        closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
         onView(withId(R.id.mc_result)).check(matches(withText("2068.28 Calories/day are needed to maintain your current body composition.")));
         onView(withId(R.id.weight_result)).check(matches(withText("145.50")));
@@ -74,6 +75,7 @@ public class WellnessCalculatorTest {
         pressBack();
         onView(withId(R.id.spinner_activity_level)).perform(click());
         onData(allOf(is(instanceOf(String.class)), is("Highly active"))).perform(click());
+        closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
         onView(withId(R.id.mc_result)).check(matches(withText("2930.07 Calories/day are needed to maintain your current body composition.")));
         onView(withId(R.id.weight_result)).check(matches(withText("145.50")));
@@ -86,6 +88,7 @@ public class WellnessCalculatorTest {
         onView(withId(R.id.spinner_activity_level)).perform(click());
         onData(allOf(is(instanceOf(String.class)), is("Active"))).perform(click());
         onView(withId(R.id.edittext_new_weight)).perform(typeText("142.65"));
+        closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
         onView(withId(R.id.mc_result)).check(matches(withText("2388.15 Calories/day are needed to maintain your current body composition.")));
         onView(withId(R.id.weight_result)).check(matches(withText("142.65")));
@@ -97,6 +100,7 @@ public class WellnessCalculatorTest {
         pressBack();
         onView(withId(R.id.edittext_new_weight)).perform(clearText());
         onView(withId(R.id.edittext_new_height)).perform(typeText("178.5"));
+        closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
         onView(withId(R.id.mc_result)).check(matches(withText("2420.00 Calories/day are needed to maintain your current body composition.")));
         onView(withId(R.id.weight_result)).check(matches(withText("145.50")));
@@ -107,6 +111,7 @@ public class WellnessCalculatorTest {
         //back and custom weight again and keep custom height
         pressBack();
         onView(withId(R.id.edittext_new_weight)).perform(typeText("150.25"));
+        closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
         onView(withId(R.id.mc_result)).check(matches(withText("2461.41 Calories/day are needed to maintain your current body composition.")));
         onView(withId(R.id.weight_result)).check(matches(withText("150.25")));
