@@ -15,11 +15,12 @@ public class LoginTest {
     //integration test of LoginManager and DatabaseHelper classes
 
     private LoginManager loginManager;
+    private DatabaseHelper dbHelper;
 
     @Before
     public void setUp() throws Exception {
         DatabaseServices.setDB();
-        DatabaseHelper dbHelper = new DatabaseHelper();
+        dbHelper = new DatabaseHelper();
         User testUser1 = new User("testUser1", "testUser1@email.com", 20, 150, "Male", 175, "password");
         User testUser2 = new User("testUser2", "testUser2@email.com", 22, 140, "Male", 170, "password");
         dbHelper.addData(testUser1);
@@ -29,6 +30,8 @@ public class LoginTest {
 
     @After
     public void tearDown() {
+        dbHelper.removeUser("testUser1");
+        dbHelper.removeUser("testUser2");
     }
 
     @Test

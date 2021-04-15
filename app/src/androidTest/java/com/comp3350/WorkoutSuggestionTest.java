@@ -58,7 +58,7 @@ public class WorkoutSuggestionTest {
         closeSoftKeyboard();
         onView(withId(R.id.button_login)).perform(click());
 
-        //test that user is using wellness calculator feature to get his wellness number
+        //test that a female user is using workout suggestion feature to get her workout that matched with her gender
         onView(withId(R.id.cardview_workoutPlan)).perform(click());
         //select Tone up
         onView(withId(R.id.spinner_workout)).perform(click());

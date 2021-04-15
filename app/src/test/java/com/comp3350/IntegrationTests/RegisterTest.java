@@ -30,6 +30,8 @@ public class RegisterTest {
 
     @After
     public void tearDown() {
+        dbHelper.removeUser("userAlpha");
+        dbHelper.removeUser("userBeta");
         dbHelper.removeUser("userCharlie");
     }
 
