@@ -57,7 +57,6 @@
     <string name="my_bmi">My BMI</string>
     <string name="meal_plan">Meal Plan</string>
     <string name="blood_optimizer">Blood Optimizer</string>
-    <string name="workout_plan">Workout Plan</string>
     <string name="dashboard_workout">dashboard-workout</string>
     <string name="dashboard_meal">dashboard-meal</string>
     <string name="dashboard_bmi">dashboard-bmi</string>
@@ -201,5 +200,8 @@
     <string name="femaleGeneral">If you are not aware of any specific deficiencies and have any of
                 the following symptoms including severe pms, extreme fatigue, depression, lack of sleep,
                 hair fall or skin or nail problems, check out Thrives general recommendations that might be a quick fix.</string>
+    <string name="wellness_calculator">Wellness Calculator</string>
+    <string name="self_check">Self Check</string>
+    <string name="workout_plan">Workout Plan</string>
 
 </resources>

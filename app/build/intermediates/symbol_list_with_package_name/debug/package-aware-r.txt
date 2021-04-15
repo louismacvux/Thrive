@@ -2615,6 +2615,7 @@ string search_menu_title
 string see_result
 string see_suggestions
 string select_activity_level
+string self_check
 string status_bar_notification_info_overflow
 string testGeneral
 string testHighSymptoms
@@ -2634,6 +2635,7 @@ string username
 string weight
 string weight_lbs
 string welcome_to_thrive
+string wellness_calculator
 string workout_plan
 string workout_select
 string your_bmi_result_is
