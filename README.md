@@ -7,6 +7,10 @@ Purpose of Thrive is to provide tools and information that will assist the consu
 3. You may want to include a local.properties with your location of the SDK.
 4. Build and run.
 
+## Running the tests
+1. All Unit and Integration tests are located under com.comp3350 (test)
+2. All Acceptance tests are located under com.comp3350 (androidTest)
+
 ## Branching Strategy
 Git Flow model or the successfull Git branching model.<br/>
 We have the two main branches which are master and development. <br/>
