@@ -17,12 +17,12 @@ We have the two main branches which are master and development. <br/>
 All of the other branches for feature development will branch off from the development branch and be merged to development. Then the project in development will be pushed to master once it is ready to be released. 
 
 ## Link to worksheets
-* [iteration 1](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/development/i1_worksheet_group3.md)
-* [iteration 2](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/development/iteration2WorkSheet.md)
-* [iteration 3]()
+* [iteration 1](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/master/i1_worksheet_group3.md)
+* [iteration 2](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/master/i2_worksheet_group3.md)
+* [iteration 3](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/master/i3_worksheet_group3.md)
 
 ## Link to our vision statement
 * [vision statement](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/master/VISION.md)
 
 ## Link to ARCHITECTURE.md
-* [architecture](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/development/architecture.md)
+* [architecture](https://code.cs.umanitoba.ca/3350-winter-2021-a02/thrive/-/blob/master/architecture.md)
