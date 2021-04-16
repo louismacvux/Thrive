@@ -36,6 +36,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7d9434ff-11ca-4b76-80aa-c1b3f20e9737" name="Default Changelist" comment="revert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/comp3350/IntegrationTests/FeaturesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/i3_worksheet_group3.md" beforeDir="false" afterPath="$PROJECT_DIR$/i3_worksheet_group3.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,16 +158,32 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Instrumented Tests.AllAcceptanceTests">
-    <configuration name="LoginTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllIntegrationTests" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Comp_3350.app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.comp3350.IntegrationTests.*" />
+          <option name="PATTERN" value="com.comp3350.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.comp3350.IntegrationTests" />
-      <option name="MAIN_CLASS_NAME" value="com.comp3350.IntegrationTests.LoginTest" />
+      <option name="PACKAGE_NAME" value="com.comp3350" />
+      <option name="MAIN_CLASS_NAME" value="com.comp3350.AllIntegrationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllUnitTests" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Comp_3350.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comp3350.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.comp3350" />
+      <option name="MAIN_CLASS_NAME" value="com.comp3350.AllUnitTests" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -385,64 +407,13 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkoutSuggestionTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="Comp_3350.app" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="com.comp3350.WorkoutSuggestionTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Android Instrumented Tests.AllAcceptanceTests" />
+        <item itemvalue="Android JUnit.AllIntegrationTests" />
+        <item itemvalue="Android JUnit.AllUnitTests" />
         <item itemvalue="Android Instrumented Tests.BloodInformationTest" />
         <item itemvalue="Android Instrumented Tests.MealPlanTest" />
-        <item itemvalue="Android Instrumented Tests.WorkoutSuggestionTest" />
-        <item itemvalue="Android JUnit.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -689,7 +660,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614140991436" />
-    <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1618508332716">
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1618591074010">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616125042016" />
@@ -698,10 +669,10 @@
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1614874855430" />
     <state width="1398" height="197" key="GridCell.Tab.0.bottom/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039528" />
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167173011" />
-    <state width="1398" height="280" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1618508332716" />
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom/0.25.1440.828@0.25.1440.828" timestamp="1618591074010" />
     <state width="1397" height="205" key="GridCell.Tab.0.bottom/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722786" />
     <state width="1878" height="271" key="GridCell.Tab.0.bottom/0.25.1920.1113@0.25.1920.1113" timestamp="1618294665901" />
-    <state width="1398" height="280" key="GridCell.Tab.0.center" timestamp="1618508332716">
+    <state width="1398" height="280" key="GridCell.Tab.0.center" timestamp="1618591074010">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616125042014" />
@@ -710,10 +681,10 @@
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1614874855429" />
     <state width="1398" height="197" key="GridCell.Tab.0.center/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039527" />
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167173006" />
-    <state width="1398" height="280" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1618508332716" />
+    <state width="1398" height="280" key="GridCell.Tab.0.center/0.25.1440.828@0.25.1440.828" timestamp="1618591074010" />
     <state width="1397" height="205" key="GridCell.Tab.0.center/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722786" />
     <state width="1878" height="271" key="GridCell.Tab.0.center/0.25.1920.1113@0.25.1920.1113" timestamp="1618294665900" />
-    <state width="1398" height="280" key="GridCell.Tab.0.left" timestamp="1618508332715">
+    <state width="1398" height="280" key="GridCell.Tab.0.left" timestamp="1618591074008">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616125042014" />
@@ -722,10 +693,10 @@
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1614874855428" />
     <state width="1398" height="197" key="GridCell.Tab.0.left/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039526" />
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167172993" />
-    <state width="1398" height="280" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1618508332715" />
+    <state width="1398" height="280" key="GridCell.Tab.0.left/0.25.1440.828@0.25.1440.828" timestamp="1618591074008" />
     <state width="1397" height="205" key="GridCell.Tab.0.left/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722783" />
     <state width="1878" height="271" key="GridCell.Tab.0.left/0.25.1920.1113@0.25.1920.1113" timestamp="1618294665899" />
-    <state width="1398" height="280" key="GridCell.Tab.0.right" timestamp="1618508332716">
+    <state width="1398" height="280" key="GridCell.Tab.0.right" timestamp="1618591074010">
       <screen x="0" y="25" width="1440" height="828" />
     </state>
     <state width="1494" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616125042015" />
@@ -734,7 +705,7 @@
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1614874855429" />
     <state width="1398" height="197" key="GridCell.Tab.0.right/0.25.1440.828/1440.25.1048.809@0.25.1440.828" timestamp="1615262039527" />
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.828/1440.25.1112.809@0.25.1440.828" timestamp="1616167173007" />
-    <state width="1398" height="280" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1618508332716" />
+    <state width="1398" height="280" key="GridCell.Tab.0.right/0.25.1440.828@0.25.1440.828" timestamp="1618591074010" />
     <state width="1397" height="205" key="GridCell.Tab.0.right/0.25.1440.875/1440.25.1112.762@0.25.1440.875" timestamp="1616167722786" />
     <state width="1878" height="271" key="GridCell.Tab.0.right/0.25.1920.1113@0.25.1920.1113" timestamp="1618294665901" />
     <state width="1398" height="212" key="GridCell.Tab.1.bottom" timestamp="1618504414707">
@@ -834,13 +805,6 @@
     <SUITE FILE_PATH="coverage/Comp_3350$LoginManagerTest.ic" NAME="LoginManagerTest Coverage Results" MODIFIED="1616156368682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.UnitTests.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Comp_3350$AutomatedTest.ic" NAME="AutomatedTest Coverage Results" MODIFIED="1616177533791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.comp3350.UnitTests.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Comp_3350$BloodInformationTest_getGeneralInfoTest.ic" NAME="BloodInformationTest.getGeneralInfoTest Coverage Results" MODIFIED="1616115602621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.comp3350.UnitTests.*</FILTER>
-      <FILTER>com.comp3350.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Comp_3350$AllTests.ic" NAME="AllTests Coverage Results" MODIFIED="1616185277493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.*</FILTER>
     </SUITE>
@@ -850,16 +814,26 @@
     <SUITE FILE_PATH="coverage/Comp_3350$RegisterManagerTest.ic" NAME="RegisterManagerTest Coverage Results" MODIFIED="1616156220771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.UnitTests.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Comp_3350$WellnessCalculatorTest.ic" NAME="WellnessCalculatorTest Coverage Results" MODIFIED="1616155537987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.comp3350.UnitTests.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/Comp_3350$UnitTestI1.ic" NAME="UnitTestI1 Coverage Results" MODIFIED="1616157215759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Comp_3350$AllUnitTests.ic" NAME="AllUnitTests Coverage Results" MODIFIED="1618343344976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Comp_3350$AllIntegrationTests.ic" NAME="AllIntegrationTests Coverage Results" MODIFIED="1618590788940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Comp_3350$AllIntegration.ic" NAME="AllIntegration Coverage Results" MODIFIED="1618343500335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Comp_3350$AutomatedTest.ic" NAME="AutomatedTest Coverage Results" MODIFIED="1616177533791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.UnitTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Comp_3350$BloodInformationTest_getGeneralInfoTest.ic" NAME="BloodInformationTest.getGeneralInfoTest Coverage Results" MODIFIED="1616115602621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.UnitTests.*</FILTER>
+      <FILTER>com.comp3350.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Comp_3350$WellnessCalculatorTest.ic" NAME="WellnessCalculatorTest Coverage Results" MODIFIED="1616155537987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.comp3350.UnitTests.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Comp_3350$AllUnitTests.ic" NAME="AllUnitTests Coverage Results" MODIFIED="1618590719418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.comp3350.*</FILTER>
     </SUITE>
   </component>
