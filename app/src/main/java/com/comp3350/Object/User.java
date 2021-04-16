@@ -47,14 +47,13 @@ public class User {
         this.email = email;
         this.age = age;
         this.weight = weight;
-
         if (givenGender.equals("Male"))
         {
-            me = me.MALE;
+            me = gender.MALE;
         }
         else
         {
-            me = me.FEMALE;
+            me = gender.FEMALE;
         }
         this.height = height;
         this.password = password;
@@ -115,24 +114,12 @@ public class User {
         return me.stringValue;
     }
 
-    public int  getGenderInt() {
-        if (me.stringValue.equalsIgnoreCase("Male"))
-        {
-            return 0;
-        }
-        else if (me.stringValue.equalsIgnoreCase("Female"))
-        {
-            return 1;
-        }
-        else{
-            return -1;
-        }
-    }
+    public int  getGenderInt() { return me.intValue; }
 
     public double getHeight() {
         return height;
     }
 
-    public String getPassword() { return password;}
+    public String getPassword() { return password; }
 
 }

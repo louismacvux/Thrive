@@ -4,12 +4,12 @@ import com.comp3350.Object.User;
 
 public class Calculator {
 
-    double maintenance_calories;
-    String string_weight;
-    String string_height;
-    double activity_level;
-    double bmi;
-    User user;
+    private double maintenance_calories;
+    private final String string_weight;
+    private final String string_height;
+    private final double activity_level;
+    private double bmi;
+    private final User user;
 
 
     public Calculator(String string_weight, String string_height, User user, double activity_level){
@@ -22,7 +22,7 @@ public class Calculator {
 
     public double calculateBMI(double weight, double height){
         double result;
-        if (weight > 0 || height > 0){
+        if (weight > 0 && height > 0){
             //convert weight from pounds to kilograms. 1kg = 2.2lb
             double convertedWeight = weight/2.2;
             //convert height from centimeters to meters. 1cm = 0.01m
@@ -62,7 +62,7 @@ public class Calculator {
     //getter
     public double getWeightUsed(){
         double result;
-        if (string_weight.equals("") || string_weight.equals(".")) {
+        if (string_weight.equals("") || string_weight.equals(".") || Double.parseDouble(string_weight) == 0) {
             result = user.getWeight();
         }
         else {
@@ -73,7 +73,7 @@ public class Calculator {
 
     public double getHeightUsed(){
         double result;
-        if (string_height.equals("") || string_height.equals(".")) {
+        if (string_height.equals("") || string_height.equals(".") || Double.parseDouble(string_height) == 0) {
             result = user.getHeight();
         }
         else {

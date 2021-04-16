@@ -61,7 +61,9 @@ public class MealPlanTest {
     @Test
     public void getMealPlan() {
         //login
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_username)).perform(typeText("mealPlan"));
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_password)).perform(typeText("password"));
         closeSoftKeyboard();
         onView(withId(R.id.button_login)).perform(click());
@@ -133,6 +135,7 @@ public class MealPlanTest {
         //go to wellness calculator feature
         pressBack();
         onView(withId(R.id.BMI)).perform(click());
+        //check current activity on WellnessCalculator
         intended(hasComponent(WellnessCalculator.class.getName()));
     }
 }

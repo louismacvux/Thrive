@@ -55,7 +55,9 @@ public class WellnessCalculatorTest {
     @Test
     public void getWellnessNumber() {
         //login
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_username)).perform(typeText("testUser"));
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_password)).perform(typeText("password"));
         closeSoftKeyboard();
         onView(withId(R.id.button_login)).perform(click());
@@ -73,9 +75,9 @@ public class WellnessCalculatorTest {
 
         //back and select highly active
         pressBack();
+        closeSoftKeyboard();
         onView(withId(R.id.spinner_activity_level)).perform(click());
         onData(allOf(is(instanceOf(String.class)), is("Highly active"))).perform(click());
-        closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
         onView(withId(R.id.mc_result)).check(matches(withText("2930.07 Calories/day are needed to maintain your current body composition.")));
         onView(withId(R.id.weight_result)).check(matches(withText("145.50")));
@@ -85,6 +87,7 @@ public class WellnessCalculatorTest {
 
         //back and custom weight and select active
         pressBack();
+        closeSoftKeyboard();
         onView(withId(R.id.spinner_activity_level)).perform(click());
         onData(allOf(is(instanceOf(String.class)), is("Active"))).perform(click());
         onView(withId(R.id.edittext_new_weight)).perform(typeText("142.65"));
@@ -98,7 +101,9 @@ public class WellnessCalculatorTest {
 
         //back and delete custom weight and custom height
         pressBack();
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_new_weight)).perform(clearText());
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_new_height)).perform(typeText("178.5"));
         closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());
@@ -110,6 +115,7 @@ public class WellnessCalculatorTest {
 
         //back and custom weight again and keep custom height
         pressBack();
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_new_weight)).perform(typeText("150.25"));
         closeSoftKeyboard();
         onView(withId(R.id.button_calculate)).perform(click());

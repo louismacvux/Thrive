@@ -8,8 +8,8 @@ import org.junit.runners.Suite;
         MealPlanTest.class,
         WellnessCalculatorTest.class,
         WorkoutSuggestionTest.class,
-        BloodInformationTest.class
-
+        BloodInformationTest.class,
+        RegisterLoginTest.class
 })
 
 public class AllAcceptanceTests {

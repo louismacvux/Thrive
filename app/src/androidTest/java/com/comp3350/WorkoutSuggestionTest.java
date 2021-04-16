@@ -53,7 +53,9 @@ public class WorkoutSuggestionTest {
     @Test
     public void getWorkoutSuggestion() {
         //login
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_username)).perform(typeText("femaleUser"));
+        closeSoftKeyboard();
         onView(withId(R.id.edittext_password)).perform(typeText("password"));
         closeSoftKeyboard();
         onView(withId(R.id.button_login)).perform(click());

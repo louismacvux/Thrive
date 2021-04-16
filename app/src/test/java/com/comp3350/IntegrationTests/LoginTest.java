@@ -90,49 +90,4 @@ public class LoginTest {
         System.out.println("*** LOGIN TESTS ***");
         System.out.println(num_tested + " tests run, " + (num_tested - failed_test) + " passed," + failed_test + " failed.");
     }
-
-    /*@Test
-    public void testFoundUser() {
-        int num_tested = 0;
-        int failed_test = 0;
-
-        //test testUser1 is found successful or not
-        try
-        {
-            num_tested++;
-            assert (loginManager.foundUser("testUser1"));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failed_test++;
-            System.out.println(fail.getMessage());
-        }
-
-        //test testUser2 is found successful or not
-        try
-        {
-            num_tested++;
-            assert (loginManager.foundUser("testUser2"));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failed_test++;
-            System.out.println(fail.getMessage());
-        }
-
-        //test user who is not registered is found successful or not
-        try
-        {
-            num_tested++;
-            assert (!loginManager.foundUser("unknown"));
-        }
-        catch (AssertionFailedError fail)
-        {
-            failed_test++;
-            System.out.println(fail.getMessage());
-        }
-
-        System.out.println("*** LOGIN PAGE USER FOUND TESTS ***");
-        System.out.println(num_tested + " tests run, " + (num_tested - failed_test) + " passed," + failed_test + " failed.");
-    }*/
 }

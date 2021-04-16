@@ -13,32 +13,12 @@ import static org.junit.Assert.*;
 
 public class RegisterManagerTest {
 
-    RegisterManager manager = new RegisterManager();
-    User u1;
+    RegisterManager manager;
 
     @Before
     public void setUp() {
-        u1 = new User("emma", "emma@gmail.com", 18, 140,
-                "female", 160.8, "emma1234");
+        manager = new RegisterManager();
     }
-
-//    @Test
-//    public void fieldEmpty() {
-//        assert(!manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
-//                "male", 32, 140, 170));
-//
-//        //empty fields
-//        assert(manager.fieldEmpty("", "bob", "bob1234", "bob1234",
-//                "male", 32, 140, 170)); //empty email
-//        assert(manager.fieldEmpty("bob@gmail.com", "", "bob1234", "bob1234",
-//                "male", 32, 140, 170)); //empty username
-//        assert(manager.fieldEmpty("bob@gmail.com", "bob", "", "bob1234",
-//                "male", 32, 140, 170)); //empty pw
-//        assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "",
-//                "male", 32, 140, 170)); //empty confirmpw
-//        assert(manager.fieldEmpty("bob@gmail.com", "bob", "bob1234", "bob1234",
-//                "male", 0, 0, 0)); //invalid numbers
-//    }
 
     @Test
     public void parseInt(){
@@ -77,7 +57,7 @@ public class RegisterManagerTest {
 
     @Test
     public void validateEmail(){
-        String email = u1.getEmail();
+        String email = "emma@gmail.com";
         String tooManyChars = "thisisaverysuperlongandhumongousemail@gmail.com";
         String wrongFormat1 = "emma@gmail";
         String wrongFormat2 = "emmagmail.com";
@@ -91,7 +71,7 @@ public class RegisterManagerTest {
 
     @Test
     public void validateName(){
-        String name = u1.getName();
+        String name = "emma";
         String tooLong = "thisisaveryverylongusername";
         String withSpaces = "emma Johnson";
 
@@ -104,7 +84,7 @@ public class RegisterManagerTest {
 
     @Test
     public void validatePass(){
-        String pw = u1.getPassword();
+        String pw = "emma1234";
         String tooLong = "thisisaveryveryveryverylongpassword";
         String tooShort = "short";
         String withSpaces = "emma 1234";
@@ -125,11 +105,5 @@ public class RegisterManagerTest {
         assert(manager.validateConfirmPass(pw, confirm));
         assert(!manager.validateConfirmPass(pw, wrongConfirm));
         assert(manager.validateConfirmPass("",""));
-    }
-
-
-    @After
-    public void tearDown() {
-        u1 = null;
     }
 }
